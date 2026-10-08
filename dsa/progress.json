@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "currentDay": 0,
+  "lastLessonDate": null,
+  "currentTopic": null,
+  "topicsCompleted": [],
+  "nextRoadmapTopic": "big-o",
+  "roadmapProgress": "0/59",
+  "upcomingRevisions": [],
+  "stats": {
+    "lessons": 0,
+    "newTopicLessons": 0,
+    "revisionLessons": 0,
+    "problemsGenerated": 0,
+    "problemsCompleted": 0,
+    "lessonsCompleted": 0
+  },
+  "lessons": []
+}

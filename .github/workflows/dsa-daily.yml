@@ -1,0 +1,178 @@
+# Generates one DSA lesson per day, entirely on GitHub-hosted runners.
+#
+#   generate  (read-only token + AI secret)  plan -> AI generation -> sandboxed tests -> repair
+#   validate  (read-only token, NO secrets)  independent re-run of every test in the sandbox
+#   publish   (write token, runs NO generated code)  merge into dsa/, commit, push
+#
+# Docs: .github/agents/README.md
+name: DSA Daily Lesson
+
+on:
+  schedule:
+    # Every day at 06:00 UTC. GitHub cron is always UTC and runs can start a
+    # few minutes late. To change the time, edit this line (see the README).
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: "Roadmap topic id or title (e.g. binary-search). Leave empty to follow the roadmap."
+        required: false
+        default: ""
+        type: string
+      difficulty:
+        description: "Difficulty of the problem set"
+        required: false
+        default: default
+        type: choice
+        options: [default, progressive, easy, medium, hard]
+      problems:
+        description: "Number of problems (empty = configured default)"
+        required: false
+        default: ""
+        type: string
+      force:
+        description: "Regenerate today's lesson if it already exists"
+        required: false
+        default: false
+        type: boolean
+      extra_lesson:
+        description: "Add another lesson even if today's already exists"
+        required: false
+        default: false
+        type: boolean
+
+# Nothing by default; each job requests exactly what it needs.
+permissions: {}
+
+# Never run two lesson pipelines for the same branch at once; queue instead.
+concurrency:
+  group: dsa-daily-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  AGENT: .github/agents/scripts/agent.py
+  PYTHON_VERSION: "3.12"
+  PYTHONDONTWRITEBYTECODE: "1"
+  PYTHONUNBUFFERED: "1"
+  DSA_LANGUAGE: ${{ vars.DSA_LANGUAGE }}
+  DSA_TIMEZONE: ${{ vars.DSA_TIMEZONE }}
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  generate:
+    name: Generate lesson
+    # Set the repository variable DSA_PAUSED=true to pause scheduled lessons.
+    if: vars.DSA_PAUSED != 'true' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    permissions:
+      contents: read
+    outputs:
+      skipped: ${{ steps.generate.outputs.skipped }}
+      day: ${{ steps.generate.outputs.day }}
+      title: ${{ steps.generate.outputs.title }}
+      # Passed downstream so "Re-run failed jobs" still finds this attempt's artifact.
+      artifact: dsa-lesson-${{ github.run_id }}-${{ github.run_attempt }}
+    steps:
+      - name: Checkout (latest branch tip, no stored credentials)
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.ref }}
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Check configuration
+        run: python "$AGENT" check
+
+      - name: Generate and validate lesson
+        id: generate
+        env:
+          # Secrets are exposed to this step only. They are never printed;
+          # generated code runs in a Docker sandbox that cannot see them.
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          DSA_AI_PROVIDER: ${{ vars.DSA_AI_PROVIDER }}
+          DSA_AI_MODEL: ${{ vars.DSA_AI_MODEL }}
+          OPENAI_BASE_URL: ${{ vars.OPENAI_BASE_URL }}
+          # Workflow inputs are passed as environment variables (never
+          # interpolated into the script) to prevent shell injection.
+          DSA_TOPIC: ${{ inputs.topic }}
+          DSA_DIFFICULTY: ${{ inputs.difficulty }}
+          DSA_PROBLEMS: ${{ inputs.problems }}
+          DSA_FORCE: ${{ inputs.force }}
+          DSA_EXTRA_LESSON: ${{ inputs.extra_lesson }}
+        run: python "$AGENT" generate --staging "$RUNNER_TEMP/staging"
+
+      - name: Upload staged lesson
+        if: steps.generate.outputs.skipped == 'false'
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: dsa-lesson-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/staging
+          if-no-files-found: error
+          retention-days: 7
+
+  validate:
+    name: Validate lesson (no secrets)
+    needs: generate
+    if: needs.generate.outputs.skipped == 'false'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout (no stored credentials)
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.ref }}
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Download staged lesson
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: ${{ needs.generate.outputs.artifact }}
+          path: ${{ runner.temp }}/staging
+
+      - name: Re-run all tests in the sandbox
+        run: python "$AGENT" validate --staging "$RUNNER_TEMP/staging"
+
+  publish:
+    name: Commit and push
+    needs: [generate, validate]
+    if: needs.generate.outputs.skipped == 'false'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.ref }}
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Download staged lesson
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: ${{ needs.generate.outputs.artifact }}
+          path: ${{ runner.temp }}/staging
+
+      - name: Merge lesson, update progress, commit and push
+        run: bash .github/agents/scripts/publish.sh "$RUNNER_TEMP/staging"

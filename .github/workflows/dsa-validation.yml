@@ -1,0 +1,87 @@
+# Continuous validation of the agent and of every lesson in the repository.
+# Runs on pushes / pull requests that touch the agent or the lessons, and on
+# demand. Read-only token, no secrets: safe for pull requests from forks.
+#
+# Note: commits pushed by the daily workflow (GITHUB_TOKEN) do not trigger
+# this workflow; those lessons are already validated inside dsa-daily.yml.
+name: DSA Validation
+
+on:
+  push:
+    paths:
+      - ".github/**"
+      - "dsa/**"
+  pull_request:
+    paths:
+      - ".github/**"
+      - "dsa/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: dsa-validation-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  AGENT: .github/agents/scripts/agent.py
+  PYTHON_VERSION: "3.12"
+  PYTHONDONTWRITEBYTECODE: "1"
+  PYTHONUNBUFFERED: "1"
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  agent:
+    name: Agent self-tests & lint
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Lint workflows (actionlint)
+        run: |
+          docker run --rm --network none -v "$PWD:/repo:ro" -w /repo \
+            rhysd/actionlint:1.7.12@sha256:b1934ee5f1c509618f2508e6eb47ee0d3520686341fec936f3b79331f9315667 -color
+
+      - name: Check configuration, roadmap, prompts and progress
+        run: python "$AGENT" check
+
+      - name: Agent unit and pipeline tests
+        # The self-tests run fixed, known code from the test suite (no AI
+        # output), so the local process sandbox is acceptable here.
+        run: python -m unittest discover -s .github/agents/tests -p "test_*.py" -v
+
+  lessons:
+    name: Validate lessons & practice
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Validate every lesson's reference solutions (Docker sandbox)
+        run: python "$AGENT" validate --all
+
+      - name: Report on your practice solutions
+        # Informational only: your work-in-progress never fails the build.
+        continue-on-error: true
+        run: python "$AGENT" practice-report

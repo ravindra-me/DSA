@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "description": "Ordered DSA learning roadmap. Topics are taught in the order listed; each phase builds on the previous ones. Topic ids are stable identifiers used in progress.json and in the manual 'topic' workflow input, so do not rename an id once it has been taught.",
+  "phases": [
+    {
+      "id": "fundamentals",
+      "title": "Fundamentals",
+      "topics": [
+        { "id": "big-o", "title": "Big O Notation & Complexity Analysis", "concepts": ["time complexity", "space complexity", "best/average/worst case", "amortized analysis", "growth rates"] },
+        { "id": "arrays", "title": "Arrays", "concepts": ["indexing", "traversal", "in-place updates", "dynamic arrays", "2D arrays"] },
+        { "id": "strings", "title": "Strings", "concepts": ["immutability", "character manipulation", "palindromes", "anagrams", "string building"] },
+        { "id": "recursion", "title": "Recursion", "concepts": ["base case", "recursive case", "call stack", "recursion trees", "tail recursion"] },
+        { "id": "math-basics", "title": "Basic Mathematics for DSA", "concepts": ["GCD/LCM", "primes & sieve", "modular arithmetic", "fast exponentiation", "digit manipulation"] },
+        { "id": "bit-manipulation", "title": "Bit Manipulation", "concepts": ["bitwise operators", "masks", "XOR tricks", "counting set bits", "power of two checks"] }
+      ]
+    },
+    {
+      "id": "linear",
+      "title": "Linear Data Structures",
+      "topics": [
+        { "id": "linked-list", "title": "Linked Lists", "concepts": ["singly linked list", "doubly linked list", "insertion/deletion", "dummy head", "reversal"] },
+        { "id": "linked-list-techniques", "title": "Linked List Techniques", "concepts": ["fast/slow pointers", "cycle detection", "middle node", "merging lists", "k-th from end"] },
+        { "id": "stack", "title": "Stack", "concepts": ["LIFO", "balanced parentheses", "expression evaluation", "undo history", "stack via array/list"] },
+        { "id": "monotonic-stack", "title": "Monotonic Stack", "concepts": ["next greater element", "previous smaller element", "histogram area", "stock span"] },
+        { "id": "queue", "title": "Queue", "concepts": ["FIFO", "circular queue", "queue via two stacks", "producer/consumer"] },
+        { "id": "deque", "title": "Deque & Monotonic Queue", "concepts": ["double-ended operations", "sliding window maximum", "monotonic deque", "palindrome checking"] }
+      ]
+    },
+    {
+      "id": "hashing",
+      "title": "Hashing",
+      "topics": [
+        { "id": "hash-map", "title": "HashMap", "concepts": ["hash functions", "collisions", "load factor", "key-value lookup", "two-sum pattern"] },
+        { "id": "hash-set", "title": "HashSet", "concepts": ["membership tests", "deduplication", "set operations", "seen-before pattern"] },
+        { "id": "frequency-counting", "title": "Frequency Counting", "concepts": ["counters", "anagram grouping", "majority element", "bucket by frequency"] },
+        { "id": "prefix-suffix", "title": "Prefix & Suffix Techniques", "concepts": ["prefix sums", "suffix products", "subarray sum equals k", "2D prefix sums", "difference arrays"] }
+      ]
+    },
+    {
+      "id": "patterns",
+      "title": "Core Array Patterns",
+      "topics": [
+        { "id": "two-pointers", "title": "Two Pointers", "concepts": ["opposite-direction pointers", "same-direction pointers", "pair sum in sorted array", "partitioning", "removing duplicates in place"] },
+        { "id": "sliding-window", "title": "Sliding Window", "concepts": ["fixed-size window", "variable-size window", "window invariants", "longest/shortest subarray"] }
+      ]
+    },
+    {
+      "id": "searching",
+      "title": "Searching",
+      "topics": [
+        { "id": "linear-search", "title": "Linear Search", "concepts": ["sequential scan", "sentinel search", "early exit", "searching unsorted data"] },
+        { "id": "binary-search", "title": "Binary Search", "concepts": ["sorted input", "search space halving", "loop invariants", "off-by-one errors", "iterative vs recursive"] },
+        { "id": "binary-search-variations", "title": "Binary Search Variations", "concepts": ["lower/upper bound", "first/last occurrence", "rotated sorted array", "peak element", "search in 2D matrix"] },
+        { "id": "binary-search-on-answer", "title": "Binary Search on the Answer", "concepts": ["monotonic predicate", "minimize maximum", "capacity/speed problems", "real-valued search"] }
+      ]
+    },
+    {
+      "id": "sorting",
+      "title": "Sorting",
+      "topics": [
+        { "id": "elementary-sorts", "title": "Bubble, Selection & Insertion Sort", "concepts": ["bubble sort", "selection sort", "insertion sort", "stability", "in-place sorting", "nearly-sorted input"] },
+        { "id": "merge-sort", "title": "Merge Sort", "concepts": ["divide and conquer", "merging sorted halves", "stability", "counting inversions", "external sorting"] },
+        { "id": "quick-sort", "title": "Quick Sort & Quickselect", "concepts": ["partitioning (Lomuto/Hoare)", "pivot choice", "randomization", "quickselect", "Dutch national flag"] },
+        { "id": "heap-sort", "title": "Heap Sort", "concepts": ["heapify", "sift down", "in-place heap sort", "complexity guarantees"] },
+        { "id": "non-comparison-sorts", "title": "Counting, Bucket & Radix Sort", "concepts": ["counting sort", "bucket sort", "radix sort", "linear-time sorting limits"] }
+      ]
+    },
+    {
+      "id": "trees",
+      "title": "Trees",
+      "topics": [
+        { "id": "binary-tree", "title": "Binary Trees", "concepts": ["nodes and children", "tree terminology", "building trees", "recursive tree functions"] },
+        { "id": "tree-traversals", "title": "Tree Traversals", "concepts": ["preorder", "inorder", "postorder", "level order (BFS)", "iterative traversals"] },
+        { "id": "tree-height-depth", "title": "Tree Height, Depth & Diameter", "concepts": ["height", "depth", "diameter", "balanced check", "path sums"] },
+        { "id": "bst", "title": "Binary Search Trees", "concepts": ["BST property", "search/insert/delete", "validation", "inorder successor", "k-th smallest"] },
+        { "id": "lowest-common-ancestor", "title": "Lowest Common Ancestor", "concepts": ["LCA in binary tree", "LCA in BST", "parent pointers", "binary lifting (intro)"] },
+        { "id": "balanced-trees", "title": "Balanced Trees (AVL & Red-Black Concepts)", "concepts": ["rotations", "balance factor", "AVL insertion", "red-black invariants", "why balance matters"] }
+      ]
+    },
+    {
+      "id": "heaps",
+      "title": "Heap / Priority Queue",
+      "topics": [
+        { "id": "heap-basics", "title": "Min Heap & Max Heap", "concepts": ["complete binary tree", "array representation", "push/pop", "heapify", "priority queues"] },
+        { "id": "top-k", "title": "Top K Problems", "concepts": ["k largest/smallest", "k most frequent", "k closest points", "heap vs quickselect"] },
+        { "id": "heap-advanced", "title": "Two Heaps & K-way Merge", "concepts": ["running median", "merge k sorted lists", "scheduling with heaps", "lazy deletion"] }
+      ]
+    },
+    {
+      "id": "graphs",
+      "title": "Graphs",
+      "topics": [
+        { "id": "graph-basics", "title": "Graph Representation", "concepts": ["adjacency list", "adjacency matrix", "edge list", "directed vs undirected", "weighted graphs", "grids as graphs"] },
+        { "id": "bfs", "title": "Breadth-First Search", "concepts": ["queue-based traversal", "levels", "shortest path in unweighted graphs", "multi-source BFS"] },
+        { "id": "dfs", "title": "Depth-First Search", "concepts": ["recursive DFS", "iterative DFS", "visited sets", "flood fill", "path finding"] },
+        { "id": "connected-components", "title": "Connected Components", "concepts": ["counting components", "islands in a grid", "component labeling", "bipartite check"] },
+        { "id": "cycle-detection", "title": "Cycle Detection", "concepts": ["undirected cycles", "directed cycles", "white/gray/black coloring", "parent tracking"] },
+        { "id": "topological-sort", "title": "Topological Sort", "concepts": ["DAGs", "Kahn's algorithm", "DFS-based ordering", "course scheduling", "dependency resolution"] },
+        { "id": "dijkstra", "title": "Shortest Paths: Dijkstra", "concepts": ["non-negative weights", "priority queue relaxation", "path reconstruction", "0-1 BFS"] },
+        { "id": "bellman-ford", "title": "Shortest Paths: Bellman-Ford & Floyd-Warshall", "concepts": ["negative weights", "negative cycle detection", "k-edge limited paths", "all-pairs shortest paths"] },
+        { "id": "union-find", "title": "Union Find (Disjoint Set Union)", "concepts": ["find/union", "path compression", "union by rank/size", "dynamic connectivity"] },
+        { "id": "minimum-spanning-tree", "title": "Minimum Spanning Tree", "concepts": ["Kruskal's algorithm", "Prim's algorithm", "cut property", "MST applications"] }
+      ]
+    },
+    {
+      "id": "algorithmic-paradigms",
+      "title": "Algorithmic Paradigms",
+      "topics": [
+        { "id": "greedy", "title": "Greedy Algorithms", "concepts": ["greedy choice property", "interval scheduling", "exchange arguments", "when greedy fails"] },
+        { "id": "backtracking", "title": "Backtracking", "concepts": ["choose/explore/unchoose", "subsets", "permutations", "combinations", "pruning", "N-Queens"] },
+        { "id": "dp-introduction", "title": "Dynamic Programming: Introduction", "concepts": ["overlapping subproblems", "optimal substructure", "memoization", "tabulation", "state definition"] },
+        { "id": "dp-1d", "title": "Dynamic Programming: 1D", "concepts": ["climbing stairs", "house robber", "coin change", "space optimization", "decode ways"] },
+        { "id": "dp-2d", "title": "Dynamic Programming: 2D & Grids", "concepts": ["grid paths", "minimum path sum", "edit distance", "longest common subsequence"] },
+        { "id": "dp-knapsack", "title": "Dynamic Programming: Knapsack", "concepts": ["0/1 knapsack", "unbounded knapsack", "subset sum", "partition problems"] },
+        { "id": "dp-subsequences", "title": "Dynamic Programming: Subsequences & Strings", "concepts": ["longest increasing subsequence", "palindromic subsequences", "word break", "patience sorting"] },
+        { "id": "dp-advanced", "title": "Dynamic Programming: Intervals, Trees & Bitmasks", "concepts": ["interval DP", "DP on trees", "bitmask DP", "state compression"] }
+      ]
+    },
+    {
+      "id": "advanced",
+      "title": "Advanced Data Structures & Algorithms",
+      "topics": [
+        { "id": "trie", "title": "Trie (Prefix Tree)", "concepts": ["insert/search/startsWith", "autocomplete", "word search", "XOR trie"] },
+        { "id": "segment-tree", "title": "Segment Tree", "concepts": ["range queries", "point updates", "lazy propagation", "range min/sum"] },
+        { "id": "fenwick-tree", "title": "Fenwick Tree (Binary Indexed Tree)", "concepts": ["lowbit", "prefix sums with updates", "inversion counting", "range update tricks"] },
+        { "id": "string-algorithms", "title": "String Algorithms", "concepts": ["KMP / prefix function", "Z-algorithm", "rolling hash (Rabin-Karp)", "pattern matching"] },
+        { "id": "advanced-graphs", "title": "Advanced Graph Algorithms", "concepts": ["strongly connected components", "bridges & articulation points", "Eulerian paths", "max flow (intro)"] }
+      ]
+    }
+  ]
+}
