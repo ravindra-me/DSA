@@ -29,6 +29,10 @@
       "anthropic": "https://api.anthropic.com",
       "gemini": "https://generativelanguage.googleapis.com/v1beta"
     },
+    "fallbackModels": {
+      "gemini": ["gemini-3.5-flash", "gemini-3.1-flash-lite"]
+    },
+    "geminiThinkingLevel": "low",
     "temperature": null,
     "maxOutputTokens": 24000,
     "requestTimeoutSeconds": 600,

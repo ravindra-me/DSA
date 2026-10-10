@@ -7,6 +7,7 @@ repository variables behave like "not configured"):
     DSA_TIMEZONE      IANA timezone that defines "today" for idempotency
     DSA_AI_PROVIDER   auto | openai | anthropic | gemini
     DSA_AI_MODEL      model name for the selected provider
+    DSA_AI_FALLBACK_MODELS  comma-separated fallback models ("none" disables)
     OPENAI_BASE_URL   OpenAI-compatible endpoint (Azure, OpenRouter, Groq, ...)
     DSA_SANDBOX       docker | process  (process = NO isolation, local dev only)
     DSA_REPO_ROOT     repository root (defaults to the checkout containing this file)
@@ -28,6 +29,7 @@ DEFAULT_REPO_ROOT = AGENTS_DIR.parents[1]
 DIFFICULTY_LEVELS = ("progressive", "easy", "medium", "hard")
 SANDBOX_MODES = ("docker", "process")
 PROVIDERS = ("auto", "openai", "anthropic", "gemini")
+THINKING_LEVELS = ("minimal", "low", "medium", "high")
 
 
 @dataclass(frozen=True)
@@ -43,6 +45,9 @@ class AISettings:
     models: Mapping[str, str]
     base_urls: Mapping[str, str]
     model_override: Optional[str]
+    fallback_models: Mapping[str, Tuple[str, ...]]
+    fallback_override: Optional[Tuple[str, ...]]
+    gemini_thinking_level: Optional[str]
     temperature: Optional[float]
     max_output_tokens: int
     timeout_seconds: int
@@ -154,11 +159,26 @@ def load_settings(
     temperature = ai_raw.get("temperature")
     if temperature is not None and not isinstance(temperature, (int, float)):
         raise ConfigError("config 'ai.temperature' must be a number or null")
+    fallbacks_raw = ai_raw.get("fallbackModels") or {}
+    if not isinstance(fallbacks_raw, dict) or not all(
+        isinstance(v, list) and all(isinstance(m, str) and m for m in v) for v in fallbacks_raw.values()
+    ):
+        raise ConfigError("config 'ai.fallbackModels' must map provider names to lists of model names")
+    fallback_env = _env(env, "DSA_AI_FALLBACK_MODELS")
+    fallback_override = None
+    if fallback_env is not None:
+        fallback_override = () if fallback_env.lower() == "none" else tuple(m.strip() for m in fallback_env.split(",") if m.strip())
+    thinking = ai_raw.get("geminiThinkingLevel")
+    if thinking is not None and thinking not in THINKING_LEVELS:
+        raise ConfigError(f"config 'ai.geminiThinkingLevel' must be null or one of {THINKING_LEVELS}")
     ai = AISettings(
         provider=provider,
         models=dict(ai_raw.get("models") or {}),
         base_urls=base_urls,
         model_override=_env(env, "DSA_AI_MODEL"),
+        fallback_models={k: tuple(v) for k, v in fallbacks_raw.items()},
+        fallback_override=fallback_override,
+        gemini_thinking_level=thinking,
         temperature=temperature,
         max_output_tokens=_int(ai_raw, "maxOutputTokens", 1000, 128000),
         timeout_seconds=_int(ai_raw, "requestTimeoutSeconds", 10, 1800),

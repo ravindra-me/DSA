@@ -24,7 +24,7 @@ from typing import Any, Callable, Dict, Mapping, Optional
 
 from . import log
 from .config import AISettings
-from .errors import AIError, AIRetryableError, ConfigError
+from .errors import AIError, AIRetryableError, AIUnavailableError, ConfigError
 
 RETRYABLE_STATUS = {408, 409, 425, 429, 500, 502, 503, 504, 529}
 # Order matters for provider "auto": the first key found wins.
@@ -62,6 +62,8 @@ def _post_json(url: str, headers: Mapping[str, str], body: Dict[str, Any], timeo
                 hint = re.search(r'"retryDelay"\s*:\s*"(\d+(?:\.\d+)?)s"', detail)
                 retry_after = hint.group(1) if hint else None
             raise _with_retry_after(AIRetryableError(message), retry_after) from None
+        if exc.code == 404:
+            raise AIUnavailableError(message + " (model not found or not available to this key)") from None
         if exc.code in (401, 403):
             message += " (check that the API key secret is set correctly and has access to this model)"
         raise AIError(message) from None
@@ -86,7 +88,7 @@ def with_retries(call: Callable[[], str], attempts: int, what: str, sleep: Calla
             return call()
         except AIRetryableError as exc:
             if attempt == attempts:
-                raise AIError(f"{what} failed after {attempts} attempts: {exc}") from None
+                raise AIUnavailableError(f"{what} failed after {attempts} attempts: {exc}") from None
             delay = getattr(exc, "retry_after", None) or min(90.0, 5.0 * 2.0 ** attempt) + random.uniform(0, 1)
             log.warn(f"{what}: transient error (attempt {attempt}/{attempts}), retrying in {delay:.0f}s: {exc}")
             sleep(delay)
@@ -167,6 +169,7 @@ class GeminiProvider(Provider):
         self._api_key = api_key
         self._url = f"{base_url.rstrip('/')}/models/{model}:generateContent"
         self._settings = settings
+        self._thinking_level = settings.gemini_thinking_level
 
     def complete(self, system: str, user: str) -> str:
         config: Dict[str, Any] = {
@@ -175,13 +178,25 @@ class GeminiProvider(Provider):
         }
         if self._settings.temperature is not None:
             config["temperature"] = self._settings.temperature
+        if self._thinking_level:
+            # Less "thinking" = much faster responses; plenty for lesson generation.
+            config["thinkingConfig"] = {"thinkingLevel": self._thinking_level}
         body = {
             "systemInstruction": {"parts": [{"text": system}]},
             "contents": [{"role": "user", "parts": [{"text": user}]}],
             "generationConfig": config,
         }
         # The key goes in a header, never in the URL, so it cannot appear in logged URLs.
-        data = _post_json(self._url, {"x-goog-api-key": self._api_key}, body, self._settings.timeout_seconds)
+        headers = {"x-goog-api-key": self._api_key}
+        try:
+            data = _post_json(self._url, headers, body, self._settings.timeout_seconds)
+        except AIError as exc:
+            if "HTTP 400" not in str(exc) or "thinking" not in str(exc).lower() or "thinkingConfig" not in config:
+                raise
+            log.warn(f"{self.model} rejected thinkingConfig; retrying without it")
+            self._thinking_level = None
+            del config["thinkingConfig"]
+            data = _post_json(self._url, headers, body, self._settings.timeout_seconds)
         candidates = data.get("candidates")
         if not isinstance(candidates, list) or not candidates:
             feedback = data.get("promptFeedback") or str(data)[:300]
@@ -197,7 +212,36 @@ class GeminiProvider(Provider):
         return text
 
 
-def create_provider(settings: AISettings, env: Optional[Mapping[str, str]] = None) -> Provider:
+class FallbackProvider(Provider):
+    """Tries the primary model; if it stays overloaded/unavailable after
+    retries, switches to the next fallback model for the rest of the run."""
+
+    def __init__(self, providers: "list[Provider]", attempts: int, sleep: Callable[[float], None] = time.sleep) -> None:
+        super().__init__(providers[0].model)
+        self.name = providers[0].name
+        self._providers = providers
+        self._index = 0
+        self._attempts = attempts
+        self._sleep = sleep
+
+    def complete(self, system: str, user: str) -> str:
+        while True:
+            current = self._providers[self._index]
+            try:
+                return with_retries(
+                    lambda: current.complete(system, user), self._attempts, f"{current.name}/{current.model}", self._sleep
+                )
+            except AIUnavailableError as exc:
+                if self._index + 1 >= len(self._providers):
+                    raise
+                self._index += 1
+                self.model = self._providers[self._index].model
+                log.warn(f"model {current.model} is unavailable ({str(exc)[:200]}); switching to fallback model {self.model}")
+
+
+def create_provider(
+    settings: AISettings, env: Optional[Mapping[str, str]] = None, fallback: bool = True
+) -> Provider:
     env = os.environ if env is None else env
     name = settings.provider
     if name == "auto":
@@ -217,10 +261,24 @@ def create_provider(settings: AISettings, env: Optional[Mapping[str, str]] = Non
     if not base_url:
         raise ConfigError(f"no base URL configured for provider '{name}'")
     cls = {"openai": OpenAIProvider, "anthropic": AnthropicProvider, "gemini": GeminiProvider}[name]
-    return cls(model, api_key, base_url, settings)
+    primary = cls(model, api_key, base_url, settings)
+    fallbacks = settings.fallback_override if settings.fallback_override is not None else settings.fallback_models.get(name, ())
+    extra = [m for m in dict.fromkeys(fallbacks) if m != model]
+    if not fallback or not extra:
+        return primary
+    return FallbackProvider([primary] + [cls(m, api_key, base_url, settings) for m in extra], settings.max_attempts)
 
 
 # --------------------------------------------------------------------------- JSON handling
+
+_ESCAPE = re.compile(r"\\(.)", flags=re.DOTALL)
+
+
+def _repair_escapes(text: str) -> str:
+    """Double any backslash that does not start a valid JSON escape. Scans
+    escape pairs left to right, so valid sequences like \\\\ stay intact."""
+    return _ESCAPE.sub(lambda m: m.group(0) if m.group(1) in '"\\/bfnrtu' else "\\\\" + m.group(1), text)
+
 
 def extract_json(text: str) -> Dict[str, Any]:
     """Parse a JSON object from a model response, tolerating code fences or
@@ -233,13 +291,19 @@ def extract_json(text: str) -> Dict[str, Any]:
     if start != -1 and end > start:
         candidates.append(text[start : end + 1])
     for candidate in candidates:
-        try:
-            value = json.loads(candidate)
-        except ValueError:
-            continue
-        if isinstance(value, dict):
-            return value
-    raise ValueError("response did not contain a JSON object")
+        # strict=False accepts raw newlines/tabs inside strings; the second
+        # variant also repairs invalid escapes such as "\d" or "\(".
+        for variant in (candidate, _repair_escapes(candidate)):
+            try:
+                value = json.loads(variant, strict=False)
+            except ValueError:
+                continue
+            if isinstance(value, dict):
+                return value
+    raise ValueError(
+        f"response did not contain a valid JSON object ({len(text)} chars; "
+        f"starts {text[:120]!r} ... ends {text[-120:]!r})"
+    )
 
 
 def complete_json(

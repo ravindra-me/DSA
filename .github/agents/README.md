@@ -193,6 +193,7 @@ With `ai.provider: "auto"` (the default) the agent uses whichever key exists (or
 |----------|---------|--------|
 | `DSA_AI_PROVIDER` | `gemini` | Force a provider (`gemini`, `openai`, `anthropic`). |
 | `DSA_AI_MODEL` | `gemini-3.5-flash` | Override the model from `agent.json`. |
+| `DSA_AI_FALLBACK_MODELS` | `gemini-3.5-flash,gemini-3.1-flash-lite` | Override the fallback list (`none` disables fallbacks). |
 | `OPENAI_BASE_URL` | `https://openrouter.ai/api/v1` | Use any OpenAI-compatible API (OpenRouter, Azure OpenAI, Groq, ...). Must be HTTPS. |
 | `DSA_LANGUAGE` | `javascript` | Lesson language for *new* lessons (`python`, `javascript`). |
 | `DSA_TIMEZONE` | `Asia/Kolkata` | Timezone that defines "today" for idempotency. |
@@ -213,6 +214,8 @@ With `ai.provider: "auto"` (the default) the agent uses whichever key exists (or
 | `revision.intervalsInDays` | `[7, 21, 45]` | Revision offsets, counted in lesson days after a topic is learned. |
 | `revision.minNewLessonsBetweenRevisions` | `2` | Keeps revisions from crowding out new material. |
 | `ai.models` | `gpt-5`, `claude-sonnet-5-5`, `gemini-3.8-flash` | Model per provider. |
+| `ai.fallbackModels` | `gemini`: `gemini-3.5-flash`, `gemini-3.1-flash-lite` | Used in order when the main model stays overloaded (HTTP 503/429 after retries) or doesn't exist (404). The switch lasts for the rest of the run. |
+| `ai.geminiThinkingLevel` | `low` | Gemini "thinking" effort (`minimal`/`low`/`medium`/`high`, or `null` for the model default). Lower is much faster; dropped automatically if a model rejects it. |
 | `ai.temperature` | `null` | `null` = provider default (some reasoning models reject custom values). |
 | `ai.maxOutputTokens` | `24000` | Increase if logs say a response was truncated. |
 | `ai.requestTimeoutSeconds` / `ai.maxAttempts` | `600` / `4` | Per-request timeout and bounded retries. |
@@ -340,6 +343,7 @@ Open the failed run on the Actions tab. Read the job summary first, then expand 
 | Symptom | Fix |
 |---------|-----|
 | `no AI API key found` | Add `GEMINI_API_KEY`, `OPENAI_API_KEY` or `ANTHROPIC_API_KEY` as a repository **secret** (not a variable). |
+| Gemini `HTTP 503 ... experiencing high demand` | Google-side overload, common on the free tier. The agent retries, then switches to the next model in `ai.fallbackModels`. If runs are often slow, make a fallback model the main one via `DSA_AI_MODEL`. |
 | Gemini `HTTP 429 ... RESOURCE_EXHAUSTED` after retries | Free-tier quota used up; the next scheduled run retries. Or pick a model with a higher free quota via `DSA_AI_MODEL`. See your limits in AI Studio. |
 | `HTTP 401/403 ... check that the API key secret` | Key is wrong, expired, or lacks access to the model; set `DSA_AI_MODEL` to a model you can use. |
 | `HTTP 404` / `model not found` | The model name is unavailable; set `DSA_AI_MODEL`. |

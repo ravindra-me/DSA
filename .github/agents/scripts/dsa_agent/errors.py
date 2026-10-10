@@ -18,5 +18,10 @@ class AIRetryableError(AIError):
     """A transient AI/API failure (rate limit, 5xx, timeout) worth retrying."""
 
 
+class AIUnavailableError(AIError):
+    """The model stayed overloaded/unavailable after retries, or does not
+    exist. Worth switching to a fallback model."""
+
+
 class ValidationFailed(AgentError):
     """Generated content failed validation and could not be repaired."""

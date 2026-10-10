@@ -5,3 +5,7 @@ node_modules/
 .venv/
 .idea/
 .vscode/
+
+# Local secrets: never commit
+.env
+.env.*

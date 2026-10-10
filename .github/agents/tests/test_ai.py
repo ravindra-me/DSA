@@ -81,7 +81,7 @@ class GeminiTests(unittest.TestCase):
     def setUp(self):
         self._repo = TempRepo()
         self.settings = temp_settings(self._repo.__enter__())
-        self.provider = ai.create_provider(self.settings.ai, {"GEMINI_API_KEY": "g-secret"})
+        self.provider = ai.create_provider(self.settings.ai, {"GEMINI_API_KEY": "g-secret"}, fallback=False)
 
     def tearDown(self):
         self._repo.__exit__(None, None, None)
@@ -100,6 +100,36 @@ class GeminiTests(unittest.TestCase):
         sent = json.loads(request.data)
         self.assertEqual(sent["systemInstruction"]["parts"][0]["text"], "sys")
         self.assertEqual(sent["generationConfig"]["responseMimeType"], "application/json")
+        self.assertEqual(sent["generationConfig"]["thinkingConfig"], {"thinkingLevel": "low"})
+
+    def test_drops_thinking_config_if_model_rejects_it(self):
+        rejected = http_error(400, '{"error": {"message": "thinking_level is not supported for this model"}}')
+        ok = _Response(json.dumps({"candidates": [{"content": {"parts": [{"text": "{}"}]}}]}).encode())
+        with mock.patch("urllib.request.urlopen", side_effect=[rejected, ok]) as urlopen:
+            self.assertEqual(self.provider.complete("s", "u"), "{}")
+        self.assertNotIn("thinkingConfig", json.loads(urlopen.call_args[0][0].data)["generationConfig"])
+
+    def test_switches_to_fallback_model_when_overloaded(self):
+        provider = ai.create_provider(self.settings.ai, {"GEMINI_API_KEY": "k"})
+        self.assertIsInstance(provider, ai.FallbackProvider)
+        provider._sleep = lambda s: None
+        overloaded = [http_error(503, '{"error": {"status": "UNAVAILABLE"}}') for _ in range(4)]
+        ok = _Response(json.dumps({"candidates": [{"content": {"parts": [{"text": "{}"}]}}]}).encode())
+        with mock.patch("urllib.request.urlopen", side_effect=overloaded + [ok]) as urlopen:
+            self.assertEqual(provider.complete("s", "u"), "{}")
+        self.assertIn("gemini-3.5-flash:generateContent", urlopen.call_args[0][0].full_url)
+        self.assertEqual(provider.model, "gemini-3.5-flash")
+
+    def test_missing_model_falls_back_immediately(self):
+        provider = ai.create_provider(self.settings.ai, {"GEMINI_API_KEY": "k"})
+        ok = _Response(json.dumps({"candidates": [{"content": {"parts": [{"text": "{}"}]}}]}).encode())
+        with mock.patch("urllib.request.urlopen", side_effect=[http_error(404), ok]):
+            self.assertEqual(provider.complete("s", "u"), "{}")
+        self.assertEqual(provider.model, "gemini-3.5-flash")
+
+    def test_fallbacks_can_be_disabled(self):
+        settings = temp_settings(self.settings.repo_root, DSA_AI_FALLBACK_MODELS="none")
+        self.assertIsInstance(ai.create_provider(settings.ai, {"GEMINI_API_KEY": "k"}), ai.GeminiProvider)
 
     def test_rate_limit_uses_retry_delay_from_body(self):
         limited = http_error(429, '{"error": {"details": [{"retryDelay": "37s"}]}}')
@@ -125,6 +155,14 @@ class JsonHandlingTests(unittest.TestCase):
             self.assertEqual(ai.extract_json(text), {"a": 1})
         with self.assertRaises(ValueError):
             ai.extract_json("no json here")
+
+    def test_extract_json_tolerates_raw_control_chars_and_bad_escapes(self):
+        raw = '{"visual": "a\n  b\tc", "code": "re.match(r\'\\d+\', s)", "ok": "x\\\\y \\"q\\""}'
+        raw = raw.replace("\\n", "\n")
+        value = ai.extract_json(raw)
+        self.assertEqual(value["visual"], "a\n  b\tc")
+        self.assertEqual(value["code"], "re.match(r'\\d+', s)")
+        self.assertEqual(value["ok"], 'x\\y "q"')
 
     def test_complete_json_feeds_validation_errors_back(self):
         class Scripted(ai.Provider):
