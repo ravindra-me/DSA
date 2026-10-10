@@ -4,14 +4,14 @@ Generated automatically by the [DSA learning agent](../.github/agents/README.md)
 
 | Current day | Roadmap progress | Problems solved | Next new topic |
 |-------------|------------------|-----------------|----------------|
-| 0 | 0/59 topics | 0/0 | big-o |
+| 1 | 1/59 topics | 0/5 | arrays |
 
 ## Upcoming revisions
 
-_None scheduled yet._
+- `big-o`: due on day 8
 
 ## All lessons
 
 | Day | Date | Topic | Type | Solved | Status |
 |-----|------|-------|------|--------|--------|
-| - | - | No lessons yet: the first one arrives with the next scheduled run | - | - | - |
+| [1](day-001/README.md) | 2026-10-10 | Big O Notation & Complexity Analysis | New | 0/5 | generated |

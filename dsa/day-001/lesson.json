@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "day": 1,
+  "date": "2026-10-10",
+  "topic": "big-o",
+  "kind": "new",
+  "language": "python",
+  "generator": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "agentVersion": "1.0.0"
+  },
+  "problems": [
+    {
+      "number": 1,
+      "title": "Single Missing Number",
+      "difficulty": "Easy",
+      "concept": "Linear time vs constant space trade-offs",
+      "exports": [
+        "find_missing_number"
+      ],
+      "files": {
+        "exercise": "exercises/problem-01.md",
+        "notes": "solutions/problem-01.md",
+        "solution": "solutions/problem_01.py",
+        "tests": "tests/test_problem_01.py",
+        "practice": "practice/problem_01.py"
+      },
+      "starterSha256": "793e032ef9b92547bb0c386aec9ce95927d81a88a641e8e7725d9e6e118ce13d",
+      "testsRun": 8,
+      "repairs": 0
+    },
+    {
+      "number": 2,
+      "title": "Sorted Pair Target Sum",
+      "difficulty": "Easy/Medium",
+      "concept": "Two-pointer linear scan vs quadratic brute force",
+      "exports": [
+        "two_sum_sorted"
+      ],
+      "files": {
+        "exercise": "exercises/problem-02.md",
+        "notes": "solutions/problem-02.md",
+        "solution": "solutions/problem_02.py",
+        "tests": "tests/test_problem_02.py",
+        "practice": "practice/problem_02.py"
+      },
+      "starterSha256": "c9e25742019e0bd5f43da6ed250cd463ab950ea8c29972c5b79e2c045e502a58",
+      "testsRun": 10,
+      "repairs": 2
+    },
+    {
+      "number": 3,
+      "title": "Amortized Queue via Stacks",
+      "difficulty": "Medium",
+      "concept": "Amortized time complexity analysis",
+      "exports": [
+        "AmortizedQueue"
+      ],
+      "files": {
+        "exercise": "exercises/problem-03.md",
+        "notes": "solutions/problem-03.md",
+        "solution": "solutions/problem_03.py",
+        "tests": "tests/test_problem_03.py",
+        "practice": "practice/problem_03.py"
+      },
+      "starterSha256": "ca647ff35bcf6972d999ad1e3fb63b2346412dc2c7504b4a0a80ff4413400220",
+      "testsRun": 7,
+      "repairs": 1
+    },
+    {
+      "number": 4,
+      "title": "Logarithmic Peak Finder",
+      "difficulty": "Medium/Hard",
+      "concept": "Logarithmic time complexity O(log n) vs linear scan O(n)",
+      "exports": [
+        "find_peak_element"
+      ],
+      "files": {
+        "exercise": "exercises/problem-04.md",
+        "notes": "solutions/problem-04.md",
+        "solution": "solutions/problem_04.py",
+        "tests": "tests/test_problem_04.py",
+        "practice": "practice/problem_04.py"
+      },
+      "starterSha256": "169afb459bb75cd5c8861f3fdcc1ad33f7aeb341a1bc9a603fc7f9151841add4",
+      "testsRun": 6,
+      "repairs": 0
+    },
+    {
+      "number": 5,
+      "title": "First Missing Positive",
+      "difficulty": "Hard",
+      "concept": "In-place cyclic indexing to achieve O(n) time and O(1) auxiliary space",
+      "exports": [
+        "first_missing_positive"
+      ],
+      "files": {
+        "exercise": "exercises/problem-05.md",
+        "notes": "solutions/problem-05.md",
+        "solution": "solutions/problem_05.py",
+        "tests": "tests/test_problem_05.py",
+        "practice": "practice/problem_05.py"
+      },
+      "starterSha256": "e80d0d2911c16b1a762ee4f44c770d8cce50e8edf43c772f05efdc4d5bb6b6e3",
+      "testsRun": 7,
+      "repairs": 0
+    }
+  ]
+}

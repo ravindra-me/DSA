@@ -1,19 +1,92 @@
 {
   "schemaVersion": 1,
-  "currentDay": 0,
-  "lastLessonDate": null,
-  "currentTopic": null,
-  "topicsCompleted": [],
-  "nextRoadmapTopic": "big-o",
-  "roadmapProgress": "0/59",
-  "upcomingRevisions": [],
+  "currentDay": 1,
+  "lastLessonDate": "2026-10-10",
+  "currentTopic": "big-o",
+  "topicsCompleted": [
+    "big-o"
+  ],
+  "nextRoadmapTopic": "arrays",
+  "roadmapProgress": "1/59",
+  "upcomingRevisions": [
+    {
+      "topic": "big-o",
+      "dueDay": 8,
+      "stage": 1,
+      "requested": false
+    }
+  ],
   "stats": {
-    "lessons": 0,
-    "newTopicLessons": 0,
+    "lessons": 1,
+    "newTopicLessons": 1,
     "revisionLessons": 0,
-    "problemsGenerated": 0,
+    "problemsGenerated": 5,
     "problemsCompleted": 0,
     "lessonsCompleted": 0
   },
-  "lessons": []
+  "lessons": [
+    {
+      "day": 1,
+      "date": "2026-10-10",
+      "topic": "big-o",
+      "topicTitle": "Big O Notation & Complexity Analysis",
+      "phase": "Fundamentals",
+      "kind": "new",
+      "revisionStage": 0,
+      "difficulty": "progressive",
+      "language": "python",
+      "status": "generated",
+      "problemsGenerated": 5,
+      "problemsCompleted": 0,
+      "problems": [
+        {
+          "number": 1,
+          "title": "Single Missing Number",
+          "difficulty": "Easy",
+          "concept": "Linear time vs constant space trade-offs"
+        },
+        {
+          "number": 2,
+          "title": "Sorted Pair Target Sum",
+          "difficulty": "Easy/Medium",
+          "concept": "Two-pointer linear scan vs quadratic brute force"
+        },
+        {
+          "number": 3,
+          "title": "Amortized Queue via Stacks",
+          "difficulty": "Medium",
+          "concept": "Amortized time complexity analysis"
+        },
+        {
+          "number": 4,
+          "title": "Logarithmic Peak Finder",
+          "difficulty": "Medium/Hard",
+          "concept": "Logarithmic time complexity O(log n) vs linear scan O(n)"
+        },
+        {
+          "number": 5,
+          "title": "First Missing Positive",
+          "difficulty": "Hard",
+          "concept": "In-place cyclic indexing to achieve O(n) time and O(1) auxiliary space"
+        }
+      ],
+      "conceptsCovered": [
+        "time complexity",
+        "space complexity",
+        "growth rates",
+        "best average worst case",
+        "amortized analysis"
+      ],
+      "path": "dsa/day-001",
+      "generatedAt": "2026-10-10T09:26:54+00:00",
+      "generationId": "f45a4cf6383348b7b0fd6459f8632103",
+      "generator": {
+        "provider": "gemini",
+        "model": "gemini-3.8-flash",
+        "agentVersion": "1.0.0"
+      },
+      "requestRevision": false,
+      "revisionRequired": true
+    }
+  ]
 }
