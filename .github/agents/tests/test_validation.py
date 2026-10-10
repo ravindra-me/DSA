@@ -68,6 +68,10 @@ class SandboxValidationTests(unittest.TestCase):
         self.assertFalse(result.ok)
         self.assertIn("FAIL", result.report)
 
+    def test_bare_testcase_base_class_works(self):
+        tests = COUNT_PAIRS_TESTS.replace("(unittest.TestCase)", "(TestCase)")
+        self.assertTrue(validate_problem(PYTHON, self.sandbox, code(tests=tests), 6).ok)
+
     def test_too_few_tests_fails(self):
         self.assertFalse(validate_problem(PYTHON, self.sandbox, code(), 10).ok)
 
