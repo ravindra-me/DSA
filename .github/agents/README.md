@@ -21,6 +21,7 @@ Each lesson contains a concept explanation, progressively harder exercises, refe
 11. [Troubleshooting](#11-troubleshooting)
 12. [Local development (optional)](#12-local-development-optional)
 13. [Extending the agent](#13-extending-the-agent)
+14. [Running a course with student forks](#14-running-a-course-with-student-forks)
 
 ---
 
@@ -47,7 +48,8 @@ The default branch must allow pushes from `github-actions[bot]`. If you protect 
 .github/
 ├── workflows/
 │   ├── dsa-daily.yml          # scheduled + manual lesson pipeline (generate → validate → publish)
-│   └── dsa-validation.yml     # CI: lint workflows, agent self-tests, re-validate every lesson
+│   ├── dsa-validation.yml     # CI: course repo = lint + self-tests + all lessons; forks = student solutions
+│   └── dsa-sync-fork.yml      # forks only: merge new lessons from the course repo daily
 └── agents/
     ├── README.md              # this file
     ├── config/agent.json      # all tunables (language, problem count, revision, AI, sandbox)
@@ -387,3 +389,24 @@ python .github/agents/scripts/agent.py practice --day 1        # test your pract
 - **Prompts**: edit `prompts/*.md`. Placeholders use `{{name}}`; unknown placeholders fail fast in `check` and the self-tests.
 - **New language**: add a `LanguageProfile` in `scripts/dsa_agent/languages.py`. It defines the file names, test command, sandbox image (pin by digest), test-count regex, prompt conventions, import header and static safety rules.
 - **New AI provider**: subclass `Provider` in `scripts/dsa_agent/ai.py` (one `complete(system, user)` method), add its key to `KEY_ENV`, register it in `create_provider`, add it to `PROVIDERS` in `config.py`, and pass its secret in `dsa-daily.yml`.
+
+---
+
+## 14. Running a course with student forks
+
+The repository is designed as a **course repo** (yours) plus **one fork per student**. Students follow [STUDENTS.md](../../STUDENTS.md).
+
+| Workflow | Course repo | Student fork |
+|----------|-------------|--------------|
+| `dsa-daily.yml` | Generates and publishes the daily lesson | Never runs (`github.event.repository.fork` guard), so no API key is needed |
+| `dsa-validation.yml` | Lint, self-tests, re-validates every lesson | **Check my solutions**: runs the tests on every `practice/` file the student changed, ✅/❌ per problem in the job summary |
+| `dsa-sync-fork.yml` | Never runs | Daily at 08:00 UTC, merges new lessons from the course repo via the GitHub API |
+
+How it fits together:
+
+- **Students only edit `dsa/day-NNN/practice/`.** The course never changes those files after publishing a lesson, so syncing a fork does not conflict.
+- **Don't `force`-regenerate a day that students have started.** It replaces the whole day folder, including the practice starters, and conflicts with their edits.
+- **Automatic sync can't apply course changes to `.github/workflows/`.** The fork's token has no `workflows` permission. When you change a workflow, students click **Sync fork** once.
+- **Student CI uses the student's own Actions minutes,** not yours. A practice run is short: only attempted problems are tested.
+- **Visibility:** forks of a public repo are public; reference solutions are in the lessons anyway. For a private course, use a GitHub **organization**, add students with the **Read** role and allow private forking in the organization settings. On a personal account, every collaborator gets write access, which this setup avoids.
+

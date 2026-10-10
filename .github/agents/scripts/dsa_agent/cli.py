@@ -230,16 +230,27 @@ def cmd_practice_report(args: argparse.Namespace) -> int:
     settings, _ = _load()
     sandbox = None
     lines = ["### Practice report", "", "| Day | Problem | Result |", "|-----|---------|--------|"]
+    attempted = failing = 0
     for day_dir in sorted(p for p in settings.lessons_dir.glob("day-*") if (p / "lesson.json").is_file()):
         sandbox = sandbox or create_sandbox(settings.sandbox)
         for row in run_practice(day_dir, sandbox):
-            if row["attempted"]:
-                lines.append(f"| {day_dir.name} | {row['number']}. {row['title']} | {'✅ passed' if row['passed'] else '❌ failing'} |")
-    if len(lines) == 4:
-        lines.append("| - | No practice attempts found yet | - |")
+            if not row["attempted"]:
+                continue
+            attempted += 1
+            failing += 0 if row["passed"] else 1
+            lines.append(f"| {day_dir.name} | {row['number']}. {row['title']} | {'✅ passed' if row['passed'] else '❌ failing'} |")
+            if not row["passed"]:
+                with log.group(f"{day_dir.name} problem {row['number']} ({row['title']}): test output"):
+                    log.info(row["output"])
+    if not attempted:
+        lines.append("| - | No solutions found yet: edit the files in dsa/day-NNN/practice/ | - |")
+    lines += ["", f"**{attempted - failing}/{attempted} attempted problems pass.**"]
     report = "\n".join(lines)
     log.info(report)
     log.summary(report)
+    if args.strict and failing:
+        log.error(f"{failing} of your solutions fail their tests (see the test output above)")
+        return 1
     return 0
 
 
@@ -298,7 +309,9 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--problem", type=int)
     p.set_defaults(func=cmd_practice)
 
-    sub.add_parser("practice-report", help="summarise practice attempts").set_defaults(func=cmd_practice_report)
+    p = sub.add_parser("practice-report", help="summarise practice attempts")
+    p.add_argument("--strict", action="store_true", help="exit non-zero if any attempted solution fails")
+    p.set_defaults(func=cmd_practice_report)
     sub.add_parser("reindex", help="rebuild derived progress fields and dsa/README.md").set_defaults(func=cmd_reindex)
     return parser
 

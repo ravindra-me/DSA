@@ -165,8 +165,8 @@ Try each problem yourself before opening its solution.
 ```
 
 4. Compare with the walkthrough in `solutions/`.
-5. When done, update this day's `status` / `problemsCompleted` in [`progress.json`](../progress.json).
-   Set `"requestRevision": true` if you want this topic revisited soon.
+5. Commit and push your `practice/` files. In your fork, the **DSA Validation** workflow shows
+   which of your solutions pass (see [STUDENTS.md](../../STUDENTS.md)).
 
 ---
 *Concepts covered: {', '.join(lesson['conceptsCovered'])}*

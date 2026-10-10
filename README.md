@@ -4,6 +4,10 @@ A self-driving Data Structures & Algorithms course. Every day a GitHub Actions w
 
 It runs entirely on GitHub, so your computer doesn't need to be on.
 
+## Students: start here
+
+Fork this repository, enable Actions in your fork, and follow **[STUDENTS.md](STUDENTS.md)**. Your fork receives each new lesson automatically. You solve the problems in your own copy, and GitHub shows ✅/❌ for your solutions.
+
 ## How to use this repository
 
 1. **Open today's lesson.** The newest day is at the top of [`dsa/README.md`](dsa/README.md). Each `dsa/day-NNN/README.md` covers:
@@ -22,7 +26,7 @@ It runs entirely on GitHub, so your computer doesn't need to be on.
    ```
    You can also commit from github.com or a Codespace; the *DSA Validation* workflow reports which of your practice solutions pass.
 5. **Compare** with `solutions/problem-NN.md`. It covers the approach, thought process, algorithm, complexity, edge cases and a clean implementation.
-6. **Track progress** by setting `status` / `problemsCompleted` for the day in [`dsa/progress.json`](dsa/progress.json). Set `"requestRevision": true` to get a topic revised soon.
+6. **Course owner only:** set `"requestRevision": true` on a lesson in [`dsa/progress.json`](dsa/progress.json) to get that topic revised soon. Students should not edit this file in their forks; it would cause sync conflicts.
 
 ## Curriculum
 
@@ -42,7 +46,7 @@ The agent follows an ordered [59-topic roadmap](.github/agents/roadmap/roadmap.j
 
 Earlier topics come back as **spaced revision** lessons with new problems (by default 7, 21 and 45 lesson-days later).
 
-## Setup (one time)
+## Setup (course owner, one time)
 
 1. Add a `GEMINI_API_KEY` secret (free tier works; get a key at [Google AI Studio](https://aistudio.google.com/apikey)), **or** an `OPENAI_API_KEY` / `ANTHROPIC_API_KEY` secret (*Settings → Secrets and variables → Actions*).
 2. Under *Settings → Actions → General → Workflow permissions*, choose **Read and write permissions**.
@@ -54,7 +58,9 @@ Full documentation covers architecture, security model, configuration, schedule,
 
 ```
 .github/workflows/dsa-daily.yml       daily lesson pipeline (generate → validate → publish)
-.github/workflows/dsa-validation.yml  CI for the agent and every lesson
+.github/workflows/dsa-validation.yml  CI: agent + all lessons (course repo) / student solutions (forks)
+.github/workflows/dsa-sync-fork.yml   forks only: pull new lessons daily
+STUDENTS.md                           guide for students working in forks
 .github/agents/                       the agent: config, roadmap, prompts, scripts, self-tests
 dsa/                                  your lessons + progress.json
 ```

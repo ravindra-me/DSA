@@ -189,8 +189,8 @@ DSA_SOLUTIONS_DIR=practice python -m unittest discover -s tests -p test_problem_
 ```
 
 4. Compare with the walkthrough in `solutions/`.
-5. When done, update this day's `status` / `problemsCompleted` in [`progress.json`](../progress.json).
-   Set `"requestRevision": true` if you want this topic revisited soon.
+5. Commit and push your `practice/` files. In your fork, the **DSA Validation** workflow shows
+   which of your solutions pass (see [STUDENTS.md](../../STUDENTS.md)).
 
 ---
 *Concepts covered: time complexity, space complexity, growth rates, best average worst case, amortized analysis*

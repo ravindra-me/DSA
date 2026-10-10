@@ -64,8 +64,11 @@ defaults:
 jobs:
   generate:
     name: Generate lesson
-    # Set the repository variable DSA_PAUSED=true to pause scheduled lessons.
-    if: vars.DSA_PAUSED != 'true' || github.event_name == 'workflow_dispatch'
+    # Only the course repository generates lessons; student forks receive them
+    # by syncing. Set the repository variable DSA_PAUSED=true to pause the schedule.
+    if: >-
+      !github.event.repository.fork &&
+      (vars.DSA_PAUSED != 'true' || github.event_name == 'workflow_dispatch')
     runs-on: ubuntu-24.04
     timeout-minutes: 60
     permissions:
