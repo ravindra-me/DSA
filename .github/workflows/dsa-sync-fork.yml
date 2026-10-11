@@ -9,8 +9,10 @@ name: Sync Fork
 
 on:
   schedule:
-    # 01:30 UTC = 7:00 AM IST: after the daily lesson is published at 6:00 AM IST.
+    # 7:00 AM IST (after the 6:00 AM lesson) and 9:00 AM IST (after the
+    # 8:00 AM backup run). Syncing when nothing is new is harmless.
     - cron: "30 1 * * *"
+    - cron: "30 3 * * *"
   workflow_dispatch:
 
 permissions: {}

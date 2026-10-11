@@ -31,7 +31,7 @@ A new Data Structures & Algorithms lesson is published to this course repository
 
 ### 1. Get the new lesson
 
-Your fork syncs automatically every day at about 7:00 AM IST (the lesson is published at 6:00 AM IST). Then pull it to your computer:
+Your fork syncs automatically every morning (at about 7:00 AM IST, and again at 9:00 AM IST as a backup). Then pull it to your computer:
 
 ```bash
 git pull

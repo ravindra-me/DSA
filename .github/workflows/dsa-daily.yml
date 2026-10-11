@@ -9,9 +9,13 @@ name: DSA Daily Lesson
 
 on:
   schedule:
-    # Every day at 00:30 UTC = 6:00 AM IST. GitHub cron is always UTC and runs
-    # can start some minutes late. To change the time, edit this line (see the README).
+    # Every day at 00:30 UTC = 6:00 AM IST. GitHub cron is always UTC, and
+    # scheduled runs can start late or (rarely) be skipped under load, so a
+    # backup run follows at 02:30 UTC = 8:00 AM IST. If the lesson already
+    # exists, the backup exits in seconds without calling the AI.
+    # To change the time, edit these lines (see the README).
     - cron: "30 0 * * *"
+    - cron: "30 2 * * *"
   workflow_dispatch:
     inputs:
       topic:

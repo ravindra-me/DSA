@@ -242,7 +242,7 @@ Examples: `"30 1 * * *"` = 07:00 IST daily; `"0 6 * * 1-5"` = weekdays only; `"0
 
 Notes:
 
-- Cron times are **UTC**, and GitHub may start scheduled runs some minutes late.
+- Cron times are **UTC**. GitHub may start scheduled runs late, or occasionally skip one under heavy load. That's why there is a second, **backup** schedule (8:00 AM IST): if the lesson already exists, it finishes in seconds without calling the AI.
 - Set `DSA_TIMEZONE` so the lesson *date* matches your day.
 - Scheduled workflows run from the default branch only.
 - In public repositories, GitHub disables schedules after 60 days without repository activity. If that happens, re-enable the workflow on the Actions tab.
@@ -400,7 +400,7 @@ The repository is designed as a **course repo** (yours) plus **one fork per stud
 |----------|-------------|--------------|
 | `dsa-daily.yml` | Generates and publishes the daily lesson | Never runs (`github.event.repository.fork` guard), so no API key is needed |
 | `dsa-validation.yml` | Lint, self-tests, re-validates every lesson | **Check my solutions**: runs the tests on every `practice/` file the student changed, ✅/❌ per problem in the job summary |
-| `dsa-sync-fork.yml` | Never runs | Daily at 01:30 UTC (7:00 AM IST), merges new lessons from the course repo via the GitHub API |
+| `dsa-sync-fork.yml` | Never runs | Daily at 7:00 and 9:00 AM IST, merges new lessons from the course repo via the GitHub API |
 
 How it fits together:
 
