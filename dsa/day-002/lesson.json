@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "day": 2,
+  "date": "2026-10-11",
+  "topic": "arrays",
+  "kind": "new",
+  "language": "python",
+  "generator": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash",
+    "agentVersion": "1.0.0"
+  },
+  "problems": [
+    {
+      "number": 1,
+      "title": "Remove Element In-Place",
+      "difficulty": "Easy",
+      "concept": "in-place updates and overwrite pointers",
+      "exports": [
+        "remove_element"
+      ],
+      "files": {
+        "exercise": "exercises/problem-01.md",
+        "notes": "solutions/problem-01.md",
+        "solution": "solutions/problem_01.py",
+        "tests": "tests/test_problem_01.py",
+        "practice": "practice/problem_01.py"
+      },
+      "starterSha256": "8b5b3034da486d3f754dabbfb20091001e25c71eb38aa3203746037373d0b5ff",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 2,
+      "title": "Rotate Array by K Steps",
+      "difficulty": "Easy/Medium",
+      "concept": "in-place array reversal and index wrapping",
+      "exports": [
+        "rotate"
+      ],
+      "files": {
+        "exercise": "exercises/problem-02.md",
+        "notes": "solutions/problem-02.md",
+        "solution": "solutions/problem_02.py",
+        "tests": "tests/test_problem_02.py",
+        "practice": "practice/problem_02.py"
+      },
+      "starterSha256": "8574152c54c92ac9c517a0fe3471fc79334d5dd469c0b25f895e1642e88b766f",
+      "testsRun": 8,
+      "repairs": 0
+    },
+    {
+      "number": 3,
+      "title": "Spiral Matrix Traversal",
+      "difficulty": "Medium",
+      "concept": "2D array boundary simulation",
+      "exports": [
+        "spiral_order"
+      ],
+      "files": {
+        "exercise": "exercises/problem-03.md",
+        "notes": "solutions/problem-03.md",
+        "solution": "solutions/problem_03.py",
+        "tests": "tests/test_problem_03.py",
+        "practice": "practice/problem_03.py"
+      },
+      "starterSha256": "727307e8fea7265f5146afda30d3ad5abb79b4437886f1204dc254d8276f67d3",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 4,
+      "title": "Set Matrix Zeroes",
+      "difficulty": "Medium/Hard",
+      "concept": "2D array state encoding and memory optimization",
+      "exports": [
+        "set_zeroes"
+      ],
+      "files": {
+        "exercise": "exercises/problem-04.md",
+        "notes": "solutions/problem-04.md",
+        "solution": "solutions/problem_04.py",
+        "tests": "tests/test_problem_04.py",
+        "practice": "practice/problem_04.py"
+      },
+      "starterSha256": "2c00668269d268c1d8fdd8ab2c0497a31589b9b07d911a512c3d542da0173716",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 5,
+      "title": "First Missing Positive",
+      "difficulty": "Hard",
+      "concept": "index-as-hash-key / cycle placement in-place",
+      "exports": [
+        "first_missing_positive"
+      ],
+      "files": {
+        "exercise": "exercises/problem-05.md",
+        "notes": "solutions/problem-05.md",
+        "solution": "solutions/problem_05.py",
+        "tests": "tests/test_problem_05.py",
+        "practice": "practice/problem_05.py"
+      },
+      "starterSha256": "128c1e4c4c1f7422fb2ed9be13bebf00378e35b5641f718521543cbf2f17a677",
+      "testsRun": 6,
+      "repairs": 0
+    }
+  ]
+}

@@ -1,26 +1,33 @@
 {
   "schemaVersion": 1,
-  "currentDay": 1,
-  "lastLessonDate": "2026-10-10",
-  "currentTopic": "big-o",
+  "currentDay": 2,
+  "lastLessonDate": "2026-10-11",
+  "currentTopic": "arrays",
   "topicsCompleted": [
-    "big-o"
+    "big-o",
+    "arrays"
   ],
-  "nextRoadmapTopic": "arrays",
-  "roadmapProgress": "1/59",
+  "nextRoadmapTopic": "strings",
+  "roadmapProgress": "2/59",
   "upcomingRevisions": [
     {
       "topic": "big-o",
       "dueDay": 8,
       "stage": 1,
       "requested": false
+    },
+    {
+      "topic": "arrays",
+      "dueDay": 9,
+      "stage": 1,
+      "requested": false
     }
   ],
   "stats": {
-    "lessons": 1,
-    "newTopicLessons": 1,
+    "lessons": 2,
+    "newTopicLessons": 2,
     "revisionLessons": 0,
-    "problemsGenerated": 5,
+    "problemsGenerated": 10,
     "problemsCompleted": 0,
     "lessonsCompleted": 0
   },
@@ -83,6 +90,70 @@
       "generator": {
         "provider": "gemini",
         "model": "gemini-3.8-flash",
+        "agentVersion": "1.0.0"
+      },
+      "requestRevision": false,
+      "revisionRequired": true
+    },
+    {
+      "day": 2,
+      "date": "2026-10-11",
+      "topic": "arrays",
+      "topicTitle": "Arrays",
+      "phase": "Fundamentals",
+      "kind": "new",
+      "revisionStage": 0,
+      "difficulty": "progressive",
+      "language": "python",
+      "status": "generated",
+      "problemsGenerated": 5,
+      "problemsCompleted": 0,
+      "problems": [
+        {
+          "number": 1,
+          "title": "Remove Element In-Place",
+          "difficulty": "Easy",
+          "concept": "in-place updates and overwrite pointers"
+        },
+        {
+          "number": 2,
+          "title": "Rotate Array by K Steps",
+          "difficulty": "Easy/Medium",
+          "concept": "in-place array reversal and index wrapping"
+        },
+        {
+          "number": 3,
+          "title": "Spiral Matrix Traversal",
+          "difficulty": "Medium",
+          "concept": "2D array boundary simulation"
+        },
+        {
+          "number": 4,
+          "title": "Set Matrix Zeroes",
+          "difficulty": "Medium/Hard",
+          "concept": "2D array state encoding and memory optimization"
+        },
+        {
+          "number": 5,
+          "title": "First Missing Positive",
+          "difficulty": "Hard",
+          "concept": "index-as-hash-key / cycle placement in-place"
+        }
+      ],
+      "conceptsCovered": [
+        "contiguous-memory",
+        "indexing",
+        "dynamic-arrays",
+        "amortized-complexity",
+        "in-place-mutation",
+        "2d-arrays"
+      ],
+      "path": "dsa/day-002",
+      "generatedAt": "2026-10-11T06:38:14+00:00",
+      "generationId": "6e0d434262f54824aa9de1676cd633cb",
+      "generator": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
         "agentVersion": "1.0.0"
       },
       "requestRevision": false,
