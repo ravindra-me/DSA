@@ -9,8 +9,8 @@ name: Sync Fork
 
 on:
   schedule:
-    # 08:00 UTC (13:30 IST): after the daily lesson is published at 06:00 UTC.
-    - cron: "0 8 * * *"
+    # 01:30 UTC = 7:00 AM IST: after the daily lesson is published at 6:00 AM IST.
+    - cron: "30 1 * * *"
   workflow_dispatch:
 
 permissions: {}

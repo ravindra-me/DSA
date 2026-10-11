@@ -50,7 +50,7 @@ Earlier topics come back as **spaced revision** lessons with new problems (by de
 
 1. Add a `GEMINI_API_KEY` secret (free tier works; get a key at [Google AI Studio](https://aistudio.google.com/apikey)), **or** an `OPENAI_API_KEY` / `ANTHROPIC_API_KEY` secret (*Settings → Secrets and variables → Actions*).
 2. Under *Settings → Actions → General → Workflow permissions*, choose **Read and write permissions**.
-3. Done. Lessons arrive daily at 06:00 UTC. To get one right away, use *Actions → DSA Daily Lesson → Run workflow*. You can also pick a topic, difficulty and number of problems there.
+3. Done. Lessons arrive daily at 6:00 AM IST (00:30 UTC). To get one right away, use *Actions → DSA Daily Lesson → Run workflow*. You can also pick a topic, difficulty and number of problems there.
 
 Full documentation covers architecture, security model, configuration, schedule, revision logic and troubleshooting: [`.github/agents/README.md`](.github/agents/README.md).
 

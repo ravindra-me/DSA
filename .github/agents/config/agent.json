@@ -2,7 +2,7 @@
   "$comment": "DSA agent configuration. Every key is documented in .github/agents/README.md. Values marked (env) can be overridden per run with the given environment variable / GitHub repository variable.",
 
   "language": "python",
-  "timezone": "UTC",
+  "timezone": "Asia/Kolkata",
   "lessonsDir": "dsa",
 
   "problemsPerDay": 5,

@@ -36,7 +36,7 @@ You only need a GitHub repository and an AI API key.
    - `ANTHROPIC_API_KEY` for Anthropic Claude (billed to your Anthropic API account, separate from a Claude.ai subscription).
 3. **Allow the workflow to push**: *Settings → Actions → General → Workflow permissions* → select **Read and write permissions**. (The workflow still asks for write access only in the single job that needs it.)
 4. **Enable Actions** if prompted on the *Actions* tab.
-5. Optional: run it now via *Actions → DSA Daily Lesson → Run workflow*. Otherwise the first lesson arrives at the next scheduled time (06:00 UTC by default).
+5. Optional: run it now via *Actions → DSA Daily Lesson → Run workflow*. Otherwise the first lesson arrives at the next scheduled time (6:00 AM IST / 00:30 UTC by default).
 
 The default branch must allow pushes from `github-actions[bot]`. If you protect it with required reviews, see [§11](#11-troubleshooting).
 
@@ -206,7 +206,7 @@ With `ai.provider: "auto"` (the default) the agent uses whichever key exists (or
 | Key | Default | Meaning |
 |-----|---------|---------|
 | `language` | `python` | `python` (unittest) or `javascript` (node:test). Neither needs packages. |
-| `timezone` | `UTC` | IANA timezone for the lesson date. |
+| `timezone` | `Asia/Kolkata` | IANA timezone for the lesson date. |
 | `lessonsDir` | `dsa` | Where lessons and `progress.json` live. |
 | `problemsPerDay` / `maxProblemsPerDay` | `5` / `8` | Problems per lesson and the upper bound for manual requests. |
 | `defaultDifficulty` | `progressive` | `progressive` (Easy → Hard ladder), `easy`, `medium`, `hard`. |
@@ -235,7 +235,7 @@ GitHub only reads the cron expression from the workflow file. Edit `.github/work
 ```yaml
 on:
   schedule:
-    - cron: "0 6 * * *"     # minute hour day-of-month month day-of-week, in UTC
+    - cron: "30 0 * * *"    # minute hour day-of-month month day-of-week, in UTC (= 6:00 AM IST)
 ```
 
 Examples: `"30 1 * * *"` = 07:00 IST daily; `"0 6 * * 1-5"` = weekdays only; `"0 6 */2 * *"` = every other day.
@@ -400,7 +400,7 @@ The repository is designed as a **course repo** (yours) plus **one fork per stud
 |----------|-------------|--------------|
 | `dsa-daily.yml` | Generates and publishes the daily lesson | Never runs (`github.event.repository.fork` guard), so no API key is needed |
 | `dsa-validation.yml` | Lint, self-tests, re-validates every lesson | **Check my solutions**: runs the tests on every `practice/` file the student changed, ✅/❌ per problem in the job summary |
-| `dsa-sync-fork.yml` | Never runs | Daily at 08:00 UTC, merges new lessons from the course repo via the GitHub API |
+| `dsa-sync-fork.yml` | Never runs | Daily at 01:30 UTC (7:00 AM IST), merges new lessons from the course repo via the GitHub API |
 
 How it fits together:
 
