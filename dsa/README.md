@@ -4,18 +4,20 @@ Generated automatically by the [DSA learning agent](../.github/agents/README.md)
 
 | Current day | Roadmap progress | Problems solved | Next new topic |
 |-------------|------------------|-----------------|----------------|
-| 3 | 3/59 topics | 0/15 | recursion |
+| 4 | 4/59 topics | 0/20 | math-basics |
 
 ## Upcoming revisions
 
 - `big-o`: due on day 8
 - `arrays`: due on day 9
 - `strings`: due on day 10
+- `recursion`: due on day 11
 
 ## All lessons
 
 | Day | Date | Topic | Type | Solved | Status |
 |-----|------|-------|------|--------|--------|
+| [4](day-004/README.md) | 2026-10-13 | Recursion | New | 0/5 | generated |
 | [3](day-003/README.md) | 2026-10-12 | Strings | New | 0/5 | generated |
 | [2](day-002/README.md) | 2026-10-11 | Arrays | New | 0/5 | generated |
 | [1](day-001/README.md) | 2026-10-10 | Big O Notation & Complexity Analysis | New | 0/5 | generated |

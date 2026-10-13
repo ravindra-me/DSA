@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "day": 4,
+  "date": "2026-10-13",
+  "topic": "recursion",
+  "kind": "new",
+  "language": "python",
+  "generator": {
+    "provider": "gemini",
+    "model": "gemini-3.1-flash-lite",
+    "agentVersion": "1.0.0"
+  },
+  "problems": [
+    {
+      "number": 1,
+      "title": "Sum of Array",
+      "difficulty": "Easy",
+      "concept": "Base recursion on linear structures",
+      "exports": [
+        "recursive_sum"
+      ],
+      "files": {
+        "exercise": "exercises/problem-01.md",
+        "notes": "solutions/problem-01.md",
+        "solution": "solutions/problem_01.py",
+        "tests": "tests/test_problem_01.py",
+        "practice": "practice/problem_01.py"
+      },
+      "starterSha256": "47adfcbc9d98be3f0ae4a24f4d8bcb07439650e96096354ebce9ef8ade50a628",
+      "testsRun": 6,
+      "repairs": 1
+    },
+    {
+      "number": 2,
+      "title": "Power Function",
+      "difficulty": "Easy/Medium",
+      "concept": "Divide and conquer (Exponentiation)",
+      "exports": [
+        "power"
+      ],
+      "files": {
+        "exercise": "exercises/problem-02.md",
+        "notes": "solutions/problem-02.md",
+        "solution": "solutions/problem_02.py",
+        "tests": "tests/test_problem_02.py",
+        "practice": "practice/problem_02.py"
+      },
+      "starterSha256": "ce89aabdf0951ee690794a8418b0fcc57042be5d453ab17e56f777cd2c5e6bfd",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 3,
+      "title": "Reverse String",
+      "difficulty": "Medium",
+      "concept": "Recursive manipulation of sequences",
+      "exports": [
+        "reverse_string"
+      ],
+      "files": {
+        "exercise": "exercises/problem-03.md",
+        "notes": "solutions/problem-03.md",
+        "solution": "solutions/problem_03.py",
+        "tests": "tests/test_problem_03.py",
+        "practice": "practice/problem_03.py"
+      },
+      "starterSha256": "44e587cf113911623365f4777abba781252674742fb781b1f426c762ec516c8e",
+      "testsRun": 6,
+      "repairs": 0
+    },
+    {
+      "number": 4,
+      "title": "Nested List Sum",
+      "difficulty": "Medium/Hard",
+      "concept": "Tree traversal",
+      "exports": [
+        "nested_sum"
+      ],
+      "files": {
+        "exercise": "exercises/problem-04.md",
+        "notes": "solutions/problem-04.md",
+        "solution": "solutions/problem_04.py",
+        "tests": "tests/test_problem_04.py",
+        "practice": "practice/problem_04.py"
+      },
+      "starterSha256": "6162c2b9681fd234845152a27a363ae1abbf25ed089f6d646f4b3bb6be926058",
+      "testsRun": 7,
+      "repairs": 1
+    },
+    {
+      "number": 5,
+      "title": "Generate Parentheses",
+      "difficulty": "Hard",
+      "concept": "Backtracking / Combinatorial recursion",
+      "exports": [
+        "generate_parentheses"
+      ],
+      "files": {
+        "exercise": "exercises/problem-05.md",
+        "notes": "solutions/problem-05.md",
+        "solution": "solutions/problem_05.py",
+        "tests": "tests/test_problem_05.py",
+        "practice": "practice/problem_05.py"
+      },
+      "starterSha256": "3b2142052e7cd2ab9f17bfbd381bea6a142c996011c3e2dc7f06867fe7eef167",
+      "testsRun": 7,
+      "repairs": 0
+    }
+  ]
+}
