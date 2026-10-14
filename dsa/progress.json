@@ -1,16 +1,17 @@
 {
   "schemaVersion": 1,
-  "currentDay": 4,
-  "lastLessonDate": "2026-10-13",
-  "currentTopic": "recursion",
+  "currentDay": 5,
+  "lastLessonDate": "2026-10-14",
+  "currentTopic": "math-basics",
   "topicsCompleted": [
     "big-o",
     "arrays",
     "strings",
-    "recursion"
+    "recursion",
+    "math-basics"
   ],
-  "nextRoadmapTopic": "math-basics",
-  "roadmapProgress": "4/59",
+  "nextRoadmapTopic": "bit-manipulation",
+  "roadmapProgress": "5/59",
   "upcomingRevisions": [
     {
       "topic": "big-o",
@@ -35,13 +36,19 @@
       "dueDay": 11,
       "stage": 1,
       "requested": false
+    },
+    {
+      "topic": "math-basics",
+      "dueDay": 12,
+      "stage": 1,
+      "requested": false
     }
   ],
   "stats": {
-    "lessons": 4,
-    "newTopicLessons": 4,
+    "lessons": 5,
+    "newTopicLessons": 5,
     "revisionLessons": 0,
-    "problemsGenerated": 20,
+    "problemsGenerated": 25,
     "problemsCompleted": 0,
     "lessonsCompleted": 0
   },
@@ -294,6 +301,69 @@
       "generator": {
         "provider": "gemini",
         "model": "gemini-3.1-flash-lite",
+        "agentVersion": "1.0.0"
+      },
+      "requestRevision": false,
+      "revisionRequired": true
+    },
+    {
+      "day": 5,
+      "date": "2026-10-14",
+      "topic": "math-basics",
+      "topicTitle": "Basic Mathematics for DSA",
+      "phase": "Fundamentals",
+      "kind": "new",
+      "revisionStage": 0,
+      "difficulty": "progressive",
+      "language": "python",
+      "status": "generated",
+      "problemsGenerated": 5,
+      "problemsCompleted": 0,
+      "problems": [
+        {
+          "number": 1,
+          "title": "Reverse Integer with Overflow Guard",
+          "difficulty": "Easy",
+          "concept": "Digit extraction and arithmetic overflow handling"
+        },
+        {
+          "number": 2,
+          "title": "Pairwise Array Reduction",
+          "difficulty": "Easy/Medium",
+          "concept": "Euclidean GCD and LCM across multiple values"
+        },
+        {
+          "number": 3,
+          "title": "Prime Factor Counting Queries",
+          "difficulty": "Medium",
+          "concept": "Sieve of Eratosthenes with precomputed Smallest Prime Factor (SPF)"
+        },
+        {
+          "number": 4,
+          "title": "Modular Exponentiation Matrix Series",
+          "difficulty": "Medium/Hard",
+          "concept": "Fast binary exponentiation and modular arithmetic properties"
+        },
+        {
+          "number": 5,
+          "title": "Prime Counting in Ranges (Segmented Sieve)",
+          "difficulty": "Hard",
+          "concept": "Segmented Sieve of Eratosthenes"
+        }
+      ],
+      "conceptsCovered": [
+        "Digit Extraction and Reversal",
+        "Euclidean GCD and LCM",
+        "Modular Arithmetic Invariants",
+        "Binary Exponentiation",
+        "Sieve of Eratosthenes"
+      ],
+      "path": "dsa/day-005",
+      "generatedAt": "2026-10-14T05:25:22+00:00",
+      "generationId": "1d74ecbcaf0e4081bb5e6844885b6efd",
+      "generator": {
+        "provider": "gemini",
+        "model": "gemini-3.8-flash",
         "agentVersion": "1.0.0"
       },
       "requestRevision": false,

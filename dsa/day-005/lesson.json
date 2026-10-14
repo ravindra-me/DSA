@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "day": 5,
+  "date": "2026-10-14",
+  "topic": "math-basics",
+  "kind": "new",
+  "language": "python",
+  "generator": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "agentVersion": "1.0.0"
+  },
+  "problems": [
+    {
+      "number": 1,
+      "title": "Reverse Integer with Overflow Guard",
+      "difficulty": "Easy",
+      "concept": "Digit extraction and arithmetic overflow handling",
+      "exports": [
+        "reverse_integer"
+      ],
+      "files": {
+        "exercise": "exercises/problem-01.md",
+        "notes": "solutions/problem-01.md",
+        "solution": "solutions/problem_01.py",
+        "tests": "tests/test_problem_01.py",
+        "practice": "practice/problem_01.py"
+      },
+      "starterSha256": "5997a0b15a61f02d34fe452d1fbceb302f3ce11ef7b14b35ca2fdbff8c00f7a6",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 2,
+      "title": "Pairwise Array Reduction",
+      "difficulty": "Easy/Medium",
+      "concept": "Euclidean GCD and LCM across multiple values",
+      "exports": [
+        "array_gcd_lcm"
+      ],
+      "files": {
+        "exercise": "exercises/problem-02.md",
+        "notes": "solutions/problem-02.md",
+        "solution": "solutions/problem_02.py",
+        "tests": "tests/test_problem_02.py",
+        "practice": "practice/problem_02.py"
+      },
+      "starterSha256": "a43f0366d3446204d3513b7a7d380bf40beeae51204ec1193dae0398a3cde107",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 3,
+      "title": "Prime Factor Counting Queries",
+      "difficulty": "Medium",
+      "concept": "Sieve of Eratosthenes with precomputed Smallest Prime Factor (SPF)",
+      "exports": [
+        "count_distinct_prime_factors"
+      ],
+      "files": {
+        "exercise": "exercises/problem-03.md",
+        "notes": "solutions/problem-03.md",
+        "solution": "solutions/problem_03.py",
+        "tests": "tests/test_problem_03.py",
+        "practice": "practice/problem_03.py"
+      },
+      "starterSha256": "d3fe3e84c8c40bdc81b576f0022e0980f254a935921a591a0374bc9d6876e32a",
+      "testsRun": 6,
+      "repairs": 0
+    },
+    {
+      "number": 4,
+      "title": "Modular Exponentiation Matrix Series",
+      "difficulty": "Medium/Hard",
+      "concept": "Fast binary exponentiation and modular arithmetic properties",
+      "exports": [
+        "geometric_sum_mod"
+      ],
+      "files": {
+        "exercise": "exercises/problem-04.md",
+        "notes": "solutions/problem-04.md",
+        "solution": "solutions/problem_04.py",
+        "tests": "tests/test_problem_04.py",
+        "practice": "practice/problem_04.py"
+      },
+      "starterSha256": "0354f720c0a4469ea24450b6aaf738a55372552490ef7298f1982a5cfdcaf94c",
+      "testsRun": 7,
+      "repairs": 1
+    },
+    {
+      "number": 5,
+      "title": "Prime Counting in Ranges (Segmented Sieve)",
+      "difficulty": "Hard",
+      "concept": "Segmented Sieve of Eratosthenes",
+      "exports": [
+        "count_primes_in_range"
+      ],
+      "files": {
+        "exercise": "exercises/problem-05.md",
+        "notes": "solutions/problem-05.md",
+        "solution": "solutions/problem_05.py",
+        "tests": "tests/test_problem_05.py",
+        "practice": "practice/problem_05.py"
+      },
+      "starterSha256": "b1f132d02b7969a26201678d2c73dcad19be621ffbcca798a8eecb247c19a6e7",
+      "testsRun": 8,
+      "repairs": 1
+    }
+  ]
+}
