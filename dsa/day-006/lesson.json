@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "day": 6,
+  "date": "2026-10-15",
+  "topic": "bit-manipulation",
+  "kind": "new",
+  "language": "python",
+  "generator": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "agentVersion": "1.0.0"
+  },
+  "problems": [
+    {
+      "number": 1,
+      "title": "Power of Two and Hamming Weight",
+      "difficulty": "Easy",
+      "concept": "Power of two checking and bit counting using bitwise operations",
+      "exports": [
+        "analyze_bits"
+      ],
+      "files": {
+        "exercise": "exercises/problem-01.md",
+        "notes": "solutions/problem-01.md",
+        "solution": "solutions/problem_01.py",
+        "tests": "tests/test_problem_01.py",
+        "practice": "practice/problem_01.py"
+      },
+      "starterSha256": "10782f68366da0e136cb0b3e8f2551260ca6a9f8441aa504bb7cf01490322fc9",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 2,
+      "title": "Single Number from Pairs",
+      "difficulty": "Easy/Medium",
+      "concept": "XOR cancellation property",
+      "exports": [
+        "single_number"
+      ],
+      "files": {
+        "exercise": "exercises/problem-02.md",
+        "notes": "solutions/problem-02.md",
+        "solution": "solutions/problem_02.py",
+        "tests": "tests/test_problem_02.py",
+        "practice": "practice/problem_02.py"
+      },
+      "starterSha256": "9c239d6ea8407ebbbac20fa568e757dba949d9a4495aa03d71f8d3050e6c9087",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 3,
+      "title": "Reverse Bits of a 32-bit Integer",
+      "difficulty": "Medium",
+      "concept": "Bit extraction and bit assembly with shift operators",
+      "exports": [
+        "reverse_bits"
+      ],
+      "files": {
+        "exercise": "exercises/problem-03.md",
+        "notes": "solutions/problem-03.md",
+        "solution": "solutions/problem_03.py",
+        "tests": "tests/test_problem_03.py",
+        "practice": "practice/problem_03.py"
+      },
+      "starterSha256": "0aeb3a498e5f57bc0d29f2cce331a4784a8e119e06998f15257190e14c1f0ecb",
+      "testsRun": 8,
+      "repairs": 0
+    },
+    {
+      "number": 4,
+      "title": "Single Number III (Two Unique Elements)",
+      "difficulty": "Medium/Hard",
+      "concept": "Partitioning elements by distinguishing bit using lowest set bit",
+      "exports": [
+        "single_number_two_uniques"
+      ],
+      "files": {
+        "exercise": "exercises/problem-04.md",
+        "notes": "solutions/problem-04.md",
+        "solution": "solutions/problem_04.py",
+        "tests": "tests/test_problem_04.py",
+        "practice": "practice/problem_04.py"
+      },
+      "starterSha256": "74c12c59b4396e603032075b636d4a0beb46b7704d0f64dde90e973e5664f857",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 5,
+      "title": "Maximum XOR of Two Numbers in an Array",
+      "difficulty": "Hard",
+      "concept": "Bitwise prefix matching and greedy evaluation with masks",
+      "exports": [
+        "find_maximum_xor"
+      ],
+      "files": {
+        "exercise": "exercises/problem-05.md",
+        "notes": "solutions/problem-05.md",
+        "solution": "solutions/problem_05.py",
+        "tests": "tests/test_problem_05.py",
+        "practice": "practice/problem_05.py"
+      },
+      "starterSha256": "752e0373d63e9567c8f099f68451f96016cec2607321846bab429cc490dcbbcd",
+      "testsRun": 8,
+      "repairs": 0
+    }
+  ]
+}

@@ -4,7 +4,7 @@ Generated automatically by the [DSA learning agent](../.github/agents/README.md)
 
 | Current day | Roadmap progress | Problems solved | Next new topic |
 |-------------|------------------|-----------------|----------------|
-| 5 | 5/59 topics | 0/25 | bit-manipulation |
+| 6 | 6/59 topics | 0/30 | linked-list |
 
 ## Upcoming revisions
 
@@ -13,11 +13,13 @@ Generated automatically by the [DSA learning agent](../.github/agents/README.md)
 - `strings`: due on day 10
 - `recursion`: due on day 11
 - `math-basics`: due on day 12
+- `bit-manipulation`: due on day 13
 
 ## All lessons
 
 | Day | Date | Topic | Type | Solved | Status |
 |-----|------|-------|------|--------|--------|
+| [6](day-006/README.md) | 2026-10-15 | Bit Manipulation | New | 0/5 | generated |
 | [5](day-005/README.md) | 2026-10-14 | Basic Mathematics for DSA | New | 0/5 | generated |
 | [4](day-004/README.md) | 2026-10-13 | Recursion | New | 0/5 | generated |
 | [3](day-003/README.md) | 2026-10-12 | Strings | New | 0/5 | generated |

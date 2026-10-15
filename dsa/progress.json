@@ -1,17 +1,18 @@
 {
   "schemaVersion": 1,
-  "currentDay": 5,
-  "lastLessonDate": "2026-10-14",
-  "currentTopic": "math-basics",
+  "currentDay": 6,
+  "lastLessonDate": "2026-10-15",
+  "currentTopic": "bit-manipulation",
   "topicsCompleted": [
     "big-o",
     "arrays",
     "strings",
     "recursion",
-    "math-basics"
+    "math-basics",
+    "bit-manipulation"
   ],
-  "nextRoadmapTopic": "bit-manipulation",
-  "roadmapProgress": "5/59",
+  "nextRoadmapTopic": "linked-list",
+  "roadmapProgress": "6/59",
   "upcomingRevisions": [
     {
       "topic": "big-o",
@@ -42,13 +43,19 @@
       "dueDay": 12,
       "stage": 1,
       "requested": false
+    },
+    {
+      "topic": "bit-manipulation",
+      "dueDay": 13,
+      "stage": 1,
+      "requested": false
     }
   ],
   "stats": {
-    "lessons": 5,
-    "newTopicLessons": 5,
+    "lessons": 6,
+    "newTopicLessons": 6,
     "revisionLessons": 0,
-    "problemsGenerated": 25,
+    "problemsGenerated": 30,
     "problemsCompleted": 0,
     "lessonsCompleted": 0
   },
@@ -361,6 +368,69 @@
       "path": "dsa/day-005",
       "generatedAt": "2026-10-14T05:25:22+00:00",
       "generationId": "1d74ecbcaf0e4081bb5e6844885b6efd",
+      "generator": {
+        "provider": "gemini",
+        "model": "gemini-3.8-flash",
+        "agentVersion": "1.0.0"
+      },
+      "requestRevision": false,
+      "revisionRequired": true
+    },
+    {
+      "day": 6,
+      "date": "2026-10-15",
+      "topic": "bit-manipulation",
+      "topicTitle": "Bit Manipulation",
+      "phase": "Fundamentals",
+      "kind": "new",
+      "revisionStage": 0,
+      "difficulty": "progressive",
+      "language": "python",
+      "status": "generated",
+      "problemsGenerated": 5,
+      "problemsCompleted": 0,
+      "problems": [
+        {
+          "number": 1,
+          "title": "Power of Two and Hamming Weight",
+          "difficulty": "Easy",
+          "concept": "Power of two checking and bit counting using bitwise operations"
+        },
+        {
+          "number": 2,
+          "title": "Single Number from Pairs",
+          "difficulty": "Easy/Medium",
+          "concept": "XOR cancellation property"
+        },
+        {
+          "number": 3,
+          "title": "Reverse Bits of a 32-bit Integer",
+          "difficulty": "Medium",
+          "concept": "Bit extraction and bit assembly with shift operators"
+        },
+        {
+          "number": 4,
+          "title": "Single Number III (Two Unique Elements)",
+          "difficulty": "Medium/Hard",
+          "concept": "Partitioning elements by distinguishing bit using lowest set bit"
+        },
+        {
+          "number": 5,
+          "title": "Maximum XOR of Two Numbers in an Array",
+          "difficulty": "Hard",
+          "concept": "Bitwise prefix matching and greedy evaluation with masks"
+        }
+      ],
+      "conceptsCovered": [
+        "Bitwise AND, OR, XOR, NOT, Shifts",
+        "Bitmasking (set, get, clear, toggle)",
+        "Brian Kernighan's Algorithm",
+        "Power of Two detection",
+        "Two's complement and `n & (-n)`"
+      ],
+      "path": "dsa/day-006",
+      "generatedAt": "2026-10-15T05:02:49+00:00",
+      "generationId": "f9f5dac9ffd54844ab11b805b34ff69c",
       "generator": {
         "provider": "gemini",
         "model": "gemini-3.8-flash",
