@@ -1,18 +1,19 @@
 {
   "schemaVersion": 1,
-  "currentDay": 6,
-  "lastLessonDate": "2026-10-15",
-  "currentTopic": "bit-manipulation",
+  "currentDay": 7,
+  "lastLessonDate": "2026-10-16",
+  "currentTopic": "linked-list",
   "topicsCompleted": [
     "big-o",
     "arrays",
     "strings",
     "recursion",
     "math-basics",
-    "bit-manipulation"
+    "bit-manipulation",
+    "linked-list"
   ],
-  "nextRoadmapTopic": "linked-list",
-  "roadmapProgress": "6/59",
+  "nextRoadmapTopic": "linked-list-techniques",
+  "roadmapProgress": "7/59",
   "upcomingRevisions": [
     {
       "topic": "big-o",
@@ -49,13 +50,19 @@
       "dueDay": 13,
       "stage": 1,
       "requested": false
+    },
+    {
+      "topic": "linked-list",
+      "dueDay": 14,
+      "stage": 1,
+      "requested": false
     }
   ],
   "stats": {
-    "lessons": 6,
-    "newTopicLessons": 6,
+    "lessons": 7,
+    "newTopicLessons": 7,
     "revisionLessons": 0,
-    "problemsGenerated": 30,
+    "problemsGenerated": 35,
     "problemsCompleted": 0,
     "lessonsCompleted": 0
   },
@@ -434,6 +441,70 @@
       "generator": {
         "provider": "gemini",
         "model": "gemini-3.8-flash",
+        "agentVersion": "1.0.0"
+      },
+      "requestRevision": false,
+      "revisionRequired": true
+    },
+    {
+      "day": 7,
+      "date": "2026-10-16",
+      "topic": "linked-list",
+      "topicTitle": "Linked Lists",
+      "phase": "Linear Data Structures",
+      "kind": "new",
+      "revisionStage": 0,
+      "difficulty": "progressive",
+      "language": "python",
+      "status": "generated",
+      "problemsGenerated": 5,
+      "problemsCompleted": 0,
+      "problems": [
+        {
+          "number": 1,
+          "title": "Reverse a Linked List",
+          "difficulty": "Easy",
+          "concept": "Basic pointer manipulation and iterative reversal"
+        },
+        {
+          "number": 2,
+          "title": "Remove Elements by Value",
+          "difficulty": "Easy/Medium",
+          "concept": "Dummy head pattern for deletion"
+        },
+        {
+          "number": 3,
+          "title": "Merge Two Sorted Lists",
+          "difficulty": "Medium",
+          "concept": "Two-pointer list merging with dummy head"
+        },
+        {
+          "number": 4,
+          "title": "Remove N-th Node From End of List",
+          "difficulty": "Medium/Hard",
+          "concept": "Fast and slow runner pointers with gap"
+        },
+        {
+          "number": 5,
+          "title": "Reverse Nodes in k-Group",
+          "difficulty": "Hard",
+          "concept": "Complex multi-pointer block reversal"
+        }
+      ],
+      "conceptsCovered": [
+        "singly-linked-list",
+        "doubly-linked-list",
+        "dummy-head",
+        "pointer-manipulation",
+        "fast-and-slow-pointers",
+        "list-reversal"
+      ],
+      "path": "dsa/day-007",
+      "generatedAt": "2026-10-16T04:58:37+00:00",
+      "generationId": "7ebcf81fc9014533af190d1a10be9b86",
+      "generator": {
+        "provider": "gemini",
+        "model": "gemini-3.1-flash-lite",
         "agentVersion": "1.0.0"
       },
       "requestRevision": false,

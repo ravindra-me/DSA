@@ -4,7 +4,7 @@ Generated automatically by the [DSA learning agent](../.github/agents/README.md)
 
 | Current day | Roadmap progress | Problems solved | Next new topic |
 |-------------|------------------|-----------------|----------------|
-| 6 | 6/59 topics | 0/30 | linked-list |
+| 7 | 7/59 topics | 0/35 | linked-list-techniques |
 
 ## Upcoming revisions
 
@@ -14,11 +14,13 @@ Generated automatically by the [DSA learning agent](../.github/agents/README.md)
 - `recursion`: due on day 11
 - `math-basics`: due on day 12
 - `bit-manipulation`: due on day 13
+- `linked-list`: due on day 14
 
 ## All lessons
 
 | Day | Date | Topic | Type | Solved | Status |
 |-----|------|-------|------|--------|--------|
+| [7](day-007/README.md) | 2026-10-16 | Linked Lists | New | 0/5 | generated |
 | [6](day-006/README.md) | 2026-10-15 | Bit Manipulation | New | 0/5 | generated |
 | [5](day-005/README.md) | 2026-10-14 | Basic Mathematics for DSA | New | 0/5 | generated |
 | [4](day-004/README.md) | 2026-10-13 | Recursion | New | 0/5 | generated |

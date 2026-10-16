@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "day": 7,
+  "date": "2026-10-16",
+  "topic": "linked-list",
+  "kind": "new",
+  "language": "python",
+  "generator": {
+    "provider": "gemini",
+    "model": "gemini-3.1-flash-lite",
+    "agentVersion": "1.0.0"
+  },
+  "problems": [
+    {
+      "number": 1,
+      "title": "Reverse a Linked List",
+      "difficulty": "Easy",
+      "concept": "Basic pointer manipulation and iterative reversal",
+      "exports": [
+        "ListNode",
+        "reverse_list"
+      ],
+      "files": {
+        "exercise": "exercises/problem-01.md",
+        "notes": "solutions/problem-01.md",
+        "solution": "solutions/problem_01.py",
+        "tests": "tests/test_problem_01.py",
+        "practice": "practice/problem_01.py"
+      },
+      "starterSha256": "b97570942edb85811ded23abb6b65e9d942e5cffdacf4ba33988584962d2d4e5",
+      "testsRun": 6,
+      "repairs": 1
+    },
+    {
+      "number": 2,
+      "title": "Remove Elements by Value",
+      "difficulty": "Easy/Medium",
+      "concept": "Dummy head pattern for deletion",
+      "exports": [
+        "ListNode",
+        "remove_elements"
+      ],
+      "files": {
+        "exercise": "exercises/problem-02.md",
+        "notes": "solutions/problem-02.md",
+        "solution": "solutions/problem_02.py",
+        "tests": "tests/test_problem_02.py",
+        "practice": "practice/problem_02.py"
+      },
+      "starterSha256": "e4fa13a9cdc013cc9b673e89b51d74c605069207c4ca3dbc6cd3a758fef1f90a",
+      "testsRun": 8,
+      "repairs": 0
+    },
+    {
+      "number": 3,
+      "title": "Merge Two Sorted Lists",
+      "difficulty": "Medium",
+      "concept": "Two-pointer list merging with dummy head",
+      "exports": [
+        "ListNode",
+        "merge_two_lists"
+      ],
+      "files": {
+        "exercise": "exercises/problem-03.md",
+        "notes": "solutions/problem-03.md",
+        "solution": "solutions/problem_03.py",
+        "tests": "tests/test_problem_03.py",
+        "practice": "practice/problem_03.py"
+      },
+      "starterSha256": "2dd4bd8f83cb107e597f474aab4c8c917ebdf9a7830c7ff5f6062ac4c4a89263",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 4,
+      "title": "Remove N-th Node From End of List",
+      "difficulty": "Medium/Hard",
+      "concept": "Fast and slow runner pointers with gap",
+      "exports": [
+        "ListNode",
+        "remove_nth_from_end"
+      ],
+      "files": {
+        "exercise": "exercises/problem-04.md",
+        "notes": "solutions/problem-04.md",
+        "solution": "solutions/problem_04.py",
+        "tests": "tests/test_problem_04.py",
+        "practice": "practice/problem_04.py"
+      },
+      "starterSha256": "9a58e0542876b9d7a3f6b9bce6ffe82b83616e963b3cb997f16512d54cdad86a",
+      "testsRun": 6,
+      "repairs": 0
+    },
+    {
+      "number": 5,
+      "title": "Reverse Nodes in k-Group",
+      "difficulty": "Hard",
+      "concept": "Complex multi-pointer block reversal",
+      "exports": [
+        "ListNode",
+        "reverse_k_group"
+      ],
+      "files": {
+        "exercise": "exercises/problem-05.md",
+        "notes": "solutions/problem-05.md",
+        "solution": "solutions/problem_05.py",
+        "tests": "tests/test_problem_05.py",
+        "practice": "practice/problem_05.py"
+      },
+      "starterSha256": "0b430458885c0616154612e589e7167c22205f415d4942a5d93f983512add946",
+      "testsRun": 7,
+      "repairs": 0
+    }
+  ]
+}
