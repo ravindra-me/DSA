@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "currentDay": 7,
-  "lastLessonDate": "2026-10-16",
-  "currentTopic": "linked-list",
+  "currentDay": 8,
+  "lastLessonDate": "2026-10-17",
+  "currentTopic": "big-o",
   "topicsCompleted": [
     "big-o",
     "arrays",
@@ -15,12 +15,6 @@
   "nextRoadmapTopic": "linked-list-techniques",
   "roadmapProgress": "7/59",
   "upcomingRevisions": [
-    {
-      "topic": "big-o",
-      "dueDay": 8,
-      "stage": 1,
-      "requested": false
-    },
     {
       "topic": "arrays",
       "dueDay": 9,
@@ -56,13 +50,19 @@
       "dueDay": 14,
       "stage": 1,
       "requested": false
+    },
+    {
+      "topic": "big-o",
+      "dueDay": 22,
+      "stage": 2,
+      "requested": false
     }
   ],
   "stats": {
-    "lessons": 7,
+    "lessons": 8,
     "newTopicLessons": 7,
-    "revisionLessons": 0,
-    "problemsGenerated": 35,
+    "revisionLessons": 1,
+    "problemsGenerated": 40,
     "problemsCompleted": 0,
     "lessonsCompleted": 0
   },
@@ -505,6 +505,69 @@
       "generator": {
         "provider": "gemini",
         "model": "gemini-3.1-flash-lite",
+        "agentVersion": "1.0.0"
+      },
+      "requestRevision": false,
+      "revisionRequired": true
+    },
+    {
+      "day": 8,
+      "date": "2026-10-17",
+      "topic": "big-o",
+      "topicTitle": "Big O Notation & Complexity Analysis",
+      "phase": "Fundamentals",
+      "kind": "revision",
+      "revisionStage": 1,
+      "difficulty": "progressive",
+      "language": "python",
+      "status": "generated",
+      "problemsGenerated": 5,
+      "problemsCompleted": 0,
+      "problems": [
+        {
+          "number": 1,
+          "title": "Subarray Product Less Than K",
+          "difficulty": "Easy/Medium",
+          "concept": "Two Pointers / Sliding Window amortized complexity analysis"
+        },
+        {
+          "number": 2,
+          "title": "Continuous Resettable Counter",
+          "difficulty": "Medium",
+          "concept": "Amortized state updates with lazy propagation"
+        },
+        {
+          "number": 3,
+          "title": "Longest Duplicate Substring Length",
+          "difficulty": "Medium/Hard",
+          "concept": "Multi-variable analysis and binary search with polynomial rolling hash"
+        },
+        {
+          "number": 4,
+          "title": "Partition Linked List Around Pivot",
+          "difficulty": "Medium/Hard",
+          "concept": "O(N) time and O(1) auxiliary space pointer manipulation"
+        },
+        {
+          "number": 5,
+          "title": "Minimum Window Subsequence",
+          "difficulty": "Hard",
+          "concept": "Multi-variable dynamic programming / two-pointer complexity analysis"
+        }
+      ],
+      "conceptsCovered": [
+        "asymptotic-notation",
+        "amortized-analysis",
+        "space-complexity",
+        "time-complexity",
+        "growth-rates"
+      ],
+      "path": "dsa/day-008",
+      "generatedAt": "2026-10-17T04:48:54+00:00",
+      "generationId": "6955a485250b43ac970098f3c271f100",
+      "generator": {
+        "provider": "gemini",
+        "model": "gemini-3.8-flash",
         "agentVersion": "1.0.0"
       },
       "requestRevision": false,

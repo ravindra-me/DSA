@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "day": 8,
+  "date": "2026-10-17",
+  "topic": "big-o",
+  "kind": "revision",
+  "language": "python",
+  "generator": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "agentVersion": "1.0.0"
+  },
+  "problems": [
+    {
+      "number": 1,
+      "title": "Subarray Product Less Than K",
+      "difficulty": "Easy/Medium",
+      "concept": "Two Pointers / Sliding Window amortized complexity analysis",
+      "exports": [
+        "num_subarray_product_less_than_k"
+      ],
+      "files": {
+        "exercise": "exercises/problem-01.md",
+        "notes": "solutions/problem-01.md",
+        "solution": "solutions/problem_01.py",
+        "tests": "tests/test_problem_01.py",
+        "practice": "practice/problem_01.py"
+      },
+      "starterSha256": "6ee2fe7cec62b94c2d2c49772b9b4672aac95aa9cf86c3d0e57978c1a86145a9",
+      "testsRun": 8,
+      "repairs": 0
+    },
+    {
+      "number": 2,
+      "title": "Continuous Resettable Counter",
+      "difficulty": "Medium",
+      "concept": "Amortized state updates with lazy propagation",
+      "exports": [
+        "ResettableCounters"
+      ],
+      "files": {
+        "exercise": "exercises/problem-02.md",
+        "notes": "solutions/problem-02.md",
+        "solution": "solutions/problem_02.py",
+        "tests": "tests/test_problem_02.py",
+        "practice": "practice/problem_02.py"
+      },
+      "starterSha256": "3c2affef347fc8da6e0436f64725f9a5ea51463a6ff9a0b2c2104b4b6eed646e",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 3,
+      "title": "Longest Duplicate Substring Length",
+      "difficulty": "Medium/Hard",
+      "concept": "Multi-variable analysis and binary search with polynomial rolling hash",
+      "exports": [
+        "longest_duplicate_substring_length"
+      ],
+      "files": {
+        "exercise": "exercises/problem-03.md",
+        "notes": "solutions/problem-03.md",
+        "solution": "solutions/problem_03.py",
+        "tests": "tests/test_problem_03.py",
+        "practice": "practice/problem_03.py"
+      },
+      "starterSha256": "5a2077072915f1a79c647f70b755ddb07def9daa02be4238981841b64468f7b0",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 4,
+      "title": "Partition Linked List Around Pivot",
+      "difficulty": "Medium/Hard",
+      "concept": "O(N) time and O(1) auxiliary space pointer manipulation",
+      "exports": [
+        "ListNode",
+        "partition_list"
+      ],
+      "files": {
+        "exercise": "exercises/problem-04.md",
+        "notes": "solutions/problem-04.md",
+        "solution": "solutions/problem_04.py",
+        "tests": "tests/test_problem_04.py",
+        "practice": "practice/problem_04.py"
+      },
+      "starterSha256": "9a620f8a17e009d49cd6e71f12140933199c91d377d6eb9e479e40690005fe2c",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 5,
+      "title": "Minimum Window Subsequence",
+      "difficulty": "Hard",
+      "concept": "Multi-variable dynamic programming / two-pointer complexity analysis",
+      "exports": [
+        "min_window_subsequence"
+      ],
+      "files": {
+        "exercise": "exercises/problem-05.md",
+        "notes": "solutions/problem-05.md",
+        "solution": "solutions/problem_05.py",
+        "tests": "tests/test_problem_05.py",
+        "practice": "practice/problem_05.py"
+      },
+      "starterSha256": "ff68baecd19faa58a93a458d1ffa1d44f948afc142bf378ebe0606b8b6317a77",
+      "testsRun": 9,
+      "repairs": 1
+    }
+  ]
+}
