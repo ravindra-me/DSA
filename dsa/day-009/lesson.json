@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "day": 9,
+  "date": "2026-10-18",
+  "topic": "linked-list-techniques",
+  "kind": "new",
+  "language": "python",
+  "generator": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "agentVersion": "1.0.0"
+  },
+  "problems": [
+    {
+      "number": 1,
+      "title": "Find Middle Node Value",
+      "difficulty": "Easy",
+      "concept": "Fast and slow pointers for finding midpoints",
+      "exports": [
+        "ListNode",
+        "find_middle_value"
+      ],
+      "files": {
+        "exercise": "exercises/problem-01.md",
+        "notes": "solutions/problem-01.md",
+        "solution": "solutions/problem_01.py",
+        "tests": "tests/test_problem_01.py",
+        "practice": "practice/problem_01.py"
+      },
+      "starterSha256": "599ce56da93fd17a5bbf48af6e8a950afd6bb4c291394b6aecec10e51daff7f6",
+      "testsRun": 8,
+      "repairs": 0
+    },
+    {
+      "number": 2,
+      "title": "Remove K-th Node From End",
+      "difficulty": "Easy/Medium",
+      "concept": "Fixed-gap runner pointers and dummy head node",
+      "exports": [
+        "ListNode",
+        "remove_kth_from_end"
+      ],
+      "files": {
+        "exercise": "exercises/problem-02.md",
+        "notes": "solutions/problem-02.md",
+        "solution": "solutions/problem_02.py",
+        "tests": "tests/test_problem_02.py",
+        "practice": "practice/problem_02.py"
+      },
+      "starterSha256": "35c716e37a08bf00f98e7d8f0d21fa27925e39c68e3d2ebc9fbb121553138f92",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 3,
+      "title": "Find Cycle Entrance Value",
+      "difficulty": "Medium",
+      "concept": "Floyd's Tortoise and Hare cycle detection and entrance resolution",
+      "exports": [
+        "ListNode",
+        "find_cycle_entrance_value"
+      ],
+      "files": {
+        "exercise": "exercises/problem-03.md",
+        "notes": "solutions/problem-03.md",
+        "solution": "solutions/problem_03.py",
+        "tests": "tests/test_problem_03.py",
+        "practice": "practice/problem_03.py"
+      },
+      "starterSha256": "4a016e5c1a06564af49a40744b23734462ce465d751f79737c17d87308734447",
+      "testsRun": 10,
+      "repairs": 0
+    },
+    {
+      "number": 4,
+      "title": "Merge Two Sorted Linked Lists",
+      "difficulty": "Medium/Hard",
+      "concept": "Sentinel node pointer splicing for sorted list combination",
+      "exports": [
+        "ListNode",
+        "merge_two_sorted_lists"
+      ],
+      "files": {
+        "exercise": "exercises/problem-04.md",
+        "notes": "solutions/problem-04.md",
+        "solution": "solutions/problem_04.py",
+        "tests": "tests/test_problem_04.py",
+        "practice": "practice/problem_04.py"
+      },
+      "starterSha256": "275171ace4a082839bf027bebf6d7222cf9f0624ba390314ddc7c21abb620613",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 5,
+      "title": "Reorder and Interweave List",
+      "difficulty": "Hard",
+      "concept": "Combining midpoint split, in-place reversal, and alternating merge",
+      "exports": [
+        "ListNode",
+        "reorder_list"
+      ],
+      "files": {
+        "exercise": "exercises/problem-05.md",
+        "notes": "solutions/problem-05.md",
+        "solution": "solutions/problem_05.py",
+        "tests": "tests/test_problem_05.py",
+        "practice": "practice/problem_05.py"
+      },
+      "starterSha256": "8624c44f4892327b1153b95069fddf5fbc5075db000fadcd0281afaeb058265d",
+      "testsRun": 6,
+      "repairs": 0
+    }
+  ]
+}

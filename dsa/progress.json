@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "currentDay": 8,
-  "lastLessonDate": "2026-10-17",
-  "currentTopic": "big-o",
+  "currentDay": 9,
+  "lastLessonDate": "2026-10-18",
+  "currentTopic": "linked-list-techniques",
   "topicsCompleted": [
     "big-o",
     "arrays",
@@ -10,10 +10,11 @@
     "recursion",
     "math-basics",
     "bit-manipulation",
-    "linked-list"
+    "linked-list",
+    "linked-list-techniques"
   ],
-  "nextRoadmapTopic": "linked-list-techniques",
-  "roadmapProgress": "7/59",
+  "nextRoadmapTopic": "stack",
+  "roadmapProgress": "8/59",
   "upcomingRevisions": [
     {
       "topic": "arrays",
@@ -52,6 +53,12 @@
       "requested": false
     },
     {
+      "topic": "linked-list-techniques",
+      "dueDay": 16,
+      "stage": 1,
+      "requested": false
+    },
+    {
       "topic": "big-o",
       "dueDay": 22,
       "stage": 2,
@@ -59,10 +66,10 @@
     }
   ],
   "stats": {
-    "lessons": 8,
-    "newTopicLessons": 7,
+    "lessons": 9,
+    "newTopicLessons": 8,
     "revisionLessons": 1,
-    "problemsGenerated": 40,
+    "problemsGenerated": 45,
     "problemsCompleted": 0,
     "lessonsCompleted": 0
   },
@@ -565,6 +572,69 @@
       "path": "dsa/day-008",
       "generatedAt": "2026-10-17T04:48:54+00:00",
       "generationId": "6955a485250b43ac970098f3c271f100",
+      "generator": {
+        "provider": "gemini",
+        "model": "gemini-3.8-flash",
+        "agentVersion": "1.0.0"
+      },
+      "requestRevision": false,
+      "revisionRequired": true
+    },
+    {
+      "day": 9,
+      "date": "2026-10-18",
+      "topic": "linked-list-techniques",
+      "topicTitle": "Linked List Techniques",
+      "phase": "Linear Data Structures",
+      "kind": "new",
+      "revisionStage": 0,
+      "difficulty": "progressive",
+      "language": "python",
+      "status": "generated",
+      "problemsGenerated": 5,
+      "problemsCompleted": 0,
+      "problems": [
+        {
+          "number": 1,
+          "title": "Find Middle Node Value",
+          "difficulty": "Easy",
+          "concept": "Fast and slow pointers for finding midpoints"
+        },
+        {
+          "number": 2,
+          "title": "Remove K-th Node From End",
+          "difficulty": "Easy/Medium",
+          "concept": "Fixed-gap runner pointers and dummy head node"
+        },
+        {
+          "number": 3,
+          "title": "Find Cycle Entrance Value",
+          "difficulty": "Medium",
+          "concept": "Floyd's Tortoise and Hare cycle detection and entrance resolution"
+        },
+        {
+          "number": 4,
+          "title": "Merge Two Sorted Linked Lists",
+          "difficulty": "Medium/Hard",
+          "concept": "Sentinel node pointer splicing for sorted list combination"
+        },
+        {
+          "number": 5,
+          "title": "Reorder and Interweave List",
+          "difficulty": "Hard",
+          "concept": "Combining midpoint split, in-place reversal, and alternating merge"
+        }
+      ],
+      "conceptsCovered": [
+        "Fast and slow pointers (Tortoise and Hare)",
+        "Cycle detection and loop-start resolution",
+        "Finding middle nodes (odd vs. even handling)",
+        "Fixed-gap runner pointers (k-th from end)",
+        "Sentinel / dummy node patterns for list merging and mutation"
+      ],
+      "path": "dsa/day-009",
+      "generatedAt": "2026-10-18T04:54:44+00:00",
+      "generationId": "83b5fbf84f574b92ad6cae00267d88ba",
       "generator": {
         "provider": "gemini",
         "model": "gemini-3.8-flash",
