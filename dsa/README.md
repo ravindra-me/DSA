@@ -4,7 +4,7 @@ Generated automatically by the [DSA learning agent](../.github/agents/README.md)
 
 | Current day | Roadmap progress | Problems solved | Next new topic |
 |-------------|------------------|-----------------|----------------|
-| 9 | 8/59 topics | 0/45 | stack |
+| 10 | 9/59 topics | 0/50 | monotonic-stack |
 
 ## Upcoming revisions
 
@@ -15,12 +15,14 @@ Generated automatically by the [DSA learning agent](../.github/agents/README.md)
 - `bit-manipulation`: due on day 13
 - `linked-list`: due on day 14
 - `linked-list-techniques`: due on day 16
+- `stack`: due on day 17
 - `big-o`: due on day 22
 
 ## All lessons
 
 | Day | Date | Topic | Type | Solved | Status |
 |-----|------|-------|------|--------|--------|
+| [10](day-010/README.md) | 2026-10-19 | Stack | New | 0/5 | generated |
 | [9](day-009/README.md) | 2026-10-18 | Linked List Techniques | New | 0/5 | generated |
 | [8](day-008/README.md) | 2026-10-17 | Big O Notation & Complexity Analysis | Revision | 0/5 | generated |
 | [7](day-007/README.md) | 2026-10-16 | Linked Lists | New | 0/5 | generated |

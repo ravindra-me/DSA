@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "day": 10,
+  "date": "2026-10-19",
+  "topic": "stack",
+  "kind": "new",
+  "language": "python",
+  "generator": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "agentVersion": "1.0.0"
+  },
+  "problems": [
+    {
+      "number": 1,
+      "title": "Valid Parentheses and Brackets",
+      "difficulty": "Easy",
+      "concept": "Bracket matching using LIFO stack invariant",
+      "exports": [
+        "is_valid_brackets"
+      ],
+      "files": {
+        "exercise": "exercises/problem-01.md",
+        "notes": "solutions/problem-01.md",
+        "solution": "solutions/problem_01.py",
+        "tests": "tests/test_problem_01.py",
+        "practice": "practice/problem_01.py"
+      },
+      "starterSha256": "1ff9f026aefb5025ef8220810479cd132d426071f139dfa19fccbe7abfc3d144",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 2,
+      "title": "Evaluate Reverse Polish Notation",
+      "difficulty": "Easy/Medium",
+      "concept": "Postfix expression evaluation with stack",
+      "exports": [
+        "eval_rpn"
+      ],
+      "files": {
+        "exercise": "exercises/problem-02.md",
+        "notes": "solutions/problem-02.md",
+        "solution": "solutions/problem_02.py",
+        "tests": "tests/test_problem_02.py",
+        "practice": "practice/problem_02.py"
+      },
+      "starterSha256": "8a8c06e981bd27106564796719425ca89e8a30e1742bc42360a1f40f1e03cbed",
+      "testsRun": 8,
+      "repairs": 0
+    },
+    {
+      "number": 3,
+      "title": "Text Editor with Undo History",
+      "difficulty": "Medium",
+      "concept": "State restoration and history management via dual stacks",
+      "exports": [
+        "TextEditor"
+      ],
+      "files": {
+        "exercise": "exercises/problem-03.md",
+        "notes": "solutions/problem-03.md",
+        "solution": "solutions/problem_03.py",
+        "tests": "tests/test_problem_03.py",
+        "practice": "practice/problem_03.py"
+      },
+      "starterSha256": "da6f38176fca622933c2732ba070965cab552fbc31a995c2e2c37ae8bd1387e4",
+      "testsRun": 8,
+      "repairs": 0
+    },
+    {
+      "number": 4,
+      "title": "Design Min-Stack with Constant Time Minimum",
+      "difficulty": "Medium/Hard",
+      "concept": "Auxiliary stack invariant for auxiliary queries",
+      "exports": [
+        "MinStack"
+      ],
+      "files": {
+        "exercise": "exercises/problem-04.md",
+        "notes": "solutions/problem-04.md",
+        "solution": "solutions/problem_04.py",
+        "tests": "tests/test_problem_04.py",
+        "practice": "practice/problem_04.py"
+      },
+      "starterSha256": "03f27b43788d0fe84ff425ca99cd6addcf00e8ad443a5cffdf5851f18558ac3c",
+      "testsRun": 6,
+      "repairs": 0
+    },
+    {
+      "number": 5,
+      "title": "Decode String with Nested Multipliers",
+      "difficulty": "Hard",
+      "concept": "Nested context resolution with dual stacks",
+      "exports": [
+        "decode_string"
+      ],
+      "files": {
+        "exercise": "exercises/problem-05.md",
+        "notes": "solutions/problem-05.md",
+        "solution": "solutions/problem_05.py",
+        "tests": "tests/test_problem_05.py",
+        "practice": "practice/problem_05.py"
+      },
+      "starterSha256": "accce571c9ac4a9a8a3921f2092abec271c8caf21fb8f37fc4062d0fc91bf06f",
+      "testsRun": 8,
+      "repairs": 0
+    }
+  ]
+}

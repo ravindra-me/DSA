@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "currentDay": 9,
-  "lastLessonDate": "2026-10-18",
-  "currentTopic": "linked-list-techniques",
+  "currentDay": 10,
+  "lastLessonDate": "2026-10-19",
+  "currentTopic": "stack",
   "topicsCompleted": [
     "big-o",
     "arrays",
@@ -11,10 +11,11 @@
     "math-basics",
     "bit-manipulation",
     "linked-list",
-    "linked-list-techniques"
+    "linked-list-techniques",
+    "stack"
   ],
-  "nextRoadmapTopic": "stack",
-  "roadmapProgress": "8/59",
+  "nextRoadmapTopic": "monotonic-stack",
+  "roadmapProgress": "9/59",
   "upcomingRevisions": [
     {
       "topic": "arrays",
@@ -59,6 +60,12 @@
       "requested": false
     },
     {
+      "topic": "stack",
+      "dueDay": 17,
+      "stage": 1,
+      "requested": false
+    },
+    {
       "topic": "big-o",
       "dueDay": 22,
       "stage": 2,
@@ -66,10 +73,10 @@
     }
   ],
   "stats": {
-    "lessons": 9,
-    "newTopicLessons": 8,
+    "lessons": 10,
+    "newTopicLessons": 9,
     "revisionLessons": 1,
-    "problemsGenerated": 45,
+    "problemsGenerated": 50,
     "problemsCompleted": 0,
     "lessonsCompleted": 0
   },
@@ -635,6 +642,70 @@
       "path": "dsa/day-009",
       "generatedAt": "2026-10-18T04:54:44+00:00",
       "generationId": "83b5fbf84f574b92ad6cae00267d88ba",
+      "generator": {
+        "provider": "gemini",
+        "model": "gemini-3.8-flash",
+        "agentVersion": "1.0.0"
+      },
+      "requestRevision": false,
+      "revisionRequired": true
+    },
+    {
+      "day": 10,
+      "date": "2026-10-19",
+      "topic": "stack",
+      "topicTitle": "Stack",
+      "phase": "Linear Data Structures",
+      "kind": "new",
+      "revisionStage": 0,
+      "difficulty": "progressive",
+      "language": "python",
+      "status": "generated",
+      "problemsGenerated": 5,
+      "problemsCompleted": 0,
+      "problems": [
+        {
+          "number": 1,
+          "title": "Valid Parentheses and Brackets",
+          "difficulty": "Easy",
+          "concept": "Bracket matching using LIFO stack invariant"
+        },
+        {
+          "number": 2,
+          "title": "Evaluate Reverse Polish Notation",
+          "difficulty": "Easy/Medium",
+          "concept": "Postfix expression evaluation with stack"
+        },
+        {
+          "number": 3,
+          "title": "Text Editor with Undo History",
+          "difficulty": "Medium",
+          "concept": "State restoration and history management via dual stacks"
+        },
+        {
+          "number": 4,
+          "title": "Design Min-Stack with Constant Time Minimum",
+          "difficulty": "Medium/Hard",
+          "concept": "Auxiliary stack invariant for auxiliary queries"
+        },
+        {
+          "number": 5,
+          "title": "Decode String with Nested Multipliers",
+          "difficulty": "Hard",
+          "concept": "Nested context resolution with dual stacks"
+        }
+      ],
+      "conceptsCovered": [
+        "LIFO (Last-In, First-Out)",
+        "Stack operations (push, pop, peek)",
+        "Bracket / Parentheses matching",
+        "Reverse Polish Notation (RPN)",
+        "Undo / State history tracking",
+        "Min Stack auxiliary tracking"
+      ],
+      "path": "dsa/day-010",
+      "generatedAt": "2026-10-19T05:04:21+00:00",
+      "generationId": "8a2a98a8d25940aaab8ae7be2fc4c226",
       "generator": {
         "provider": "gemini",
         "model": "gemini-3.8-flash",
