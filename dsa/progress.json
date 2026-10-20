@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "currentDay": 10,
-  "lastLessonDate": "2026-10-19",
-  "currentTopic": "stack",
+  "currentDay": 11,
+  "lastLessonDate": "2026-10-20",
+  "currentTopic": "arrays",
   "topicsCompleted": [
     "big-o",
     "arrays",
@@ -17,12 +17,6 @@
   "nextRoadmapTopic": "monotonic-stack",
   "roadmapProgress": "9/59",
   "upcomingRevisions": [
-    {
-      "topic": "arrays",
-      "dueDay": 9,
-      "stage": 1,
-      "requested": false
-    },
     {
       "topic": "strings",
       "dueDay": 10,
@@ -70,13 +64,19 @@
       "dueDay": 22,
       "stage": 2,
       "requested": false
+    },
+    {
+      "topic": "arrays",
+      "dueDay": 23,
+      "stage": 2,
+      "requested": false
     }
   ],
   "stats": {
-    "lessons": 10,
+    "lessons": 11,
     "newTopicLessons": 9,
-    "revisionLessons": 1,
-    "problemsGenerated": 50,
+    "revisionLessons": 2,
+    "problemsGenerated": 55,
     "problemsCompleted": 0,
     "lessonsCompleted": 0
   },
@@ -706,6 +706,69 @@
       "path": "dsa/day-010",
       "generatedAt": "2026-10-19T05:04:21+00:00",
       "generationId": "8a2a98a8d25940aaab8ae7be2fc4c226",
+      "generator": {
+        "provider": "gemini",
+        "model": "gemini-3.8-flash",
+        "agentVersion": "1.0.0"
+      },
+      "requestRevision": false,
+      "revisionRequired": true
+    },
+    {
+      "day": 11,
+      "date": "2026-10-20",
+      "topic": "arrays",
+      "topicTitle": "Arrays",
+      "phase": "Fundamentals",
+      "kind": "revision",
+      "revisionStage": 1,
+      "difficulty": "progressive",
+      "language": "python",
+      "status": "generated",
+      "problemsGenerated": 5,
+      "problemsCompleted": 0,
+      "problems": [
+        {
+          "number": 1,
+          "title": "Sort Array by Parity II",
+          "difficulty": "Easy/Medium",
+          "concept": "two-pointers-invariants"
+        },
+        {
+          "number": 2,
+          "title": "Product of Array Except Self",
+          "difficulty": "Medium",
+          "concept": "prefix-suffix-products"
+        },
+        {
+          "number": 3,
+          "title": "Diagonal Matrix Traverse",
+          "difficulty": "Medium/Hard",
+          "concept": "2d-matrix-manipulation"
+        },
+        {
+          "number": 4,
+          "title": "Maximum Length of Repeated Subarray",
+          "difficulty": "Medium/Hard",
+          "concept": "dynamic-arrays"
+        },
+        {
+          "number": 5,
+          "title": "Largest Rectangle in Histogram",
+          "difficulty": "Hard",
+          "concept": "monotonic-stack-over-indices"
+        }
+      ],
+      "conceptsCovered": [
+        "dynamic-arrays",
+        "two-pointers-invariants",
+        "prefix-suffix-products",
+        "2d-matrix-manipulation",
+        "monotonic-stack-over-indices"
+      ],
+      "path": "dsa/day-011",
+      "generatedAt": "2026-10-20T05:19:08+00:00",
+      "generationId": "7b310d3a5ca04a59919295263660304c",
       "generator": {
         "provider": "gemini",
         "model": "gemini-3.8-flash",

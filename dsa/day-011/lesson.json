@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "day": 11,
+  "date": "2026-10-20",
+  "topic": "arrays",
+  "kind": "revision",
+  "language": "python",
+  "generator": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "agentVersion": "1.0.0"
+  },
+  "problems": [
+    {
+      "number": 1,
+      "title": "Sort Array by Parity II",
+      "difficulty": "Easy/Medium",
+      "concept": "two-pointers-invariants",
+      "exports": [
+        "sort_array_by_parity_ii"
+      ],
+      "files": {
+        "exercise": "exercises/problem-01.md",
+        "notes": "solutions/problem-01.md",
+        "solution": "solutions/problem_01.py",
+        "tests": "tests/test_problem_01.py",
+        "practice": "practice/problem_01.py"
+      },
+      "starterSha256": "c1e9d7551d5cedce248c6a1f318b435d5c441c3221d5e63ec096bb7a66546c6d",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 2,
+      "title": "Product of Array Except Self",
+      "difficulty": "Medium",
+      "concept": "prefix-suffix-products",
+      "exports": [
+        "product_except_self"
+      ],
+      "files": {
+        "exercise": "exercises/problem-02.md",
+        "notes": "solutions/problem-02.md",
+        "solution": "solutions/problem_02.py",
+        "tests": "tests/test_problem_02.py",
+        "practice": "practice/problem_02.py"
+      },
+      "starterSha256": "ec084b589e70e0005842f5e70e5a0dbf049fe1f7ac1c6c662d11aa70c3d770fa",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 3,
+      "title": "Diagonal Matrix Traverse",
+      "difficulty": "Medium/Hard",
+      "concept": "2d-matrix-manipulation",
+      "exports": [
+        "find_diagonal_order"
+      ],
+      "files": {
+        "exercise": "exercises/problem-03.md",
+        "notes": "solutions/problem-03.md",
+        "solution": "solutions/problem_03.py",
+        "tests": "tests/test_problem_03.py",
+        "practice": "practice/problem_03.py"
+      },
+      "starterSha256": "9db9f88221f23a3571f4ea49a5c26d7421a9cec721711a3a79022455d6961610",
+      "testsRun": 9,
+      "repairs": 0
+    },
+    {
+      "number": 4,
+      "title": "Maximum Length of Repeated Subarray",
+      "difficulty": "Medium/Hard",
+      "concept": "dynamic-arrays",
+      "exports": [
+        "find_length"
+      ],
+      "files": {
+        "exercise": "exercises/problem-04.md",
+        "notes": "solutions/problem-04.md",
+        "solution": "solutions/problem_04.py",
+        "tests": "tests/test_problem_04.py",
+        "practice": "practice/problem_04.py"
+      },
+      "starterSha256": "900efb65c216fd06196d316b7186b969e2cc552f3706ca58a87740e64f99da8a",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 5,
+      "title": "Largest Rectangle in Histogram",
+      "difficulty": "Hard",
+      "concept": "monotonic-stack-over-indices",
+      "exports": [
+        "largest_rectangle_area"
+      ],
+      "files": {
+        "exercise": "exercises/problem-05.md",
+        "notes": "solutions/problem-05.md",
+        "solution": "solutions/problem_05.py",
+        "tests": "tests/test_problem_05.py",
+        "practice": "practice/problem_05.py"
+      },
+      "starterSha256": "dbbc888945b47586a95a6b4ae80f332594dff09052ec625f57eadd4bff6ffd23",
+      "testsRun": 8,
+      "repairs": 0
+    }
+  ]
+}
