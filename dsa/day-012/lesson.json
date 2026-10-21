@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "day": 12,
+  "date": "2026-10-21",
+  "topic": "monotonic-stack",
+  "kind": "new",
+  "language": "python",
+  "generator": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "agentVersion": "1.0.0"
+  },
+  "problems": [
+    {
+      "number": 1,
+      "title": "Daily Temperatures",
+      "difficulty": "Easy",
+      "concept": "Next greater element distance using a monotonic decreasing stack",
+      "exports": [
+        "daily_temperatures"
+      ],
+      "files": {
+        "exercise": "exercises/problem-01.md",
+        "notes": "solutions/problem-01.md",
+        "solution": "solutions/problem_01.py",
+        "tests": "tests/test_problem_01.py",
+        "practice": "practice/problem_01.py"
+      },
+      "starterSha256": "7a73c747235c23b5296f3b310cd2436a8de4d9bbf917cded63c6a56ee7cdfad0",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 2,
+      "title": "Online Stock Span",
+      "difficulty": "Easy/Medium",
+      "concept": "Previous greater element tracking across a streaming sequence",
+      "exports": [
+        "StockSpanner"
+      ],
+      "files": {
+        "exercise": "exercises/problem-02.md",
+        "notes": "solutions/problem-02.md",
+        "solution": "solutions/problem_02.py",
+        "tests": "tests/test_problem_02.py",
+        "practice": "practice/problem_02.py"
+      },
+      "starterSha256": "afee45270065a1a0c44dabca6c6899960c7204bc8a56e6b345562b98386ffc97",
+      "testsRun": 7,
+      "repairs": 1
+    },
+    {
+      "number": 3,
+      "title": "Next Greater Element II (Circular Array)",
+      "difficulty": "Medium",
+      "concept": "Monotonic stack on circular / wrapped arrays",
+      "exports": [
+        "next_greater_elements"
+      ],
+      "files": {
+        "exercise": "exercises/problem-03.md",
+        "notes": "solutions/problem-03.md",
+        "solution": "solutions/problem_03.py",
+        "tests": "tests/test_problem_03.py",
+        "practice": "practice/problem_03.py"
+      },
+      "starterSha256": "f09b7c24e7b98b46200c410e0d7b0fe5245e1687d201280bc8bcaf441e280fd9",
+      "testsRun": 8,
+      "repairs": 0
+    },
+    {
+      "number": 4,
+      "title": "Largest Rectangle in Histogram",
+      "difficulty": "Medium/Hard",
+      "concept": "Finding left and right smaller boundaries to calculate maximal area",
+      "exports": [
+        "largest_rectangle_area"
+      ],
+      "files": {
+        "exercise": "exercises/problem-04.md",
+        "notes": "solutions/problem-04.md",
+        "solution": "solutions/problem_04.py",
+        "tests": "tests/test_problem_04.py",
+        "practice": "practice/problem_04.py"
+      },
+      "starterSha256": "3c9f1a84bf791d24b4d5e3dc71c39c4ddfe01fc0234810088c664253b4c35412",
+      "testsRun": 9,
+      "repairs": 0
+    },
+    {
+      "number": 5,
+      "title": "Sum of Subarray Minimums",
+      "difficulty": "Hard",
+      "concept": "Counting subarrays where each element is the minimum using PSE and NSE",
+      "exports": [
+        "sum_subarray_mins"
+      ],
+      "files": {
+        "exercise": "exercises/problem-05.md",
+        "notes": "solutions/problem-05.md",
+        "solution": "solutions/problem_05.py",
+        "tests": "tests/test_problem_05.py",
+        "practice": "practice/problem_05.py"
+      },
+      "starterSha256": "9ce90e96bae20a527b5f6d8dd08f3e90d9f6ffcb1d4eba7fce5e38c50e925179",
+      "testsRun": 8,
+      "repairs": 0
+    }
+  ]
+}

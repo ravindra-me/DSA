@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "currentDay": 11,
-  "lastLessonDate": "2026-10-20",
-  "currentTopic": "arrays",
+  "currentDay": 12,
+  "lastLessonDate": "2026-10-21",
+  "currentTopic": "monotonic-stack",
   "topicsCompleted": [
     "big-o",
     "arrays",
@@ -12,10 +12,11 @@
     "bit-manipulation",
     "linked-list",
     "linked-list-techniques",
-    "stack"
+    "stack",
+    "monotonic-stack"
   ],
-  "nextRoadmapTopic": "monotonic-stack",
-  "roadmapProgress": "9/59",
+  "nextRoadmapTopic": "queue",
+  "roadmapProgress": "10/59",
   "upcomingRevisions": [
     {
       "topic": "strings",
@@ -60,6 +61,12 @@
       "requested": false
     },
     {
+      "topic": "monotonic-stack",
+      "dueDay": 19,
+      "stage": 1,
+      "requested": false
+    },
+    {
       "topic": "big-o",
       "dueDay": 22,
       "stage": 2,
@@ -73,10 +80,10 @@
     }
   ],
   "stats": {
-    "lessons": 11,
-    "newTopicLessons": 9,
+    "lessons": 12,
+    "newTopicLessons": 10,
     "revisionLessons": 2,
-    "problemsGenerated": 55,
+    "problemsGenerated": 60,
     "problemsCompleted": 0,
     "lessonsCompleted": 0
   },
@@ -769,6 +776,70 @@
       "path": "dsa/day-011",
       "generatedAt": "2026-10-20T05:19:08+00:00",
       "generationId": "7b310d3a5ca04a59919295263660304c",
+      "generator": {
+        "provider": "gemini",
+        "model": "gemini-3.8-flash",
+        "agentVersion": "1.0.0"
+      },
+      "requestRevision": false,
+      "revisionRequired": true
+    },
+    {
+      "day": 12,
+      "date": "2026-10-21",
+      "topic": "monotonic-stack",
+      "topicTitle": "Monotonic Stack",
+      "phase": "Linear Data Structures",
+      "kind": "new",
+      "revisionStage": 0,
+      "difficulty": "progressive",
+      "language": "python",
+      "status": "generated",
+      "problemsGenerated": 5,
+      "problemsCompleted": 0,
+      "problems": [
+        {
+          "number": 1,
+          "title": "Daily Temperatures",
+          "difficulty": "Easy",
+          "concept": "Next greater element distance using a monotonic decreasing stack"
+        },
+        {
+          "number": 2,
+          "title": "Online Stock Span",
+          "difficulty": "Easy/Medium",
+          "concept": "Previous greater element tracking across a streaming sequence"
+        },
+        {
+          "number": 3,
+          "title": "Next Greater Element II (Circular Array)",
+          "difficulty": "Medium",
+          "concept": "Monotonic stack on circular / wrapped arrays"
+        },
+        {
+          "number": 4,
+          "title": "Largest Rectangle in Histogram",
+          "difficulty": "Medium/Hard",
+          "concept": "Finding left and right smaller boundaries to calculate maximal area"
+        },
+        {
+          "number": 5,
+          "title": "Sum of Subarray Minimums",
+          "difficulty": "Hard",
+          "concept": "Counting subarrays where each element is the minimum using PSE and NSE"
+        }
+      ],
+      "conceptsCovered": [
+        "Monotonic Stack",
+        "Next Greater Element",
+        "Previous Smaller Element",
+        "Stock Span Problem",
+        "Amortized Complexity Analysis",
+        "Histogram Maximum Area"
+      ],
+      "path": "dsa/day-012",
+      "generatedAt": "2026-10-21T05:07:42+00:00",
+      "generationId": "ae2902b9b6dd4f8084e2c19c7cf0bc2e",
       "generator": {
         "provider": "gemini",
         "model": "gemini-3.8-flash",
