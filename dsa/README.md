@@ -4,7 +4,7 @@ Generated automatically by the [DSA learning agent](../.github/agents/README.md)
 
 | Current day | Roadmap progress | Problems solved | Next new topic |
 |-------------|------------------|-----------------|----------------|
-| 12 | 10/59 topics | 0/60 | queue |
+| 13 | 11/59 topics | 0/65 | deque |
 
 ## Upcoming revisions
 
@@ -16,13 +16,14 @@ Generated automatically by the [DSA learning agent](../.github/agents/README.md)
 - `linked-list-techniques`: due on day 16
 - `stack`: due on day 17
 - `monotonic-stack`: due on day 19
+- `queue`: due on day 20
 - `big-o`: due on day 22
-- `arrays`: due on day 23
 
 ## All lessons
 
 | Day | Date | Topic | Type | Solved | Status |
 |-----|------|-------|------|--------|--------|
+| [13](day-013/README.md) | 2026-10-22 | Queue | New | 0/5 | generated |
 | [12](day-012/README.md) | 2026-10-21 | Monotonic Stack | New | 0/5 | generated |
 | [11](day-011/README.md) | 2026-10-20 | Arrays | Revision | 0/5 | generated |
 | [10](day-010/README.md) | 2026-10-19 | Stack | New | 0/5 | generated |

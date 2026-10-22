@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "day": 13,
+  "date": "2026-10-22",
+  "topic": "queue",
+  "kind": "new",
+  "language": "python",
+  "generator": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "agentVersion": "1.0.0"
+  },
+  "problems": [
+    {
+      "number": 1,
+      "title": "Design Circular Queue",
+      "difficulty": "Easy",
+      "concept": "Fixed-capacity circular buffer with modular arithmetic",
+      "exports": [
+        "CircularQueue"
+      ],
+      "files": {
+        "exercise": "exercises/problem-01.md",
+        "notes": "solutions/problem-01.md",
+        "solution": "solutions/problem_01.py",
+        "tests": "tests/test_problem_01.py",
+        "practice": "practice/problem_01.py"
+      },
+      "starterSha256": "13cf7f9e9076b8c7ae1c59683ec91a781ec9440aa52824cc99ac584ff619fdf3",
+      "testsRun": 6,
+      "repairs": 1
+    },
+    {
+      "number": 2,
+      "title": "Implement Queue using Stacks",
+      "difficulty": "Easy/Medium",
+      "concept": "Emulating FIFO behavior using two LIFO stacks",
+      "exports": [
+        "StackQueue"
+      ],
+      "files": {
+        "exercise": "exercises/problem-02.md",
+        "notes": "solutions/problem-02.md",
+        "solution": "solutions/problem_02.py",
+        "tests": "tests/test_problem_02.py",
+        "practice": "practice/problem_02.py"
+      },
+      "starterSha256": "c55196014f43b4b54ba72b2fc6f1d3b1dd8a2ae6a41a94a9846ab122c0144a90",
+      "testsRun": 6,
+      "repairs": 0
+    },
+    {
+      "number": 3,
+      "title": "Recent Calls Rate Limiter",
+      "difficulty": "Medium",
+      "concept": "Sliding window time-series queue",
+      "exports": [
+        "RecentCounter"
+      ],
+      "files": {
+        "exercise": "exercises/problem-03.md",
+        "notes": "solutions/problem-03.md",
+        "solution": "solutions/problem_03.py",
+        "tests": "tests/test_problem_03.py",
+        "practice": "practice/problem_03.py"
+      },
+      "starterSha256": "d1594042f7985370782dd4000306123f7f82ec75f2a0bc08bf695dc23f7d5147",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 4,
+      "title": "Predict the Winner of the Assembly",
+      "difficulty": "Medium/Hard",
+      "concept": "Round-robin queue simulation with priority/elimination dynamics",
+      "exports": [
+        "predict_party_victory"
+      ],
+      "files": {
+        "exercise": "exercises/problem-04.md",
+        "notes": "solutions/problem-04.md",
+        "solution": "solutions/problem_04.py",
+        "tests": "tests/test_problem_04.py",
+        "practice": "practice/problem_04.py"
+      },
+      "starterSha256": "84e99e0fe1d5deab267d479022b9bc4a7c7939b908ec96be2f19151e3e9b4bd4",
+      "testsRun": 8,
+      "repairs": 0
+    },
+    {
+      "number": 5,
+      "title": "Bounded Producer-Consumer Buffer Simulator",
+      "difficulty": "Hard",
+      "concept": "Bounded queue simulation with buffer overflow shedding and consumer latency",
+      "exports": [
+        "simulate_task_pipeline"
+      ],
+      "files": {
+        "exercise": "exercises/problem-05.md",
+        "notes": "solutions/problem-05.md",
+        "solution": "solutions/problem_05.py",
+        "tests": "tests/test_problem_05.py",
+        "practice": "practice/problem_05.py"
+      },
+      "starterSha256": "29aa68d7e24070af2bf4d1b5f1fc9701f80a7234a3e768ba9f50637da8a74e64",
+      "testsRun": 7,
+      "repairs": 0
+    }
+  ]
+}

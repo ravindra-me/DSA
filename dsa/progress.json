@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "currentDay": 12,
-  "lastLessonDate": "2026-10-21",
-  "currentTopic": "monotonic-stack",
+  "currentDay": 13,
+  "lastLessonDate": "2026-10-22",
+  "currentTopic": "queue",
   "topicsCompleted": [
     "big-o",
     "arrays",
@@ -13,10 +13,11 @@
     "linked-list",
     "linked-list-techniques",
     "stack",
-    "monotonic-stack"
+    "monotonic-stack",
+    "queue"
   ],
-  "nextRoadmapTopic": "queue",
-  "roadmapProgress": "10/59",
+  "nextRoadmapTopic": "deque",
+  "roadmapProgress": "11/59",
   "upcomingRevisions": [
     {
       "topic": "strings",
@@ -67,6 +68,12 @@
       "requested": false
     },
     {
+      "topic": "queue",
+      "dueDay": 20,
+      "stage": 1,
+      "requested": false
+    },
+    {
       "topic": "big-o",
       "dueDay": 22,
       "stage": 2,
@@ -80,10 +87,10 @@
     }
   ],
   "stats": {
-    "lessons": 12,
-    "newTopicLessons": 10,
+    "lessons": 13,
+    "newTopicLessons": 11,
     "revisionLessons": 2,
-    "problemsGenerated": 60,
+    "problemsGenerated": 65,
     "problemsCompleted": 0,
     "lessonsCompleted": 0
   },
@@ -840,6 +847,70 @@
       "path": "dsa/day-012",
       "generatedAt": "2026-10-21T05:07:42+00:00",
       "generationId": "ae2902b9b6dd4f8084e2c19c7cf0bc2e",
+      "generator": {
+        "provider": "gemini",
+        "model": "gemini-3.8-flash",
+        "agentVersion": "1.0.0"
+      },
+      "requestRevision": false,
+      "revisionRequired": true
+    },
+    {
+      "day": 13,
+      "date": "2026-10-22",
+      "topic": "queue",
+      "topicTitle": "Queue",
+      "phase": "Linear Data Structures",
+      "kind": "new",
+      "revisionStage": 0,
+      "difficulty": "progressive",
+      "language": "python",
+      "status": "generated",
+      "problemsGenerated": 5,
+      "problemsCompleted": 0,
+      "problems": [
+        {
+          "number": 1,
+          "title": "Design Circular Queue",
+          "difficulty": "Easy",
+          "concept": "Fixed-capacity circular buffer with modular arithmetic"
+        },
+        {
+          "number": 2,
+          "title": "Implement Queue using Stacks",
+          "difficulty": "Easy/Medium",
+          "concept": "Emulating FIFO behavior using two LIFO stacks"
+        },
+        {
+          "number": 3,
+          "title": "Recent Calls Rate Limiter",
+          "difficulty": "Medium",
+          "concept": "Sliding window time-series queue"
+        },
+        {
+          "number": 4,
+          "title": "Predict the Winner of the Assembly",
+          "difficulty": "Medium/Hard",
+          "concept": "Round-robin queue simulation with priority/elimination dynamics"
+        },
+        {
+          "number": 5,
+          "title": "Bounded Producer-Consumer Buffer Simulator",
+          "difficulty": "Hard",
+          "concept": "Bounded queue simulation with buffer overflow shedding and consumer latency"
+        }
+      ],
+      "conceptsCovered": [
+        "FIFO principle",
+        "Circular buffer (circular queue)",
+        "Modular arithmetic wrap-around",
+        "Two-stack queue and amortized analysis",
+        "Bounded queues and backpressure",
+        "Sliding-window time queues"
+      ],
+      "path": "dsa/day-013",
+      "generatedAt": "2026-10-22T05:19:47+00:00",
+      "generationId": "9e1512c1642040a6b35ec83f5594c059",
       "generator": {
         "provider": "gemini",
         "model": "gemini-3.8-flash",
