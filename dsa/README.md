@@ -4,11 +4,10 @@ Generated automatically by the [DSA learning agent](../.github/agents/README.md)
 
 | Current day | Roadmap progress | Problems solved | Next new topic |
 |-------------|------------------|-----------------|----------------|
-| 13 | 11/59 topics | 0/65 | deque |
+| 14 | 11/59 topics | 0/70 | deque |
 
 ## Upcoming revisions
 
-- `strings`: due on day 10
 - `recursion`: due on day 11
 - `math-basics`: due on day 12
 - `bit-manipulation`: due on day 13
@@ -18,11 +17,13 @@ Generated automatically by the [DSA learning agent](../.github/agents/README.md)
 - `monotonic-stack`: due on day 19
 - `queue`: due on day 20
 - `big-o`: due on day 22
+- `arrays`: due on day 23
 
 ## All lessons
 
 | Day | Date | Topic | Type | Solved | Status |
 |-----|------|-------|------|--------|--------|
+| [14](day-014/README.md) | 2026-10-23 | Strings | Revision | 0/5 | generated |
 | [13](day-013/README.md) | 2026-10-22 | Queue | New | 0/5 | generated |
 | [12](day-012/README.md) | 2026-10-21 | Monotonic Stack | New | 0/5 | generated |
 | [11](day-011/README.md) | 2026-10-20 | Arrays | Revision | 0/5 | generated |

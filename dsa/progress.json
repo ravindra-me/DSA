@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "currentDay": 13,
-  "lastLessonDate": "2026-10-22",
-  "currentTopic": "queue",
+  "currentDay": 14,
+  "lastLessonDate": "2026-10-23",
+  "currentTopic": "strings",
   "topicsCompleted": [
     "big-o",
     "arrays",
@@ -19,12 +19,6 @@
   "nextRoadmapTopic": "deque",
   "roadmapProgress": "11/59",
   "upcomingRevisions": [
-    {
-      "topic": "strings",
-      "dueDay": 10,
-      "stage": 1,
-      "requested": false
-    },
     {
       "topic": "recursion",
       "dueDay": 11,
@@ -84,13 +78,19 @@
       "dueDay": 23,
       "stage": 2,
       "requested": false
+    },
+    {
+      "topic": "strings",
+      "dueDay": 24,
+      "stage": 2,
+      "requested": false
     }
   ],
   "stats": {
-    "lessons": 13,
+    "lessons": 14,
     "newTopicLessons": 11,
-    "revisionLessons": 2,
-    "problemsGenerated": 65,
+    "revisionLessons": 3,
+    "problemsGenerated": 70,
     "problemsCompleted": 0,
     "lessonsCompleted": 0
   },
@@ -911,6 +911,69 @@
       "path": "dsa/day-013",
       "generatedAt": "2026-10-22T05:19:47+00:00",
       "generationId": "9e1512c1642040a6b35ec83f5594c059",
+      "generator": {
+        "provider": "gemini",
+        "model": "gemini-3.8-flash",
+        "agentVersion": "1.0.0"
+      },
+      "requestRevision": false,
+      "revisionRequired": true
+    },
+    {
+      "day": 14,
+      "date": "2026-10-23",
+      "topic": "strings",
+      "topicTitle": "Strings",
+      "phase": "Fundamentals",
+      "kind": "revision",
+      "revisionStage": 1,
+      "difficulty": "progressive",
+      "language": "python",
+      "status": "generated",
+      "problemsGenerated": 5,
+      "problemsCompleted": 0,
+      "problems": [
+        {
+          "number": 1,
+          "title": "Valid Palindrome II",
+          "difficulty": "Easy/Medium",
+          "concept": "Two-pointer symmetry check with single tolerance branch"
+        },
+        {
+          "number": 2,
+          "title": "Decode String",
+          "difficulty": "Medium",
+          "concept": "Stack-based nested string reconstruction"
+        },
+        {
+          "number": 3,
+          "title": "Find All Anagrams in a String",
+          "difficulty": "Medium/Hard",
+          "concept": "Fixed sliding window with character frequency signature"
+        },
+        {
+          "number": 4,
+          "title": "Remove Duplicate Letters to Form Smallest Subsequence",
+          "difficulty": "Medium/Hard",
+          "concept": "Monotonic stack with character frequency and seen tracking"
+        },
+        {
+          "number": 5,
+          "title": "Shortest Palindrome via Prefix Prepending",
+          "difficulty": "Hard",
+          "concept": "Finding the longest palindromic prefix using rolling hash or prefix-suffix matching"
+        }
+      ],
+      "conceptsCovered": [
+        "String Immutability and Memory",
+        "Efficient String Building",
+        "Two-Pointer Symmetrical Traversals",
+        "Anagram and Frequency Signatures",
+        "Stack-Assisted String Parsing and Transformations"
+      ],
+      "path": "dsa/day-014",
+      "generatedAt": "2026-10-23T05:14:35+00:00",
+      "generationId": "c1c5397436ba4e679786816504344067",
       "generator": {
         "provider": "gemini",
         "model": "gemini-3.8-flash",

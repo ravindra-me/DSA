@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "day": 14,
+  "date": "2026-10-23",
+  "topic": "strings",
+  "kind": "revision",
+  "language": "python",
+  "generator": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "agentVersion": "1.0.0"
+  },
+  "problems": [
+    {
+      "number": 1,
+      "title": "Valid Palindrome II",
+      "difficulty": "Easy/Medium",
+      "concept": "Two-pointer symmetry check with single tolerance branch",
+      "exports": [
+        "valid_palindrome_after_one_removal"
+      ],
+      "files": {
+        "exercise": "exercises/problem-01.md",
+        "notes": "solutions/problem-01.md",
+        "solution": "solutions/problem_01.py",
+        "tests": "tests/test_problem_01.py",
+        "practice": "practice/problem_01.py"
+      },
+      "starterSha256": "c49025d6ed4630843da774aa9417017e979b46e7f973aa8cd30350f14920490e",
+      "testsRun": 8,
+      "repairs": 0
+    },
+    {
+      "number": 2,
+      "title": "Decode String",
+      "difficulty": "Medium",
+      "concept": "Stack-based nested string reconstruction",
+      "exports": [
+        "decode_string"
+      ],
+      "files": {
+        "exercise": "exercises/problem-02.md",
+        "notes": "solutions/problem-02.md",
+        "solution": "solutions/problem_02.py",
+        "tests": "tests/test_problem_02.py",
+        "practice": "practice/problem_02.py"
+      },
+      "starterSha256": "4be70f4181fd33dbf0f48b3b6ddd12b719fbd8613f40c774c604fa1e8185e12c",
+      "testsRun": 8,
+      "repairs": 0
+    },
+    {
+      "number": 3,
+      "title": "Find All Anagrams in a String",
+      "difficulty": "Medium/Hard",
+      "concept": "Fixed sliding window with character frequency signature",
+      "exports": [
+        "find_all_anagrams"
+      ],
+      "files": {
+        "exercise": "exercises/problem-03.md",
+        "notes": "solutions/problem-03.md",
+        "solution": "solutions/problem_03.py",
+        "tests": "tests/test_problem_03.py",
+        "practice": "practice/problem_03.py"
+      },
+      "starterSha256": "aea189ec47eddedcb77a8c99484b9153992a607f73cd96991653e0ba821c48be",
+      "testsRun": 8,
+      "repairs": 0
+    },
+    {
+      "number": 4,
+      "title": "Remove Duplicate Letters to Form Smallest Subsequence",
+      "difficulty": "Medium/Hard",
+      "concept": "Monotonic stack with character frequency and seen tracking",
+      "exports": [
+        "remove_duplicate_letters"
+      ],
+      "files": {
+        "exercise": "exercises/problem-04.md",
+        "notes": "solutions/problem-04.md",
+        "solution": "solutions/problem_04.py",
+        "tests": "tests/test_problem_04.py",
+        "practice": "practice/problem_04.py"
+      },
+      "starterSha256": "04d006acf2c16456e63919a483cebe17d4081e48da8c09e6c2632a55d295f2aa",
+      "testsRun": 9,
+      "repairs": 0
+    },
+    {
+      "number": 5,
+      "title": "Shortest Palindrome via Prefix Prepending",
+      "difficulty": "Hard",
+      "concept": "Finding the longest palindromic prefix using rolling hash or prefix-suffix matching",
+      "exports": [
+        "shortest_palindrome"
+      ],
+      "files": {
+        "exercise": "exercises/problem-05.md",
+        "notes": "solutions/problem-05.md",
+        "solution": "solutions/problem_05.py",
+        "tests": "tests/test_problem_05.py",
+        "practice": "practice/problem_05.py"
+      },
+      "starterSha256": "84b145e78b26e5a71e6012536dfab6cdd4a0cb826050c06af4a1aa75691d591f",
+      "testsRun": 7,
+      "repairs": 0
+    }
+  ]
+}
