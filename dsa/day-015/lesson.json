@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "day": 15,
+  "date": "2026-10-24",
+  "topic": "deque",
+  "kind": "new",
+  "language": "python",
+  "generator": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "agentVersion": "1.0.0"
+  },
+  "problems": [
+    {
+      "number": 1,
+      "title": "Validate Deque Palindrome",
+      "difficulty": "Easy",
+      "concept": "Double-ended queue operations",
+      "exports": [
+        "is_deque_palindrome"
+      ],
+      "files": {
+        "exercise": "exercises/problem-01.md",
+        "notes": "solutions/problem-01.md",
+        "solution": "solutions/problem_01.py",
+        "tests": "tests/test_problem_01.py",
+        "practice": "practice/problem_01.py"
+      },
+      "starterSha256": "972930e8c03a3fd70dcdadc67a3b365db8d9392abe2f892efebca1cfe85c7cef",
+      "testsRun": 8,
+      "repairs": 0
+    },
+    {
+      "number": 2,
+      "title": "Recent Calls Counter",
+      "difficulty": "Easy/Medium",
+      "concept": "Fixed time-window eviction using deque",
+      "exports": [
+        "RecentCounter"
+      ],
+      "files": {
+        "exercise": "exercises/problem-02.md",
+        "notes": "solutions/problem-02.md",
+        "solution": "solutions/problem_02.py",
+        "tests": "tests/test_problem_02.py",
+        "practice": "practice/problem_02.py"
+      },
+      "starterSha256": "2b23d1adb9599ab4d0a11421022e3576e3756b49eb7de31ff452555a14cc41b3",
+      "testsRun": 6,
+      "repairs": 0
+    },
+    {
+      "number": 3,
+      "title": "Sliding Window Maximum",
+      "difficulty": "Medium",
+      "concept": "Monotonic Decreasing Deque",
+      "exports": [
+        "max_sliding_window"
+      ],
+      "files": {
+        "exercise": "exercises/problem-03.md",
+        "notes": "solutions/problem-03.md",
+        "solution": "solutions/problem_03.py",
+        "tests": "tests/test_problem_03.py",
+        "practice": "practice/problem_03.py"
+      },
+      "starterSha256": "44add23f5b09ddc0e72fa91d1e28b66674230b5610b86e5e3c3117eda866f3f3",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 4,
+      "title": "Longest Continuous Subarray With Absolute Diff <= Limit",
+      "difficulty": "Medium/Hard",
+      "concept": "Dual Monotonic Deques (Min & Max)",
+      "exports": [
+        "longest_subarray_with_limit"
+      ],
+      "files": {
+        "exercise": "exercises/problem-04.md",
+        "notes": "solutions/problem-04.md",
+        "solution": "solutions/problem_04.py",
+        "tests": "tests/test_problem_04.py",
+        "practice": "practice/problem_04.py"
+      },
+      "starterSha256": "83c043f64c7c73521aaabc97c027f8d6d06a389856a305644c00b7dfe35f491e",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 5,
+      "title": "Shortest Subarray with Sum at Least K",
+      "difficulty": "Hard",
+      "concept": "Prefix Sums with Monotonic Queue Optimization",
+      "exports": [
+        "shortest_subarray_at_least_k"
+      ],
+      "files": {
+        "exercise": "exercises/problem-05.md",
+        "notes": "solutions/problem-05.md",
+        "solution": "solutions/problem_05.py",
+        "tests": "tests/test_problem_05.py",
+        "practice": "practice/problem_05.py"
+      },
+      "starterSha256": "976957c116a254b254b47267644fe65c4c2169897a3dac313d842d8832472802",
+      "testsRun": 6,
+      "repairs": 0
+    }
+  ]
+}

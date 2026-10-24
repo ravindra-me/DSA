@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "currentDay": 14,
-  "lastLessonDate": "2026-10-23",
-  "currentTopic": "strings",
+  "currentDay": 15,
+  "lastLessonDate": "2026-10-24",
+  "currentTopic": "deque",
   "topicsCompleted": [
     "big-o",
     "arrays",
@@ -14,10 +14,11 @@
     "linked-list-techniques",
     "stack",
     "monotonic-stack",
-    "queue"
+    "queue",
+    "deque"
   ],
-  "nextRoadmapTopic": "deque",
-  "roadmapProgress": "11/59",
+  "nextRoadmapTopic": "hash-map",
+  "roadmapProgress": "12/59",
   "upcomingRevisions": [
     {
       "topic": "recursion",
@@ -74,6 +75,12 @@
       "requested": false
     },
     {
+      "topic": "deque",
+      "dueDay": 22,
+      "stage": 1,
+      "requested": false
+    },
+    {
       "topic": "arrays",
       "dueDay": 23,
       "stage": 2,
@@ -87,10 +94,10 @@
     }
   ],
   "stats": {
-    "lessons": 14,
-    "newTopicLessons": 11,
+    "lessons": 15,
+    "newTopicLessons": 12,
     "revisionLessons": 3,
-    "problemsGenerated": 70,
+    "problemsGenerated": 75,
     "problemsCompleted": 0,
     "lessonsCompleted": 0
   },
@@ -974,6 +981,69 @@
       "path": "dsa/day-014",
       "generatedAt": "2026-10-23T05:14:35+00:00",
       "generationId": "c1c5397436ba4e679786816504344067",
+      "generator": {
+        "provider": "gemini",
+        "model": "gemini-3.8-flash",
+        "agentVersion": "1.0.0"
+      },
+      "requestRevision": false,
+      "revisionRequired": true
+    },
+    {
+      "day": 15,
+      "date": "2026-10-24",
+      "topic": "deque",
+      "topicTitle": "Deque & Monotonic Queue",
+      "phase": "Linear Data Structures",
+      "kind": "new",
+      "revisionStage": 0,
+      "difficulty": "progressive",
+      "language": "python",
+      "status": "generated",
+      "problemsGenerated": 5,
+      "problemsCompleted": 0,
+      "problems": [
+        {
+          "number": 1,
+          "title": "Validate Deque Palindrome",
+          "difficulty": "Easy",
+          "concept": "Double-ended queue operations"
+        },
+        {
+          "number": 2,
+          "title": "Recent Calls Counter",
+          "difficulty": "Easy/Medium",
+          "concept": "Fixed time-window eviction using deque"
+        },
+        {
+          "number": 3,
+          "title": "Sliding Window Maximum",
+          "difficulty": "Medium",
+          "concept": "Monotonic Decreasing Deque"
+        },
+        {
+          "number": 4,
+          "title": "Longest Continuous Subarray With Absolute Diff <= Limit",
+          "difficulty": "Medium/Hard",
+          "concept": "Dual Monotonic Deques (Min & Max)"
+        },
+        {
+          "number": 5,
+          "title": "Shortest Subarray with Sum at Least K",
+          "difficulty": "Hard",
+          "concept": "Prefix Sums with Monotonic Queue Optimization"
+        }
+      ],
+      "conceptsCovered": [
+        "collections.deque",
+        "Double-ended operations",
+        "Monotonic Deque",
+        "Sliding Window Extrema",
+        "Amortized O(1) analysis"
+      ],
+      "path": "dsa/day-015",
+      "generatedAt": "2026-10-24T05:06:45+00:00",
+      "generationId": "c21535e65bd648c9a472786232468125",
       "generator": {
         "provider": "gemini",
         "model": "gemini-3.8-flash",
