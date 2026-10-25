@@ -4,7 +4,7 @@ Generated automatically by the [DSA learning agent](../.github/agents/README.md)
 
 | Current day | Roadmap progress | Problems solved | Next new topic |
 |-------------|------------------|-----------------|----------------|
-| 15 | 12/59 topics | 0/75 | hash-map |
+| 16 | 13/59 topics | 0/80 | hash-set |
 
 ## Upcoming revisions
 
@@ -23,6 +23,7 @@ Generated automatically by the [DSA learning agent](../.github/agents/README.md)
 
 | Day | Date | Topic | Type | Solved | Status |
 |-----|------|-------|------|--------|--------|
+| [16](day-016/README.md) | 2026-10-25 | HashMap | New | 0/5 | generated |
 | [15](day-015/README.md) | 2026-10-24 | Deque & Monotonic Queue | New | 0/5 | generated |
 | [14](day-014/README.md) | 2026-10-23 | Strings | Revision | 0/5 | generated |
 | [13](day-013/README.md) | 2026-10-22 | Queue | New | 0/5 | generated |

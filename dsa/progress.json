@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "currentDay": 15,
-  "lastLessonDate": "2026-10-24",
-  "currentTopic": "deque",
+  "currentDay": 16,
+  "lastLessonDate": "2026-10-25",
+  "currentTopic": "hash-map",
   "topicsCompleted": [
     "big-o",
     "arrays",
@@ -15,10 +15,11 @@
     "stack",
     "monotonic-stack",
     "queue",
-    "deque"
+    "deque",
+    "hash-map"
   ],
-  "nextRoadmapTopic": "hash-map",
-  "roadmapProgress": "12/59",
+  "nextRoadmapTopic": "hash-set",
+  "roadmapProgress": "13/59",
   "upcomingRevisions": [
     {
       "topic": "recursion",
@@ -87,6 +88,12 @@
       "requested": false
     },
     {
+      "topic": "hash-map",
+      "dueDay": 23,
+      "stage": 1,
+      "requested": false
+    },
+    {
       "topic": "strings",
       "dueDay": 24,
       "stage": 2,
@@ -94,10 +101,10 @@
     }
   ],
   "stats": {
-    "lessons": 15,
-    "newTopicLessons": 12,
+    "lessons": 16,
+    "newTopicLessons": 13,
     "revisionLessons": 3,
-    "problemsGenerated": 75,
+    "problemsGenerated": 80,
     "problemsCompleted": 0,
     "lessonsCompleted": 0
   },
@@ -1044,6 +1051,69 @@
       "path": "dsa/day-015",
       "generatedAt": "2026-10-24T05:06:45+00:00",
       "generationId": "c21535e65bd648c9a472786232468125",
+      "generator": {
+        "provider": "gemini",
+        "model": "gemini-3.8-flash",
+        "agentVersion": "1.0.0"
+      },
+      "requestRevision": false,
+      "revisionRequired": true
+    },
+    {
+      "day": 16,
+      "date": "2026-10-25",
+      "topic": "hash-map",
+      "topicTitle": "HashMap",
+      "phase": "Hashing",
+      "kind": "new",
+      "revisionStage": 0,
+      "difficulty": "progressive",
+      "language": "python",
+      "status": "generated",
+      "problemsGenerated": 5,
+      "problemsCompleted": 0,
+      "problems": [
+        {
+          "number": 1,
+          "title": "Two Sum Target Difference",
+          "difficulty": "Easy",
+          "concept": "Complement lookup via HashMap"
+        },
+        {
+          "number": 2,
+          "title": "Group Anagrams by Signature",
+          "difficulty": "Easy/Medium",
+          "concept": "Hashing composite keys / canonical representation"
+        },
+        {
+          "number": 3,
+          "title": "Longest Consecutive Sequence",
+          "difficulty": "Medium",
+          "concept": "O(1) set/map lookup for connected component discovery"
+        },
+        {
+          "number": 4,
+          "title": "Subarray Sum Divisible by K",
+          "difficulty": "Medium/Hard",
+          "concept": "Prefix sum with modulo hashing"
+        },
+        {
+          "number": 5,
+          "title": "Design a Chained Hash Map with Dynamic Rehashing",
+          "difficulty": "Hard",
+          "concept": "Internal hash map architecture: buckets, collisions, load factor, rehashing"
+        }
+      ],
+      "conceptsCovered": [
+        "Hash functions and bucket indexing",
+        "Collision resolution mechanisms",
+        "Load factor and rehashing",
+        "Complement lookup / Two-Sum pattern",
+        "Frequency counting and grouping with keys"
+      ],
+      "path": "dsa/day-016",
+      "generatedAt": "2026-10-25T07:57:37+00:00",
+      "generationId": "5b483a070d6f489d9d70f6c6688d336a",
       "generator": {
         "provider": "gemini",
         "model": "gemini-3.8-flash",
