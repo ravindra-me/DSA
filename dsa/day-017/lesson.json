@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "day": 17,
+  "date": "2026-10-26",
+  "topic": "recursion",
+  "kind": "revision",
+  "language": "python",
+  "generator": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash",
+    "agentVersion": "1.0.0"
+  },
+  "problems": [
+    {
+      "number": 1,
+      "title": "Pairwise Swap Linked List Nodes",
+      "difficulty": "Easy/Medium",
+      "concept": "Recursive structural rewiring on singly linked lists",
+      "exports": [
+        "ListNode",
+        "swap_pairs"
+      ],
+      "files": {
+        "exercise": "exercises/problem-01.md",
+        "notes": "solutions/problem-01.md",
+        "solution": "solutions/problem_01.py",
+        "tests": "tests/test_problem_01.py",
+        "practice": "practice/problem_01.py"
+      },
+      "starterSha256": "2adf0d899c194e9cd61d408dc97b258d438a8631d9c69d67078387c699e063b0",
+      "testsRun": 8,
+      "repairs": 1
+    },
+    {
+      "number": 2,
+      "title": "Reverse a Stack Using Pure Recursion",
+      "difficulty": "Medium",
+      "concept": "Auxiliary stack frame state preservation without loops or external collections",
+      "exports": [
+        "reverse_stack"
+      ],
+      "files": {
+        "exercise": "exercises/problem-02.md",
+        "notes": "solutions/problem-02.md",
+        "solution": "solutions/problem_02.py",
+        "tests": "tests/test_problem_02.py",
+        "practice": "practice/problem_02.py"
+      },
+      "starterSha256": "2f4587fc54f6ecb9c97b74fa25bcec7a717baf852b0d75bd9290d2556571e1f5",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 3,
+      "title": "Decode String with Nested Multipliers",
+      "difficulty": "Medium/Hard",
+      "concept": "Recursive descent parsing with call-stack index tracking",
+      "exports": [
+        "decode_string"
+      ],
+      "files": {
+        "exercise": "exercises/problem-03.md",
+        "notes": "solutions/problem-03.md",
+        "solution": "solutions/problem_03.py",
+        "tests": "tests/test_problem_03.py",
+        "practice": "practice/problem_03.py"
+      },
+      "starterSha256": "0859d3274fd9b9290aa61ed65721a5a5aa67f9e0dd951ddb0aa0915da4cf5859",
+      "testsRun": 8,
+      "repairs": 0
+    },
+    {
+      "number": 4,
+      "title": "Find K-th Symbol in Grammar",
+      "difficulty": "Medium/Hard",
+      "concept": "Divide-and-conquer on virtual binary trees with logarithmic recursion",
+      "exports": [
+        "kth_grammar"
+      ],
+      "files": {
+        "exercise": "exercises/problem-04.md",
+        "notes": "solutions/problem-04.md",
+        "solution": "solutions/problem_04.py",
+        "tests": "tests/test_problem_04.py",
+        "practice": "practice/problem_04.py"
+      },
+      "starterSha256": "9c756bba666af43b87b85916df83dd2b52d4099e0e7f05dfd8dc14e17c27a74c",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 5,
+      "title": "Parse and Evaluate Boolean Expressions",
+      "difficulty": "Hard",
+      "concept": "Complex multi-branch recursive AST evaluation",
+      "exports": [
+        "parse_bool_expr"
+      ],
+      "files": {
+        "exercise": "exercises/problem-05.md",
+        "notes": "solutions/problem-05.md",
+        "solution": "solutions/problem_05.py",
+        "tests": "tests/test_problem_05.py",
+        "practice": "practice/problem_05.py"
+      },
+      "starterSha256": "c3793c2ecd2cb852af4ec2b1bfb5a65d2c3914eeac6de9ab13df2af04f96fc66",
+      "testsRun": 6,
+      "repairs": 0
+    }
+  ]
+}

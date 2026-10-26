@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "currentDay": 16,
-  "lastLessonDate": "2026-10-25",
-  "currentTopic": "hash-map",
+  "currentDay": 17,
+  "lastLessonDate": "2026-10-26",
+  "currentTopic": "recursion",
   "topicsCompleted": [
     "big-o",
     "arrays",
@@ -21,12 +21,6 @@
   "nextRoadmapTopic": "hash-set",
   "roadmapProgress": "13/59",
   "upcomingRevisions": [
-    {
-      "topic": "recursion",
-      "dueDay": 11,
-      "stage": 1,
-      "requested": false
-    },
     {
       "topic": "math-basics",
       "dueDay": 12,
@@ -98,13 +92,19 @@
       "dueDay": 24,
       "stage": 2,
       "requested": false
+    },
+    {
+      "topic": "recursion",
+      "dueDay": 25,
+      "stage": 2,
+      "requested": false
     }
   ],
   "stats": {
-    "lessons": 16,
+    "lessons": 17,
     "newTopicLessons": 13,
-    "revisionLessons": 3,
-    "problemsGenerated": 80,
+    "revisionLessons": 4,
+    "problemsGenerated": 85,
     "problemsCompleted": 0,
     "lessonsCompleted": 0
   },
@@ -1117,6 +1117,70 @@
       "generator": {
         "provider": "gemini",
         "model": "gemini-3.8-flash",
+        "agentVersion": "1.0.0"
+      },
+      "requestRevision": false,
+      "revisionRequired": true
+    },
+    {
+      "day": 17,
+      "date": "2026-10-26",
+      "topic": "recursion",
+      "topicTitle": "Recursion",
+      "phase": "Fundamentals",
+      "kind": "revision",
+      "revisionStage": 1,
+      "difficulty": "progressive",
+      "language": "python",
+      "status": "generated",
+      "problemsGenerated": 5,
+      "problemsCompleted": 0,
+      "problems": [
+        {
+          "number": 1,
+          "title": "Pairwise Swap Linked List Nodes",
+          "difficulty": "Easy/Medium",
+          "concept": "Recursive structural rewiring on singly linked lists"
+        },
+        {
+          "number": 2,
+          "title": "Reverse a Stack Using Pure Recursion",
+          "difficulty": "Medium",
+          "concept": "Auxiliary stack frame state preservation without loops or external collections"
+        },
+        {
+          "number": 3,
+          "title": "Decode String with Nested Multipliers",
+          "difficulty": "Medium/Hard",
+          "concept": "Recursive descent parsing with call-stack index tracking"
+        },
+        {
+          "number": 4,
+          "title": "Find K-th Symbol in Grammar",
+          "difficulty": "Medium/Hard",
+          "concept": "Divide-and-conquer on virtual binary trees with logarithmic recursion"
+        },
+        {
+          "number": 5,
+          "title": "Parse and Evaluate Boolean Expressions",
+          "difficulty": "Hard",
+          "concept": "Complex multi-branch recursive AST evaluation"
+        }
+      ],
+      "conceptsCovered": [
+        "Base cases and termination proofs",
+        "Call stack frame mechanics",
+        "Recursion trees and depth analysis",
+        "Accumulators and tail call structuring",
+        "Recursive linked structure mutation",
+        "Divide and conquer decomposition"
+      ],
+      "path": "dsa/day-017",
+      "generatedAt": "2026-10-26T05:50:32+00:00",
+      "generationId": "caf34bb8583648f68baf9ecb97301fc1",
+      "generator": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
         "agentVersion": "1.0.0"
       },
       "requestRevision": false,

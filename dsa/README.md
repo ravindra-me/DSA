@@ -4,11 +4,10 @@ Generated automatically by the [DSA learning agent](../.github/agents/README.md)
 
 | Current day | Roadmap progress | Problems solved | Next new topic |
 |-------------|------------------|-----------------|----------------|
-| 16 | 13/59 topics | 0/80 | hash-set |
+| 17 | 13/59 topics | 0/85 | hash-set |
 
 ## Upcoming revisions
 
-- `recursion`: due on day 11
 - `math-basics`: due on day 12
 - `bit-manipulation`: due on day 13
 - `linked-list`: due on day 14
@@ -18,11 +17,13 @@ Generated automatically by the [DSA learning agent](../.github/agents/README.md)
 - `queue`: due on day 20
 - `big-o`: due on day 22
 - `deque`: due on day 22
+- `arrays`: due on day 23
 
 ## All lessons
 
 | Day | Date | Topic | Type | Solved | Status |
 |-----|------|-------|------|--------|--------|
+| [17](day-017/README.md) | 2026-10-26 | Recursion | Revision | 0/5 | generated |
 | [16](day-016/README.md) | 2026-10-25 | HashMap | New | 0/5 | generated |
 | [15](day-015/README.md) | 2026-10-24 | Deque & Monotonic Queue | New | 0/5 | generated |
 | [14](day-014/README.md) | 2026-10-23 | Strings | Revision | 0/5 | generated |
