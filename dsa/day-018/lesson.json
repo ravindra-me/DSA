@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "day": 18,
+  "date": "2026-10-27",
+  "topic": "hash-set",
+  "kind": "new",
+  "language": "python",
+  "generator": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash",
+    "agentVersion": "1.0.0"
+  },
+  "problems": [
+    {
+      "number": 1,
+      "title": "Contains Duplicate",
+      "difficulty": "Easy",
+      "concept": "Basic membership testing and seen-before pattern",
+      "exports": [
+        "contains_duplicate"
+      ],
+      "files": {
+        "exercise": "exercises/problem-01.md",
+        "notes": "solutions/problem-01.md",
+        "solution": "solutions/problem_01.py",
+        "tests": "tests/test_problem_01.py",
+        "practice": "practice/problem_01.py"
+      },
+      "starterSha256": "2d5c7630831893b10026aa0165ec0bc5ef6c06531b6b82dc8acc5965dcc92547",
+      "testsRun": 8,
+      "repairs": 0
+    },
+    {
+      "number": 2,
+      "title": "Intersection of Two Arrays",
+      "difficulty": "Easy/Medium",
+      "concept": "Set deduplication and set intersection",
+      "exports": [
+        "intersection"
+      ],
+      "files": {
+        "exercise": "exercises/problem-02.md",
+        "notes": "solutions/problem-02.md",
+        "solution": "solutions/problem_02.py",
+        "tests": "tests/test_problem_02.py",
+        "practice": "practice/problem_02.py"
+      },
+      "starterSha256": "e1730f54dafaf9b259dee89ff5bff1e8f2970666e3accd18c194325df99a5aa9",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 3,
+      "title": "Happy Number",
+      "difficulty": "Medium",
+      "concept": "Cycle detection via a seen-before state set",
+      "exports": [
+        "is_happy"
+      ],
+      "files": {
+        "exercise": "exercises/problem-03.md",
+        "notes": "solutions/problem-03.md",
+        "solution": "solutions/problem_03.py",
+        "tests": "tests/test_problem_03.py",
+        "practice": "practice/problem_03.py"
+      },
+      "starterSha256": "b6eb613efc257cdaae11a90ec513059c4b7ca87bb241db3639320dc44b2fd37e",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 4,
+      "title": "Longest Consecutive Sequence",
+      "difficulty": "Medium/Hard",
+      "concept": "O(1) lookups and sequence boundary detection with HashSet",
+      "exports": [
+        "longest_consecutive"
+      ],
+      "files": {
+        "exercise": "exercises/problem-04.md",
+        "notes": "solutions/problem-04.md",
+        "solution": "solutions/problem_04.py",
+        "tests": "tests/test_problem_04.py",
+        "practice": "practice/problem_04.py"
+      },
+      "starterSha256": "0192c740af8a7a38b2aa908a84e5879198663926ae38d41be29c4d286d6ab7e8",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 5,
+      "title": "Minimum Genetic Mutation",
+      "difficulty": "Hard",
+      "concept": "HashSet for graph search state verification and visited tracking",
+      "exports": [
+        "min_mutation"
+      ],
+      "files": {
+        "exercise": "exercises/problem-05.md",
+        "notes": "solutions/problem-05.md",
+        "solution": "solutions/problem_05.py",
+        "tests": "tests/test_problem_05.py",
+        "practice": "practice/problem_05.py"
+      },
+      "starterSha256": "7ce05620a2650860684b5937325ecd01d0cd2473b43c94d9313a0a0ad1a61cb7",
+      "testsRun": 7,
+      "repairs": 0
+    }
+  ]
+}

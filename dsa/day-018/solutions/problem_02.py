@@ -1,0 +1,8 @@
+def intersection(nums1: list[int], nums2: list[int]) -> list[int]:
+    """Return sorted list of unique common elements between nums1 and nums2."""
+    set1 = set(nums1)
+    result = set()
+    for num in nums2:
+        if num in set1:
+            result.add(num)
+    return sorted(result)

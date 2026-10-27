@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "currentDay": 17,
-  "lastLessonDate": "2026-10-26",
-  "currentTopic": "recursion",
+  "currentDay": 18,
+  "lastLessonDate": "2026-10-27",
+  "currentTopic": "hash-set",
   "topicsCompleted": [
     "big-o",
     "arrays",
@@ -16,10 +16,11 @@
     "monotonic-stack",
     "queue",
     "deque",
-    "hash-map"
+    "hash-map",
+    "hash-set"
   ],
-  "nextRoadmapTopic": "hash-set",
-  "roadmapProgress": "13/59",
+  "nextRoadmapTopic": "frequency-counting",
+  "roadmapProgress": "14/59",
   "upcomingRevisions": [
     {
       "topic": "math-basics",
@@ -98,13 +99,19 @@
       "dueDay": 25,
       "stage": 2,
       "requested": false
+    },
+    {
+      "topic": "hash-set",
+      "dueDay": 25,
+      "stage": 1,
+      "requested": false
     }
   ],
   "stats": {
-    "lessons": 17,
-    "newTopicLessons": 13,
+    "lessons": 18,
+    "newTopicLessons": 14,
     "revisionLessons": 4,
-    "problemsGenerated": 85,
+    "problemsGenerated": 90,
     "problemsCompleted": 0,
     "lessonsCompleted": 0
   },
@@ -1178,6 +1185,69 @@
       "path": "dsa/day-017",
       "generatedAt": "2026-10-26T05:50:32+00:00",
       "generationId": "caf34bb8583648f68baf9ecb97301fc1",
+      "generator": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "agentVersion": "1.0.0"
+      },
+      "requestRevision": false,
+      "revisionRequired": true
+    },
+    {
+      "day": 18,
+      "date": "2026-10-27",
+      "topic": "hash-set",
+      "topicTitle": "HashSet",
+      "phase": "Hashing",
+      "kind": "new",
+      "revisionStage": 0,
+      "difficulty": "progressive",
+      "language": "python",
+      "status": "generated",
+      "problemsGenerated": 5,
+      "problemsCompleted": 0,
+      "problems": [
+        {
+          "number": 1,
+          "title": "Contains Duplicate",
+          "difficulty": "Easy",
+          "concept": "Basic membership testing and seen-before pattern"
+        },
+        {
+          "number": 2,
+          "title": "Intersection of Two Arrays",
+          "difficulty": "Easy/Medium",
+          "concept": "Set deduplication and set intersection"
+        },
+        {
+          "number": 3,
+          "title": "Happy Number",
+          "difficulty": "Medium",
+          "concept": "Cycle detection via a seen-before state set"
+        },
+        {
+          "number": 4,
+          "title": "Longest Consecutive Sequence",
+          "difficulty": "Medium/Hard",
+          "concept": "O(1) lookups and sequence boundary detection with HashSet"
+        },
+        {
+          "number": 5,
+          "title": "Minimum Genetic Mutation",
+          "difficulty": "Hard",
+          "concept": "HashSet for graph search state verification and visited tracking"
+        }
+      ],
+      "conceptsCovered": [
+        "hash-set",
+        "membership-testing",
+        "deduplication",
+        "seen-before-pattern",
+        "set-operations"
+      ],
+      "path": "dsa/day-018",
+      "generatedAt": "2026-10-27T05:41:06+00:00",
+      "generationId": "1e25c57205204dfbbb4695e5bd647274",
       "generator": {
         "provider": "gemini",
         "model": "gemini-3.5-flash",
