@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "day": 19,
+  "date": "2026-10-28",
+  "topic": "frequency-counting",
+  "kind": "new",
+  "language": "python",
+  "generator": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "agentVersion": "1.0.0"
+  },
+  "problems": [
+    {
+      "number": 1,
+      "title": "Valid Anagram Parity",
+      "difficulty": "Easy",
+      "concept": "frequency counting and balance comparison",
+      "exports": [
+        "is_anagram"
+      ],
+      "files": {
+        "exercise": "exercises/problem-01.md",
+        "notes": "solutions/problem-01.md",
+        "solution": "solutions/problem_01.py",
+        "tests": "tests/test_problem_01.py",
+        "practice": "practice/problem_01.py"
+      },
+      "starterSha256": "9064d404649d533ed6f6139e6c1dc3059fa11e8fe88906b6672a4eed0bdf9d0c",
+      "testsRun": 8,
+      "repairs": 0
+    },
+    {
+      "number": 2,
+      "title": "Majority Element Identifier",
+      "difficulty": "Easy/Medium",
+      "concept": "majority element counting and Boyer-Moore voting",
+      "exports": [
+        "majority_element"
+      ],
+      "files": {
+        "exercise": "exercises/problem-02.md",
+        "notes": "solutions/problem-02.md",
+        "solution": "solutions/problem_02.py",
+        "tests": "tests/test_problem_02.py",
+        "practice": "practice/problem_02.py"
+      },
+      "starterSha256": "b40322efd5f934be66d7618d6ab6faf3b584fae31a7b62183ee9f96ab11d9e2c",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 3,
+      "title": "Group Anagrams by Count Signature",
+      "difficulty": "Medium",
+      "concept": "canonical frequency signatures as dictionary keys",
+      "exports": [
+        "group_anagrams"
+      ],
+      "files": {
+        "exercise": "exercises/problem-03.md",
+        "notes": "solutions/problem-03.md",
+        "solution": "solutions/problem_03.py",
+        "tests": "tests/test_problem_03.py",
+        "practice": "practice/problem_03.py"
+      },
+      "starterSha256": "801e912afa540505f6e3c643e30514a1a92f55655c09ecc0bea7be8657cdf424",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 4,
+      "title": "Top K Frequent Elements via Bucketing",
+      "difficulty": "Medium/Hard",
+      "concept": "bucket sort by frequency",
+      "exports": [
+        "top_k_frequent"
+      ],
+      "files": {
+        "exercise": "exercises/problem-04.md",
+        "notes": "solutions/problem-04.md",
+        "solution": "solutions/problem_04.py",
+        "tests": "tests/test_problem_04.py",
+        "practice": "practice/problem_04.py"
+      },
+      "starterSha256": "7d377c56c9d03044c75ca743b6a6a3d56296fba09588b05a3de5cd3c7a62c56a",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 5,
+      "title": "Minimum Window Anagram Substring",
+      "difficulty": "Hard",
+      "concept": "dynamic frequency matching over sliding windows",
+      "exports": [
+        "find_anagrams"
+      ],
+      "files": {
+        "exercise": "exercises/problem-05.md",
+        "notes": "solutions/problem-05.md",
+        "solution": "solutions/problem_05.py",
+        "tests": "tests/test_problem_05.py",
+        "practice": "practice/problem_05.py"
+      },
+      "starterSha256": "7d854d33963f7ff5ff9efa228c8ebf4a998b3be7ba093b8d8f7c2d1828276713",
+      "testsRun": 8,
+      "repairs": 0
+    }
+  ]
+}

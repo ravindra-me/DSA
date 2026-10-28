@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "currentDay": 18,
-  "lastLessonDate": "2026-10-27",
-  "currentTopic": "hash-set",
+  "currentDay": 19,
+  "lastLessonDate": "2026-10-28",
+  "currentTopic": "frequency-counting",
   "topicsCompleted": [
     "big-o",
     "arrays",
@@ -17,10 +17,11 @@
     "queue",
     "deque",
     "hash-map",
-    "hash-set"
+    "hash-set",
+    "frequency-counting"
   ],
-  "nextRoadmapTopic": "frequency-counting",
-  "roadmapProgress": "14/59",
+  "nextRoadmapTopic": "prefix-suffix",
+  "roadmapProgress": "15/59",
   "upcomingRevisions": [
     {
       "topic": "math-basics",
@@ -105,13 +106,19 @@
       "dueDay": 25,
       "stage": 1,
       "requested": false
+    },
+    {
+      "topic": "frequency-counting",
+      "dueDay": 26,
+      "stage": 1,
+      "requested": false
     }
   ],
   "stats": {
-    "lessons": 18,
-    "newTopicLessons": 14,
+    "lessons": 19,
+    "newTopicLessons": 15,
     "revisionLessons": 4,
-    "problemsGenerated": 90,
+    "problemsGenerated": 95,
     "problemsCompleted": 0,
     "lessonsCompleted": 0
   },
@@ -1251,6 +1258,69 @@
       "generator": {
         "provider": "gemini",
         "model": "gemini-3.5-flash",
+        "agentVersion": "1.0.0"
+      },
+      "requestRevision": false,
+      "revisionRequired": true
+    },
+    {
+      "day": 19,
+      "date": "2026-10-28",
+      "topic": "frequency-counting",
+      "topicTitle": "Frequency Counting",
+      "phase": "Hashing",
+      "kind": "new",
+      "revisionStage": 0,
+      "difficulty": "progressive",
+      "language": "python",
+      "status": "generated",
+      "problemsGenerated": 5,
+      "problemsCompleted": 0,
+      "problems": [
+        {
+          "number": 1,
+          "title": "Valid Anagram Parity",
+          "difficulty": "Easy",
+          "concept": "frequency counting and balance comparison"
+        },
+        {
+          "number": 2,
+          "title": "Majority Element Identifier",
+          "difficulty": "Easy/Medium",
+          "concept": "majority element counting and Boyer-Moore voting"
+        },
+        {
+          "number": 3,
+          "title": "Group Anagrams by Count Signature",
+          "difficulty": "Medium",
+          "concept": "canonical frequency signatures as dictionary keys"
+        },
+        {
+          "number": 4,
+          "title": "Top K Frequent Elements via Bucketing",
+          "difficulty": "Medium/Hard",
+          "concept": "bucket sort by frequency"
+        },
+        {
+          "number": 5,
+          "title": "Minimum Window Anagram Substring",
+          "difficulty": "Hard",
+          "concept": "dynamic frequency matching over sliding windows"
+        }
+      ],
+      "conceptsCovered": [
+        "Frequency table construction",
+        "Tuple signatures for anagram grouping",
+        "Boyer-Moore voting algorithm",
+        "Bucket sort by frequency",
+        "Sliding window frequency tracking"
+      ],
+      "path": "dsa/day-019",
+      "generatedAt": "2026-10-28T06:28:38+00:00",
+      "generationId": "e31117576c7440b98f07f61d415da932",
+      "generator": {
+        "provider": "gemini",
+        "model": "gemini-3.8-flash",
         "agentVersion": "1.0.0"
       },
       "requestRevision": false,
