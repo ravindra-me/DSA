@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "day": 20,
+  "date": "2026-10-29",
+  "topic": "math-basics",
+  "kind": "revision",
+  "language": "python",
+  "generator": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "agentVersion": "1.0.0"
+  },
+  "problems": [
+    {
+      "number": 1,
+      "title": "Subarray Sum Divisibility Counter",
+      "difficulty": "Easy/Medium",
+      "concept": "Modular Arithmetic with Hash Map Prefix Sums",
+      "exports": [
+        "count_subarrays_divisible"
+      ],
+      "files": {
+        "exercise": "exercises/problem-01.md",
+        "notes": "solutions/problem-01.md",
+        "solution": "solutions/problem_01.py",
+        "tests": "tests/test_problem_01.py",
+        "practice": "practice/problem_01.py"
+      },
+      "starterSha256": "21e12b259690ac6ed0dd8bc7e5a55f5316704c54053f71578dc0a03de83ed3bf",
+      "testsRun": 8,
+      "repairs": 0
+    },
+    {
+      "number": 2,
+      "title": "Kth Digit of a Geometric Product",
+      "difficulty": "Medium",
+      "concept": "Fast Modular Exponentiation and Logarithmic Math",
+      "exports": [
+        "kth_digit_geometric_product"
+      ],
+      "files": {
+        "exercise": "exercises/problem-02.md",
+        "notes": "solutions/problem-02.md",
+        "solution": "solutions/problem_02.py",
+        "tests": "tests/test_problem_02.py",
+        "practice": "practice/problem_02.py"
+      },
+      "starterSha256": "b89cd2ceacfe4f8d993f2e4565506b11590aea449b22d2bd7a4e1a655f19bbaf",
+      "testsRun": 8,
+      "repairs": 0
+    },
+    {
+      "number": 3,
+      "title": "Coprime Component Groups",
+      "difficulty": "Medium/Hard",
+      "concept": "GCD & Prime Factorization Graph Reduction",
+      "exports": [
+        "largest_coprime_component"
+      ],
+      "files": {
+        "exercise": "exercises/problem-03.md",
+        "notes": "solutions/problem-03.md",
+        "solution": "solutions/problem_03.py",
+        "tests": "tests/test_problem_03.py",
+        "practice": "practice/problem_03.py"
+      },
+      "starterSha256": "0c0c7554c9fd8eb93134b2c5116628bd774bf6453e84ac03116f97915eb418db",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 4,
+      "title": "Prime Digit Circular Shifts",
+      "difficulty": "Medium/Hard",
+      "concept": "Sieve of Eratosthenes & Digit Manipulation",
+      "exports": [
+        "count_circular_primes"
+      ],
+      "files": {
+        "exercise": "exercises/problem-04.md",
+        "notes": "solutions/problem-04.md",
+        "solution": "solutions/problem_04.py",
+        "tests": "tests/test_problem_04.py",
+        "practice": "practice/problem_04.py"
+      },
+      "starterSha256": "971fe02a174d5e7ff6e8510ebced58808560fcd94bfb9e4357ca50f2185e8760",
+      "testsRun": 6,
+      "repairs": 0
+    },
+    {
+      "number": 5,
+      "title": "Modular Combination Sequence Queries",
+      "difficulty": "Hard",
+      "concept": "Modular Arithmetic, Factorial Precomputation & Fermat's Inverse",
+      "exports": [
+        "batch_combinations_modulo"
+      ],
+      "files": {
+        "exercise": "exercises/problem-05.md",
+        "notes": "solutions/problem-05.md",
+        "solution": "solutions/problem_05.py",
+        "tests": "tests/test_problem_05.py",
+        "practice": "practice/problem_05.py"
+      },
+      "starterSha256": "bbda0665b58113d2ca2d9804faebb65f9fc98db6182141a00cf1058422811852",
+      "testsRun": 6,
+      "repairs": 0
+    }
+  ]
+}

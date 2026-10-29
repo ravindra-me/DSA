@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "currentDay": 19,
-  "lastLessonDate": "2026-10-28",
-  "currentTopic": "frequency-counting",
+  "currentDay": 20,
+  "lastLessonDate": "2026-10-29",
+  "currentTopic": "math-basics",
   "topicsCompleted": [
     "big-o",
     "arrays",
@@ -23,12 +23,6 @@
   "nextRoadmapTopic": "prefix-suffix",
   "roadmapProgress": "15/59",
   "upcomingRevisions": [
-    {
-      "topic": "math-basics",
-      "dueDay": 12,
-      "stage": 1,
-      "requested": false
-    },
     {
       "topic": "bit-manipulation",
       "dueDay": 13,
@@ -108,6 +102,12 @@
       "requested": false
     },
     {
+      "topic": "math-basics",
+      "dueDay": 26,
+      "stage": 2,
+      "requested": false
+    },
+    {
       "topic": "frequency-counting",
       "dueDay": 26,
       "stage": 1,
@@ -115,10 +115,10 @@
     }
   ],
   "stats": {
-    "lessons": 19,
+    "lessons": 20,
     "newTopicLessons": 15,
-    "revisionLessons": 4,
-    "problemsGenerated": 95,
+    "revisionLessons": 5,
+    "problemsGenerated": 100,
     "problemsCompleted": 0,
     "lessonsCompleted": 0
   },
@@ -1318,6 +1318,70 @@
       "path": "dsa/day-019",
       "generatedAt": "2026-10-28T06:28:38+00:00",
       "generationId": "e31117576c7440b98f07f61d415da932",
+      "generator": {
+        "provider": "gemini",
+        "model": "gemini-3.8-flash",
+        "agentVersion": "1.0.0"
+      },
+      "requestRevision": false,
+      "revisionRequired": true
+    },
+    {
+      "day": 20,
+      "date": "2026-10-29",
+      "topic": "math-basics",
+      "topicTitle": "Basic Mathematics for DSA",
+      "phase": "Fundamentals",
+      "kind": "revision",
+      "revisionStage": 1,
+      "difficulty": "progressive",
+      "language": "python",
+      "status": "generated",
+      "problemsGenerated": 5,
+      "problemsCompleted": 0,
+      "problems": [
+        {
+          "number": 1,
+          "title": "Subarray Sum Divisibility Counter",
+          "difficulty": "Easy/Medium",
+          "concept": "Modular Arithmetic with Hash Map Prefix Sums"
+        },
+        {
+          "number": 2,
+          "title": "Kth Digit of a Geometric Product",
+          "difficulty": "Medium",
+          "concept": "Fast Modular Exponentiation and Logarithmic Math"
+        },
+        {
+          "number": 3,
+          "title": "Coprime Component Groups",
+          "difficulty": "Medium/Hard",
+          "concept": "GCD & Prime Factorization Graph Reduction"
+        },
+        {
+          "number": 4,
+          "title": "Prime Digit Circular Shifts",
+          "difficulty": "Medium/Hard",
+          "concept": "Sieve of Eratosthenes & Digit Manipulation"
+        },
+        {
+          "number": 5,
+          "title": "Modular Combination Sequence Queries",
+          "difficulty": "Hard",
+          "concept": "Modular Arithmetic, Factorial Precomputation & Fermat's Inverse"
+        }
+      ],
+      "conceptsCovered": [
+        "Euclidean GCD",
+        "LCM",
+        "Binary Exponentiation",
+        "Sieve of Eratosthenes",
+        "Modular Arithmetic & Inverses",
+        "Digit Manipulation"
+      ],
+      "path": "dsa/day-020",
+      "generatedAt": "2026-10-29T06:41:17+00:00",
+      "generationId": "8e1a219044124d3f98f0d70d40eddd9a",
       "generator": {
         "provider": "gemini",
         "model": "gemini-3.8-flash",

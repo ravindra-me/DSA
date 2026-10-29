@@ -4,11 +4,10 @@ Generated automatically by the [DSA learning agent](../.github/agents/README.md)
 
 | Current day | Roadmap progress | Problems solved | Next new topic |
 |-------------|------------------|-----------------|----------------|
-| 19 | 15/59 topics | 0/95 | prefix-suffix |
+| 20 | 15/59 topics | 0/100 | prefix-suffix |
 
 ## Upcoming revisions
 
-- `math-basics`: due on day 12
 - `bit-manipulation`: due on day 13
 - `linked-list`: due on day 14
 - `linked-list-techniques`: due on day 16
@@ -18,11 +17,13 @@ Generated automatically by the [DSA learning agent](../.github/agents/README.md)
 - `big-o`: due on day 22
 - `deque`: due on day 22
 - `arrays`: due on day 23
+- `hash-map`: due on day 23
 
 ## All lessons
 
 | Day | Date | Topic | Type | Solved | Status |
 |-----|------|-------|------|--------|--------|
+| [20](day-020/README.md) | 2026-10-29 | Basic Mathematics for DSA | Revision | 0/5 | generated |
 | [19](day-019/README.md) | 2026-10-28 | Frequency Counting | New | 0/5 | generated |
 | [18](day-018/README.md) | 2026-10-27 | HashSet | New | 0/5 | generated |
 | [17](day-017/README.md) | 2026-10-26 | Recursion | Revision | 0/5 | generated |
