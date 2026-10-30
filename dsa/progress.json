@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "currentDay": 20,
-  "lastLessonDate": "2026-10-29",
-  "currentTopic": "math-basics",
+  "currentDay": 21,
+  "lastLessonDate": "2026-10-30",
+  "currentTopic": "prefix-suffix",
   "topicsCompleted": [
     "big-o",
     "arrays",
@@ -18,10 +18,11 @@
     "deque",
     "hash-map",
     "hash-set",
-    "frequency-counting"
+    "frequency-counting",
+    "prefix-suffix"
   ],
-  "nextRoadmapTopic": "prefix-suffix",
-  "roadmapProgress": "15/59",
+  "nextRoadmapTopic": "two-pointers",
+  "roadmapProgress": "16/59",
   "upcomingRevisions": [
     {
       "topic": "bit-manipulation",
@@ -112,13 +113,19 @@
       "dueDay": 26,
       "stage": 1,
       "requested": false
+    },
+    {
+      "topic": "prefix-suffix",
+      "dueDay": 28,
+      "stage": 1,
+      "requested": false
     }
   ],
   "stats": {
-    "lessons": 20,
-    "newTopicLessons": 15,
+    "lessons": 21,
+    "newTopicLessons": 16,
     "revisionLessons": 5,
-    "problemsGenerated": 100,
+    "problemsGenerated": 105,
     "problemsCompleted": 0,
     "lessonsCompleted": 0
   },
@@ -1382,6 +1389,69 @@
       "path": "dsa/day-020",
       "generatedAt": "2026-10-29T06:41:17+00:00",
       "generationId": "8e1a219044124d3f98f0d70d40eddd9a",
+      "generator": {
+        "provider": "gemini",
+        "model": "gemini-3.8-flash",
+        "agentVersion": "1.0.0"
+      },
+      "requestRevision": false,
+      "revisionRequired": true
+    },
+    {
+      "day": 21,
+      "date": "2026-10-30",
+      "topic": "prefix-suffix",
+      "topicTitle": "Prefix & Suffix Techniques",
+      "phase": "Hashing",
+      "kind": "new",
+      "revisionStage": 0,
+      "difficulty": "progressive",
+      "language": "python",
+      "status": "generated",
+      "problemsGenerated": 5,
+      "problemsCompleted": 0,
+      "problems": [
+        {
+          "number": 1,
+          "title": "Immutable Range Sum Query",
+          "difficulty": "Easy",
+          "concept": "1D Prefix Sum"
+        },
+        {
+          "number": 2,
+          "title": "Product of Array Except Self",
+          "difficulty": "Easy/Medium",
+          "concept": "Prefix-Suffix Accumulation"
+        },
+        {
+          "number": 3,
+          "title": "Subarray Sum Equals K",
+          "difficulty": "Medium",
+          "concept": "Prefix Sum with Hash Map"
+        },
+        {
+          "number": 4,
+          "title": "2D Matrix Block Sum Queries",
+          "difficulty": "Medium/Hard",
+          "concept": "2D Prefix Sum (Integral Image)"
+        },
+        {
+          "number": 5,
+          "title": "Corporate Flight Bookings",
+          "difficulty": "Hard",
+          "concept": "Difference Array"
+        }
+      ],
+      "conceptsCovered": [
+        "1D Prefix Sum",
+        "Prefix-Suffix Accumulation",
+        "Prefix Sum with Hash Map",
+        "2D Prefix Sum (Integral Image)",
+        "Difference Array"
+      ],
+      "path": "dsa/day-021",
+      "generatedAt": "2026-10-30T06:16:15+00:00",
+      "generationId": "317eaec65669481499d978dd5d6f1761",
       "generator": {
         "provider": "gemini",
         "model": "gemini-3.8-flash",
