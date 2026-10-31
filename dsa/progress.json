@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "currentDay": 21,
-  "lastLessonDate": "2026-10-30",
-  "currentTopic": "prefix-suffix",
+  "currentDay": 22,
+  "lastLessonDate": "2026-10-31",
+  "currentTopic": "two-pointers",
   "topicsCompleted": [
     "big-o",
     "arrays",
@@ -19,10 +19,11 @@
     "hash-map",
     "hash-set",
     "frequency-counting",
-    "prefix-suffix"
+    "prefix-suffix",
+    "two-pointers"
   ],
-  "nextRoadmapTopic": "two-pointers",
-  "roadmapProgress": "16/59",
+  "nextRoadmapTopic": "sliding-window",
+  "roadmapProgress": "17/59",
   "upcomingRevisions": [
     {
       "topic": "bit-manipulation",
@@ -119,13 +120,19 @@
       "dueDay": 28,
       "stage": 1,
       "requested": false
+    },
+    {
+      "topic": "two-pointers",
+      "dueDay": 29,
+      "stage": 1,
+      "requested": false
     }
   ],
   "stats": {
-    "lessons": 21,
-    "newTopicLessons": 16,
+    "lessons": 22,
+    "newTopicLessons": 17,
     "revisionLessons": 5,
-    "problemsGenerated": 105,
+    "problemsGenerated": 110,
     "problemsCompleted": 0,
     "lessonsCompleted": 0
   },
@@ -1452,6 +1459,69 @@
       "path": "dsa/day-021",
       "generatedAt": "2026-10-30T06:16:15+00:00",
       "generationId": "317eaec65669481499d978dd5d6f1761",
+      "generator": {
+        "provider": "gemini",
+        "model": "gemini-3.8-flash",
+        "agentVersion": "1.0.0"
+      },
+      "requestRevision": false,
+      "revisionRequired": true
+    },
+    {
+      "day": 22,
+      "date": "2026-10-31",
+      "topic": "two-pointers",
+      "topicTitle": "Two Pointers",
+      "phase": "Core Array Patterns",
+      "kind": "new",
+      "revisionStage": 0,
+      "difficulty": "progressive",
+      "language": "python",
+      "status": "generated",
+      "problemsGenerated": 5,
+      "problemsCompleted": 0,
+      "problems": [
+        {
+          "number": 1,
+          "title": "Valid Palindrome with Alphanumeric Filtering",
+          "difficulty": "Easy",
+          "concept": "Opposite-direction pointers with conditional filtering"
+        },
+        {
+          "number": 2,
+          "title": "Remove Duplicates from Sorted Array II",
+          "difficulty": "Easy/Medium",
+          "concept": "Same-direction read/write pointers with frequency thresholding"
+        },
+        {
+          "number": 3,
+          "title": "Two Sum II - Input Array Is Sorted",
+          "difficulty": "Medium",
+          "concept": "Opposite-direction convergent search on sorted sequences"
+        },
+        {
+          "number": 4,
+          "title": "Sort Colors (Dutch National Flag)",
+          "difficulty": "Medium/Hard",
+          "concept": "Three-way partitioning using multi-pointer invariants"
+        },
+        {
+          "number": 5,
+          "title": "Container With Most Water",
+          "difficulty": "Hard",
+          "concept": "Greedy area maximization via inward converging pointers"
+        }
+      ],
+      "conceptsCovered": [
+        "Opposite-direction two pointers",
+        "Same-direction two pointers (read/write)",
+        "In-place array partitioning",
+        "Duplicate handling with two pointers",
+        "Greedy area maximization via inward pointers"
+      ],
+      "path": "dsa/day-022",
+      "generatedAt": "2026-10-31T06:41:15+00:00",
+      "generationId": "9560ec26dfc54037932c24feb748c7d2",
       "generator": {
         "provider": "gemini",
         "model": "gemini-3.8-flash",

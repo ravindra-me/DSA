@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "day": 22,
+  "date": "2026-10-31",
+  "topic": "two-pointers",
+  "kind": "new",
+  "language": "python",
+  "generator": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "agentVersion": "1.0.0"
+  },
+  "problems": [
+    {
+      "number": 1,
+      "title": "Valid Palindrome with Alphanumeric Filtering",
+      "difficulty": "Easy",
+      "concept": "Opposite-direction pointers with conditional filtering",
+      "exports": [
+        "is_valid_palindrome"
+      ],
+      "files": {
+        "exercise": "exercises/problem-01.md",
+        "notes": "solutions/problem-01.md",
+        "solution": "solutions/problem_01.py",
+        "tests": "tests/test_problem_01.py",
+        "practice": "practice/problem_01.py"
+      },
+      "starterSha256": "84b6441f45273cbd596ace49055f8a70073516565d17fda2bc662221ed78a58e",
+      "testsRun": 8,
+      "repairs": 1
+    },
+    {
+      "number": 2,
+      "title": "Remove Duplicates from Sorted Array II",
+      "difficulty": "Easy/Medium",
+      "concept": "Same-direction read/write pointers with frequency thresholding",
+      "exports": [
+        "remove_duplicates_at_most_two"
+      ],
+      "files": {
+        "exercise": "exercises/problem-02.md",
+        "notes": "solutions/problem-02.md",
+        "solution": "solutions/problem_02.py",
+        "tests": "tests/test_problem_02.py",
+        "practice": "practice/problem_02.py"
+      },
+      "starterSha256": "dfbbcb3cf6202c2340f7c05b21ac0211694126b02cf7e8da518ee37d3fd39462",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 3,
+      "title": "Two Sum II - Input Array Is Sorted",
+      "difficulty": "Medium",
+      "concept": "Opposite-direction convergent search on sorted sequences",
+      "exports": [
+        "two_sum_sorted"
+      ],
+      "files": {
+        "exercise": "exercises/problem-03.md",
+        "notes": "solutions/problem-03.md",
+        "solution": "solutions/problem_03.py",
+        "tests": "tests/test_problem_03.py",
+        "practice": "practice/problem_03.py"
+      },
+      "starterSha256": "571c41967dbe0ebdfe8fc06d4ea9b68520d7e6f3e92f09545c49cb23976f1d48",
+      "testsRun": 8,
+      "repairs": 1
+    },
+    {
+      "number": 4,
+      "title": "Sort Colors (Dutch National Flag)",
+      "difficulty": "Medium/Hard",
+      "concept": "Three-way partitioning using multi-pointer invariants",
+      "exports": [
+        "sort_colors"
+      ],
+      "files": {
+        "exercise": "exercises/problem-04.md",
+        "notes": "solutions/problem-04.md",
+        "solution": "solutions/problem_04.py",
+        "tests": "tests/test_problem_04.py",
+        "practice": "practice/problem_04.py"
+      },
+      "starterSha256": "79c6e4a36f33d9ba707cd20f2c2af8b812d1d06db1b23c0e165fbdd5bd2ea46a",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 5,
+      "title": "Container With Most Water",
+      "difficulty": "Hard",
+      "concept": "Greedy area maximization via inward converging pointers",
+      "exports": [
+        "max_area"
+      ],
+      "files": {
+        "exercise": "exercises/problem-05.md",
+        "notes": "solutions/problem-05.md",
+        "solution": "solutions/problem_05.py",
+        "tests": "tests/test_problem_05.py",
+        "practice": "practice/problem_05.py"
+      },
+      "starterSha256": "a49fefa8d56a3b256e36e5dc916eb92d1f90d6c8ebf5a60502b68a46fe53709c",
+      "testsRun": 7,
+      "repairs": 0
+    }
+  ]
+}

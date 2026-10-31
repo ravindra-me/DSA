@@ -4,7 +4,7 @@ Generated automatically by the [DSA learning agent](../.github/agents/README.md)
 
 | Current day | Roadmap progress | Problems solved | Next new topic |
 |-------------|------------------|-----------------|----------------|
-| 21 | 16/59 topics | 0/105 | two-pointers |
+| 22 | 17/59 topics | 0/110 | sliding-window |
 
 ## Upcoming revisions
 
@@ -23,6 +23,7 @@ Generated automatically by the [DSA learning agent](../.github/agents/README.md)
 
 | Day | Date | Topic | Type | Solved | Status |
 |-----|------|-------|------|--------|--------|
+| [22](day-022/README.md) | 2026-10-31 | Two Pointers | New | 0/5 | generated |
 | [21](day-021/README.md) | 2026-10-30 | Prefix & Suffix Techniques | New | 0/5 | generated |
 | [20](day-020/README.md) | 2026-10-29 | Basic Mathematics for DSA | Revision | 0/5 | generated |
 | [19](day-019/README.md) | 2026-10-28 | Frequency Counting | New | 0/5 | generated |
