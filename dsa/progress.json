@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "currentDay": 22,
-  "lastLessonDate": "2026-10-31",
-  "currentTopic": "two-pointers",
+  "currentDay": 23,
+  "lastLessonDate": "2026-11-01",
+  "currentTopic": "bit-manipulation",
   "topicsCompleted": [
     "big-o",
     "arrays",
@@ -25,12 +25,6 @@
   "nextRoadmapTopic": "sliding-window",
   "roadmapProgress": "17/59",
   "upcomingRevisions": [
-    {
-      "topic": "bit-manipulation",
-      "dueDay": 13,
-      "stage": 1,
-      "requested": false
-    },
     {
       "topic": "linked-list",
       "dueDay": 14,
@@ -116,6 +110,12 @@
       "requested": false
     },
     {
+      "topic": "bit-manipulation",
+      "dueDay": 27,
+      "stage": 2,
+      "requested": false
+    },
+    {
       "topic": "prefix-suffix",
       "dueDay": 28,
       "stage": 1,
@@ -129,10 +129,10 @@
     }
   ],
   "stats": {
-    "lessons": 22,
+    "lessons": 23,
     "newTopicLessons": 17,
-    "revisionLessons": 5,
-    "problemsGenerated": 110,
+    "revisionLessons": 6,
+    "problemsGenerated": 115,
     "problemsCompleted": 0,
     "lessonsCompleted": 0
   },
@@ -1525,6 +1525,69 @@
       "generator": {
         "provider": "gemini",
         "model": "gemini-3.8-flash",
+        "agentVersion": "1.0.0"
+      },
+      "requestRevision": false,
+      "revisionRequired": true
+    },
+    {
+      "day": 23,
+      "date": "2026-11-01",
+      "topic": "bit-manipulation",
+      "topicTitle": "Bit Manipulation",
+      "phase": "Fundamentals",
+      "kind": "revision",
+      "revisionStage": 1,
+      "difficulty": "progressive",
+      "language": "python",
+      "status": "generated",
+      "problemsGenerated": 5,
+      "problemsCompleted": 0,
+      "problems": [
+        {
+          "number": 1,
+          "title": "Subsets Generation via Bitmasks",
+          "difficulty": "Easy/Medium",
+          "concept": "Power set generation using binary integers as inclusion/exclusion masks"
+        },
+        {
+          "number": 2,
+          "title": "Single Number II: Elements Appearing Three Times",
+          "difficulty": "Medium",
+          "concept": "Bit counting modulo 3 / finite-state machine with bitwise logic"
+        },
+        {
+          "number": 3,
+          "title": "Sum of Hamming Distances of All Pairs",
+          "difficulty": "Medium/Hard",
+          "concept": "Bit-by-bit contribution counting across array elements"
+        },
+        {
+          "number": 4,
+          "title": "Find Longest Awesome Substring",
+          "difficulty": "Medium/Hard",
+          "concept": "Prefix parity bitmask combined with hash map for palindrome eligibility"
+        },
+        {
+          "number": 5,
+          "title": "Minimum XOR Sum of Two Arrays",
+          "difficulty": "Hard",
+          "concept": "Bitmask Dynamic Programming over permutations"
+        }
+      ],
+      "conceptsCovered": [
+        "Bitwise operators (&, |, ^, ~, <<, >>)",
+        "Brian Kernighan's bit-clearing invariant",
+        "Lowest set bit extraction (n & -n)",
+        "Prefix bitmasks with hash tables",
+        "Bit-level aggregation and contribution counting"
+      ],
+      "path": "dsa/day-023",
+      "generatedAt": "2026-11-01T06:56:47+00:00",
+      "generationId": "307ddb3df7c745adb9063b6ce90572e0",
+      "generator": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
         "agentVersion": "1.0.0"
       },
       "requestRevision": false,

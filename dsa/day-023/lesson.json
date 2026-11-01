@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "day": 23,
+  "date": "2026-11-01",
+  "topic": "bit-manipulation",
+  "kind": "revision",
+  "language": "python",
+  "generator": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash",
+    "agentVersion": "1.0.0"
+  },
+  "problems": [
+    {
+      "number": 1,
+      "title": "Subsets Generation via Bitmasks",
+      "difficulty": "Easy/Medium",
+      "concept": "Power set generation using binary integers as inclusion/exclusion masks",
+      "exports": [
+        "subsets_bitmask"
+      ],
+      "files": {
+        "exercise": "exercises/problem-01.md",
+        "notes": "solutions/problem-01.md",
+        "solution": "solutions/problem_01.py",
+        "tests": "tests/test_problem_01.py",
+        "practice": "practice/problem_01.py"
+      },
+      "starterSha256": "b5c74100ce875499c05da248ba288b80adba9bddec92bd8f06b22568c0e66b7b",
+      "testsRun": 6,
+      "repairs": 0
+    },
+    {
+      "number": 2,
+      "title": "Single Number II: Elements Appearing Three Times",
+      "difficulty": "Medium",
+      "concept": "Bit counting modulo 3 / finite-state machine with bitwise logic",
+      "exports": [
+        "single_number_ii"
+      ],
+      "files": {
+        "exercise": "exercises/problem-02.md",
+        "notes": "solutions/problem-02.md",
+        "solution": "solutions/problem_02.py",
+        "tests": "tests/test_problem_02.py",
+        "practice": "practice/problem_02.py"
+      },
+      "starterSha256": "34ad9d19ac2569038f39dfeba02cc25a9518f8202c645a8ff61fcbb38f7e61e9",
+      "testsRun": 6,
+      "repairs": 0
+    },
+    {
+      "number": 3,
+      "title": "Sum of Hamming Distances of All Pairs",
+      "difficulty": "Medium/Hard",
+      "concept": "Bit-by-bit contribution counting across array elements",
+      "exports": [
+        "total_hamming_distance"
+      ],
+      "files": {
+        "exercise": "exercises/problem-03.md",
+        "notes": "solutions/problem-03.md",
+        "solution": "solutions/problem_03.py",
+        "tests": "tests/test_problem_03.py",
+        "practice": "practice/problem_03.py"
+      },
+      "starterSha256": "14d3c43d21f4833b21fee6d59ab25460ea84fad6b822df5c15957a6fbfd6ce63",
+      "testsRun": 8,
+      "repairs": 0
+    },
+    {
+      "number": 4,
+      "title": "Find Longest Awesome Substring",
+      "difficulty": "Medium/Hard",
+      "concept": "Prefix parity bitmask combined with hash map for palindrome eligibility",
+      "exports": [
+        "longest_awesome"
+      ],
+      "files": {
+        "exercise": "exercises/problem-04.md",
+        "notes": "solutions/problem-04.md",
+        "solution": "solutions/problem_04.py",
+        "tests": "tests/test_problem_04.py",
+        "practice": "practice/problem_04.py"
+      },
+      "starterSha256": "12736a5231dab0a18f2453ea27a9e7c58e9c93f29c9b906970c3ff08dd0576f3",
+      "testsRun": 8,
+      "repairs": 1
+    },
+    {
+      "number": 5,
+      "title": "Minimum XOR Sum of Two Arrays",
+      "difficulty": "Hard",
+      "concept": "Bitmask Dynamic Programming over permutations",
+      "exports": [
+        "minimum_xor_sum"
+      ],
+      "files": {
+        "exercise": "exercises/problem-05.md",
+        "notes": "solutions/problem-05.md",
+        "solution": "solutions/problem_05.py",
+        "tests": "tests/test_problem_05.py",
+        "practice": "practice/problem_05.py"
+      },
+      "starterSha256": "0fc73b601692df5e3f7ca5ffacb36bc18c61fdaac5ab63299f0a0230da527bf0",
+      "testsRun": 8,
+      "repairs": 0
+    }
+  ]
+}

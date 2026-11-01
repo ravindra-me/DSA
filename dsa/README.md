@@ -4,11 +4,10 @@ Generated automatically by the [DSA learning agent](../.github/agents/README.md)
 
 | Current day | Roadmap progress | Problems solved | Next new topic |
 |-------------|------------------|-----------------|----------------|
-| 22 | 17/59 topics | 0/110 | sliding-window |
+| 23 | 17/59 topics | 0/115 | sliding-window |
 
 ## Upcoming revisions
 
-- `bit-manipulation`: due on day 13
 - `linked-list`: due on day 14
 - `linked-list-techniques`: due on day 16
 - `stack`: due on day 17
@@ -18,11 +17,13 @@ Generated automatically by the [DSA learning agent](../.github/agents/README.md)
 - `deque`: due on day 22
 - `arrays`: due on day 23
 - `hash-map`: due on day 23
+- `strings`: due on day 24
 
 ## All lessons
 
 | Day | Date | Topic | Type | Solved | Status |
 |-----|------|-------|------|--------|--------|
+| [23](day-023/README.md) | 2026-11-01 | Bit Manipulation | Revision | 0/5 | generated |
 | [22](day-022/README.md) | 2026-10-31 | Two Pointers | New | 0/5 | generated |
 | [21](day-021/README.md) | 2026-10-30 | Prefix & Suffix Techniques | New | 0/5 | generated |
 | [20](day-020/README.md) | 2026-10-29 | Basic Mathematics for DSA | Revision | 0/5 | generated |
