@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "currentDay": 23,
-  "lastLessonDate": "2026-11-01",
-  "currentTopic": "bit-manipulation",
+  "currentDay": 24,
+  "lastLessonDate": "2026-11-02",
+  "currentTopic": "sliding-window",
   "topicsCompleted": [
     "big-o",
     "arrays",
@@ -20,10 +20,11 @@
     "hash-set",
     "frequency-counting",
     "prefix-suffix",
-    "two-pointers"
+    "two-pointers",
+    "sliding-window"
   ],
-  "nextRoadmapTopic": "sliding-window",
-  "roadmapProgress": "17/59",
+  "nextRoadmapTopic": "linear-search",
+  "roadmapProgress": "18/59",
   "upcomingRevisions": [
     {
       "topic": "linked-list",
@@ -126,13 +127,19 @@
       "dueDay": 29,
       "stage": 1,
       "requested": false
+    },
+    {
+      "topic": "sliding-window",
+      "dueDay": 31,
+      "stage": 1,
+      "requested": false
     }
   ],
   "stats": {
-    "lessons": 23,
-    "newTopicLessons": 17,
+    "lessons": 24,
+    "newTopicLessons": 18,
     "revisionLessons": 6,
-    "problemsGenerated": 115,
+    "problemsGenerated": 120,
     "problemsCompleted": 0,
     "lessonsCompleted": 0
   },
@@ -1585,6 +1592,70 @@
       "path": "dsa/day-023",
       "generatedAt": "2026-11-01T06:56:47+00:00",
       "generationId": "307ddb3df7c745adb9063b6ce90572e0",
+      "generator": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "agentVersion": "1.0.0"
+      },
+      "requestRevision": false,
+      "revisionRequired": true
+    },
+    {
+      "day": 24,
+      "date": "2026-11-02",
+      "topic": "sliding-window",
+      "topicTitle": "Sliding Window",
+      "phase": "Core Array Patterns",
+      "kind": "new",
+      "revisionStage": 0,
+      "difficulty": "progressive",
+      "language": "python",
+      "status": "generated",
+      "problemsGenerated": 5,
+      "problemsCompleted": 0,
+      "problems": [
+        {
+          "number": 1,
+          "title": "Maximum Average Subarray I",
+          "difficulty": "Easy",
+          "concept": "fixed-size window"
+        },
+        {
+          "number": 2,
+          "title": "Minimum Size Subarray Sum",
+          "difficulty": "Easy/Medium",
+          "concept": "variable-size window (shortest subarray)"
+        },
+        {
+          "number": 3,
+          "title": "Longest Substring Without Repeating Characters",
+          "difficulty": "Medium",
+          "concept": "variable-size window (longest subarray with hash set/map)"
+        },
+        {
+          "number": 4,
+          "title": "Longest Repeating Character Replacement",
+          "difficulty": "Medium/Hard",
+          "concept": "window invariants with character frequency"
+        },
+        {
+          "number": 5,
+          "title": "Subarrays with K Different Integers",
+          "difficulty": "Hard",
+          "concept": "exact-K window via at-most reduction"
+        }
+      ],
+      "conceptsCovered": [
+        "fixed-size window",
+        "variable-size window",
+        "window invariants",
+        "longest subarray pattern",
+        "shortest subarray pattern",
+        "at-most to exact reduction"
+      ],
+      "path": "dsa/day-024",
+      "generatedAt": "2026-11-02T06:55:47+00:00",
+      "generationId": "55c80139484f4ac2a2a399a56278d9ee",
       "generator": {
         "provider": "gemini",
         "model": "gemini-3.5-flash",

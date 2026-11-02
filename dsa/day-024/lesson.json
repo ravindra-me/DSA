@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "day": 24,
+  "date": "2026-11-02",
+  "topic": "sliding-window",
+  "kind": "new",
+  "language": "python",
+  "generator": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash",
+    "agentVersion": "1.0.0"
+  },
+  "problems": [
+    {
+      "number": 1,
+      "title": "Maximum Average Subarray I",
+      "difficulty": "Easy",
+      "concept": "fixed-size window",
+      "exports": [
+        "find_max_average"
+      ],
+      "files": {
+        "exercise": "exercises/problem-01.md",
+        "notes": "solutions/problem-01.md",
+        "solution": "solutions/problem_01.py",
+        "tests": "tests/test_problem_01.py",
+        "practice": "practice/problem_01.py"
+      },
+      "starterSha256": "c7c5626f7813cba02983e376eb9959272c350aec34e703a39418994bcf583b1f",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 2,
+      "title": "Minimum Size Subarray Sum",
+      "difficulty": "Easy/Medium",
+      "concept": "variable-size window (shortest subarray)",
+      "exports": [
+        "min_sub_array_len"
+      ],
+      "files": {
+        "exercise": "exercises/problem-02.md",
+        "notes": "solutions/problem-02.md",
+        "solution": "solutions/problem_02.py",
+        "tests": "tests/test_problem_02.py",
+        "practice": "practice/problem_02.py"
+      },
+      "starterSha256": "466f24907c65e13562bef2f7557a510857ca1eb98d72ec94d48e7481bfccbd21",
+      "testsRun": 8,
+      "repairs": 0
+    },
+    {
+      "number": 3,
+      "title": "Longest Substring Without Repeating Characters",
+      "difficulty": "Medium",
+      "concept": "variable-size window (longest subarray with hash set/map)",
+      "exports": [
+        "length_of_longest_substring"
+      ],
+      "files": {
+        "exercise": "exercises/problem-03.md",
+        "notes": "solutions/problem-03.md",
+        "solution": "solutions/problem_03.py",
+        "tests": "tests/test_problem_03.py",
+        "practice": "practice/problem_03.py"
+      },
+      "starterSha256": "5cd3139b4230d46bf586813b12c2ccd22dbc16aba373c13764c9ff05884381b8",
+      "testsRun": 8,
+      "repairs": 0
+    },
+    {
+      "number": 4,
+      "title": "Longest Repeating Character Replacement",
+      "difficulty": "Medium/Hard",
+      "concept": "window invariants with character frequency",
+      "exports": [
+        "character_replacement"
+      ],
+      "files": {
+        "exercise": "exercises/problem-04.md",
+        "notes": "solutions/problem-04.md",
+        "solution": "solutions/problem_04.py",
+        "tests": "tests/test_problem_04.py",
+        "practice": "practice/problem_04.py"
+      },
+      "starterSha256": "466ab0b54aba7f015046355dd87f97369692816f9e8215f89b564c596c6d0607",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 5,
+      "title": "Subarrays with K Different Integers",
+      "difficulty": "Hard",
+      "concept": "exact-K window via at-most reduction",
+      "exports": [
+        "subarrays_with_k_distinct"
+      ],
+      "files": {
+        "exercise": "exercises/problem-05.md",
+        "notes": "solutions/problem-05.md",
+        "solution": "solutions/problem_05.py",
+        "tests": "tests/test_problem_05.py",
+        "practice": "practice/problem_05.py"
+      },
+      "starterSha256": "f02bd6f58c72fcc9e31f10fd1a6d3a4de4da2b756af7eaf6cc870fa0260d4395",
+      "testsRun": 7,
+      "repairs": 0
+    }
+  ]
+}
