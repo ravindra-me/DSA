@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "day": 25,
+  "date": "2026-11-03",
+  "topic": "linear-search",
+  "kind": "new",
+  "language": "python",
+  "generator": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash",
+    "agentVersion": "1.0.0"
+  },
+  "problems": [
+    {
+      "number": 1,
+      "title": "First Occurrence Index",
+      "difficulty": "Easy",
+      "concept": "Basic sequential scan with early exit",
+      "exports": [
+        "find_first_occurrence"
+      ],
+      "files": {
+        "exercise": "exercises/problem-01.md",
+        "notes": "solutions/problem-01.md",
+        "solution": "solutions/problem_01.py",
+        "tests": "tests/test_problem_01.py",
+        "practice": "practice/problem_01.py"
+      },
+      "starterSha256": "2733171acefb834a06c60aa19f13481ef6f60abd5e5548c5923d89d2bf3f9c8e",
+      "testsRun": 8,
+      "repairs": 0
+    },
+    {
+      "number": 2,
+      "title": "Sentinel Target Search",
+      "difficulty": "Easy/Medium",
+      "concept": "Sentinel search technique to eliminate bound checks",
+      "exports": [
+        "sentinel_search"
+      ],
+      "files": {
+        "exercise": "exercises/problem-02.md",
+        "notes": "solutions/problem-02.md",
+        "solution": "solutions/problem_02.py",
+        "tests": "tests/test_problem_02.py",
+        "practice": "practice/problem_02.py"
+      },
+      "starterSha256": "a299eeccfe814d6d456bb069ef9537f44870bbaac40e0a7248e812465727afc0",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 3,
+      "title": "First Local Minima in Matrix",
+      "difficulty": "Medium",
+      "concept": "Linear scan over 2D grid with conditional early exit",
+      "exports": [
+        "find_first_local_minimum"
+      ],
+      "files": {
+        "exercise": "exercises/problem-03.md",
+        "notes": "solutions/problem-03.md",
+        "solution": "solutions/problem_03.py",
+        "tests": "tests/test_problem_03.py",
+        "practice": "practice/problem_03.py"
+      },
+      "starterSha256": "ed59202f870c8bfe7f47e206d526279922301975414a587fb8ed68acdcea1c3b",
+      "testsRun": 7,
+      "repairs": 1
+    },
+    {
+      "number": 4,
+      "title": "Longest Equal Element Sequence under Skip Constraint",
+      "difficulty": "Medium/Hard",
+      "concept": "Linear scan state tracking with limited dynamic state",
+      "exports": [
+        "max_equal_frequency_with_skips"
+      ],
+      "files": {
+        "exercise": "exercises/problem-04.md",
+        "notes": "solutions/problem-04.md",
+        "solution": "solutions/problem_04.py",
+        "tests": "tests/test_problem_04.py",
+        "practice": "practice/problem_04.py"
+      },
+      "starterSha256": "aa8a0f9523b6a2220b2ce567bb9d022750e5c15175d6d18f896b88ff1ddc6d0b",
+      "testsRun": 8,
+      "repairs": 1
+    },
+    {
+      "number": 5,
+      "title": "Stream Peak Detection",
+      "difficulty": "Hard",
+      "concept": "Stateful streaming linear search over infinite dynamic window",
+      "exports": [
+        "StreamPeakFinder"
+      ],
+      "files": {
+        "exercise": "exercises/problem-05.md",
+        "notes": "solutions/problem-05.md",
+        "solution": "solutions/problem_05.py",
+        "tests": "tests/test_problem_05.py",
+        "practice": "practice/problem_05.py"
+      },
+      "starterSha256": "28b59942651c3cc4d5eb20f2d3eb9df1780dfcc899e8a3bf40f03d936d2375fb",
+      "testsRun": 7,
+      "repairs": 0
+    }
+  ]
+}

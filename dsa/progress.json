@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "currentDay": 24,
-  "lastLessonDate": "2026-11-02",
-  "currentTopic": "sliding-window",
+  "currentDay": 25,
+  "lastLessonDate": "2026-11-03",
+  "currentTopic": "linear-search",
   "topicsCompleted": [
     "big-o",
     "arrays",
@@ -21,10 +21,11 @@
     "frequency-counting",
     "prefix-suffix",
     "two-pointers",
-    "sliding-window"
+    "sliding-window",
+    "linear-search"
   ],
-  "nextRoadmapTopic": "linear-search",
-  "roadmapProgress": "18/59",
+  "nextRoadmapTopic": "binary-search",
+  "roadmapProgress": "19/59",
   "upcomingRevisions": [
     {
       "topic": "linked-list",
@@ -133,13 +134,19 @@
       "dueDay": 31,
       "stage": 1,
       "requested": false
+    },
+    {
+      "topic": "linear-search",
+      "dueDay": 32,
+      "stage": 1,
+      "requested": false
     }
   ],
   "stats": {
-    "lessons": 24,
-    "newTopicLessons": 18,
+    "lessons": 25,
+    "newTopicLessons": 19,
     "revisionLessons": 6,
-    "problemsGenerated": 120,
+    "problemsGenerated": 125,
     "problemsCompleted": 0,
     "lessonsCompleted": 0
   },
@@ -1656,6 +1663,68 @@
       "path": "dsa/day-024",
       "generatedAt": "2026-11-02T06:55:47+00:00",
       "generationId": "55c80139484f4ac2a2a399a56278d9ee",
+      "generator": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "agentVersion": "1.0.0"
+      },
+      "requestRevision": false,
+      "revisionRequired": true
+    },
+    {
+      "day": 25,
+      "date": "2026-11-03",
+      "topic": "linear-search",
+      "topicTitle": "Linear Search",
+      "phase": "Searching",
+      "kind": "new",
+      "revisionStage": 0,
+      "difficulty": "progressive",
+      "language": "python",
+      "status": "generated",
+      "problemsGenerated": 5,
+      "problemsCompleted": 0,
+      "problems": [
+        {
+          "number": 1,
+          "title": "First Occurrence Index",
+          "difficulty": "Easy",
+          "concept": "Basic sequential scan with early exit"
+        },
+        {
+          "number": 2,
+          "title": "Sentinel Target Search",
+          "difficulty": "Easy/Medium",
+          "concept": "Sentinel search technique to eliminate bound checks"
+        },
+        {
+          "number": 3,
+          "title": "First Local Minima in Matrix",
+          "difficulty": "Medium",
+          "concept": "Linear scan over 2D grid with conditional early exit"
+        },
+        {
+          "number": 4,
+          "title": "Longest Equal Element Sequence under Skip Constraint",
+          "difficulty": "Medium/Hard",
+          "concept": "Linear scan state tracking with limited dynamic state"
+        },
+        {
+          "number": 5,
+          "title": "Stream Peak Detection",
+          "difficulty": "Hard",
+          "concept": "Stateful streaming linear search over infinite dynamic window"
+        }
+      ],
+      "conceptsCovered": [
+        "linear-search",
+        "sentinel-search",
+        "early-exit",
+        "streaming-scan"
+      ],
+      "path": "dsa/day-025",
+      "generatedAt": "2026-11-03T07:14:49+00:00",
+      "generationId": "0da2258b58f348d18711ea8b04c0faf1",
       "generator": {
         "provider": "gemini",
         "model": "gemini-3.5-flash",

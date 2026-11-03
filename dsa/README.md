@@ -4,7 +4,7 @@ Generated automatically by the [DSA learning agent](../.github/agents/README.md)
 
 | Current day | Roadmap progress | Problems solved | Next new topic |
 |-------------|------------------|-----------------|----------------|
-| 24 | 18/59 topics | 0/120 | linear-search |
+| 25 | 19/59 topics | 0/125 | binary-search |
 
 ## Upcoming revisions
 
@@ -23,6 +23,7 @@ Generated automatically by the [DSA learning agent](../.github/agents/README.md)
 
 | Day | Date | Topic | Type | Solved | Status |
 |-----|------|-------|------|--------|--------|
+| [25](day-025/README.md) | 2026-11-03 | Linear Search | New | 0/5 | generated |
 | [24](day-024/README.md) | 2026-11-02 | Sliding Window | New | 0/5 | generated |
 | [23](day-023/README.md) | 2026-11-01 | Bit Manipulation | Revision | 0/5 | generated |
 | [22](day-022/README.md) | 2026-10-31 | Two Pointers | New | 0/5 | generated |
