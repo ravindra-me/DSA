@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "day": 26,
+  "date": "2026-11-04",
+  "topic": "linked-list",
+  "kind": "revision",
+  "language": "python",
+  "generator": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash",
+    "agentVersion": "1.0.0"
+  },
+  "problems": [
+    {
+      "number": 1,
+      "title": "Partition List around Pivot Value",
+      "difficulty": "Easy/Medium",
+      "concept": "Stable partitioning using dual dummy head chains",
+      "exports": [
+        "ListNode",
+        "partition_list"
+      ],
+      "files": {
+        "exercise": "exercises/problem-01.md",
+        "notes": "solutions/problem-01.md",
+        "solution": "solutions/problem_01.py",
+        "tests": "tests/test_problem_01.py",
+        "practice": "practice/problem_01.py"
+      },
+      "starterSha256": "5e6503842f23c9a622c98cc2b364ff5ee395f7fc9719800fefececf0b717566b",
+      "testsRun": 8,
+      "repairs": 0
+    },
+    {
+      "number": 2,
+      "title": "Split Linked List into k Consecutive Parts",
+      "difficulty": "Medium",
+      "concept": "List length computation and chunk slicing with dummy pointers",
+      "exports": [
+        "ListNode",
+        "split_list_to_parts"
+      ],
+      "files": {
+        "exercise": "exercises/problem-02.md",
+        "notes": "solutions/problem-02.md",
+        "solution": "solutions/problem_02.py",
+        "tests": "tests/test_problem_02.py",
+        "practice": "practice/problem_02.py"
+      },
+      "starterSha256": "ed81d4e9f944290d8caecfc81b5925f9cf91d940ae300f2ae231316383c6376c",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 3,
+      "title": "Reverse Sub-List Between Positions",
+      "difficulty": "Medium/Hard",
+      "concept": "In-place partial list reversal with local pointer reconnection",
+      "exports": [
+        "ListNode",
+        "reverse_between"
+      ],
+      "files": {
+        "exercise": "exercises/problem-03.md",
+        "notes": "solutions/problem-03.md",
+        "solution": "solutions/problem_03.py",
+        "tests": "tests/test_problem_03.py",
+        "practice": "practice/problem_03.py"
+      },
+      "starterSha256": "48b80f147da9fc56ceea9370c0a17882f1e7ca0ffc713f0cad70d159bbe2a4a7",
+      "testsRun": 8,
+      "repairs": 0
+    },
+    {
+      "number": 4,
+      "title": "Add Two Numbers II (Most Significant Digit First)",
+      "difficulty": "Medium/Hard",
+      "concept": "Linked list processing with explicit stack or head expansion without reversal",
+      "exports": [
+        "ListNode",
+        "add_two_numbers_ii"
+      ],
+      "files": {
+        "exercise": "exercises/problem-04.md",
+        "notes": "solutions/problem-04.md",
+        "solution": "solutions/problem_04.py",
+        "tests": "tests/test_problem_04.py",
+        "practice": "practice/problem_04.py"
+      },
+      "starterSha256": "596cfbb4be59f889659537adb2cadf1fc3fa240eceefddabf5513d70fa40d8a7",
+      "testsRun": 6,
+      "repairs": 0
+    },
+    {
+      "number": 5,
+      "title": "Flatten a Multilevel Doubly Linked List",
+      "difficulty": "Hard",
+      "concept": "Complex pointer rewiring in hierarchical doubly linked structures",
+      "exports": [
+        "Node",
+        "flatten"
+      ],
+      "files": {
+        "exercise": "exercises/problem-05.md",
+        "notes": "solutions/problem-05.md",
+        "solution": "solutions/problem_05.py",
+        "tests": "tests/test_problem_05.py",
+        "practice": "practice/problem_05.py"
+      },
+      "starterSha256": "4a03d2721550cdcfc9f044d80624fd1cdb61c4dead4548f5635f8ada08503849",
+      "testsRun": 7,
+      "repairs": 0
+    }
+  ]
+}

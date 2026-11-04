@@ -4,11 +4,10 @@ Generated automatically by the [DSA learning agent](../.github/agents/README.md)
 
 | Current day | Roadmap progress | Problems solved | Next new topic |
 |-------------|------------------|-----------------|----------------|
-| 25 | 19/59 topics | 0/125 | binary-search |
+| 26 | 19/59 topics | 0/130 | binary-search |
 
 ## Upcoming revisions
 
-- `linked-list`: due on day 14
 - `linked-list-techniques`: due on day 16
 - `stack`: due on day 17
 - `monotonic-stack`: due on day 19
@@ -18,11 +17,13 @@ Generated automatically by the [DSA learning agent](../.github/agents/README.md)
 - `arrays`: due on day 23
 - `hash-map`: due on day 23
 - `strings`: due on day 24
+- `recursion`: due on day 25
 
 ## All lessons
 
 | Day | Date | Topic | Type | Solved | Status |
 |-----|------|-------|------|--------|--------|
+| [26](day-026/README.md) | 2026-11-04 | Linked Lists | Revision | 0/5 | generated |
 | [25](day-025/README.md) | 2026-11-03 | Linear Search | New | 0/5 | generated |
 | [24](day-024/README.md) | 2026-11-02 | Sliding Window | New | 0/5 | generated |
 | [23](day-023/README.md) | 2026-11-01 | Bit Manipulation | Revision | 0/5 | generated |

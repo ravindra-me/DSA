@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "currentDay": 25,
-  "lastLessonDate": "2026-11-03",
-  "currentTopic": "linear-search",
+  "currentDay": 26,
+  "lastLessonDate": "2026-11-04",
+  "currentTopic": "linked-list",
   "topicsCompleted": [
     "big-o",
     "arrays",
@@ -27,12 +27,6 @@
   "nextRoadmapTopic": "binary-search",
   "roadmapProgress": "19/59",
   "upcomingRevisions": [
-    {
-      "topic": "linked-list",
-      "dueDay": 14,
-      "stage": 1,
-      "requested": false
-    },
     {
       "topic": "linked-list-techniques",
       "dueDay": 16,
@@ -118,6 +112,12 @@
       "requested": false
     },
     {
+      "topic": "linked-list",
+      "dueDay": 28,
+      "stage": 2,
+      "requested": false
+    },
+    {
       "topic": "prefix-suffix",
       "dueDay": 28,
       "stage": 1,
@@ -143,10 +143,10 @@
     }
   ],
   "stats": {
-    "lessons": 25,
+    "lessons": 26,
     "newTopicLessons": 19,
-    "revisionLessons": 6,
-    "problemsGenerated": 125,
+    "revisionLessons": 7,
+    "problemsGenerated": 130,
     "problemsCompleted": 0,
     "lessonsCompleted": 0
   },
@@ -1725,6 +1725,70 @@
       "path": "dsa/day-025",
       "generatedAt": "2026-11-03T07:14:49+00:00",
       "generationId": "0da2258b58f348d18711ea8b04c0faf1",
+      "generator": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "agentVersion": "1.0.0"
+      },
+      "requestRevision": false,
+      "revisionRequired": true
+    },
+    {
+      "day": 26,
+      "date": "2026-11-04",
+      "topic": "linked-list",
+      "topicTitle": "Linked Lists",
+      "phase": "Linear Data Structures",
+      "kind": "revision",
+      "revisionStage": 1,
+      "difficulty": "progressive",
+      "language": "python",
+      "status": "generated",
+      "problemsGenerated": 5,
+      "problemsCompleted": 0,
+      "problems": [
+        {
+          "number": 1,
+          "title": "Partition List around Pivot Value",
+          "difficulty": "Easy/Medium",
+          "concept": "Stable partitioning using dual dummy head chains"
+        },
+        {
+          "number": 2,
+          "title": "Split Linked List into k Consecutive Parts",
+          "difficulty": "Medium",
+          "concept": "List length computation and chunk slicing with dummy pointers"
+        },
+        {
+          "number": 3,
+          "title": "Reverse Sub-List Between Positions",
+          "difficulty": "Medium/Hard",
+          "concept": "In-place partial list reversal with local pointer reconnection"
+        },
+        {
+          "number": 4,
+          "title": "Add Two Numbers II (Most Significant Digit First)",
+          "difficulty": "Medium/Hard",
+          "concept": "Linked list processing with explicit stack or head expansion without reversal"
+        },
+        {
+          "number": 5,
+          "title": "Flatten a Multilevel Doubly Linked List",
+          "difficulty": "Hard",
+          "concept": "Complex pointer rewiring in hierarchical doubly linked structures"
+        }
+      ],
+      "conceptsCovered": [
+        "linked-list",
+        "singly-linked-list",
+        "doubly-linked-list",
+        "dummy-head",
+        "pointer-reversal",
+        "two-pointers"
+      ],
+      "path": "dsa/day-026",
+      "generatedAt": "2026-11-04T09:43:12+00:00",
+      "generationId": "df775eafd780484ca0422c29c7ddff17",
       "generator": {
         "provider": "gemini",
         "model": "gemini-3.5-flash",
