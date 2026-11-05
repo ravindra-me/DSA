@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "day": 27,
+  "date": "2026-11-05",
+  "topic": "binary-search",
+  "kind": "new",
+  "language": "python",
+  "generator": {
+    "provider": "gemini",
+    "model": "gemini-3.1-flash-lite",
+    "agentVersion": "1.0.0"
+  },
+  "problems": [
+    {
+      "number": 1,
+      "title": "Standard Binary Search",
+      "difficulty": "Easy",
+      "concept": "Basic search space halving on a distinct sorted array",
+      "exports": [
+        "search"
+      ],
+      "files": {
+        "exercise": "exercises/problem-01.md",
+        "notes": "solutions/problem-01.md",
+        "solution": "solutions/problem_01.py",
+        "tests": "tests/test_problem_01.py",
+        "practice": "practice/problem_01.py"
+      },
+      "starterSha256": "8b190031d15182fb275943534528a3a0245c5ef259a11549a7e81ecdbe458b1f",
+      "testsRun": 8,
+      "repairs": 0
+    },
+    {
+      "number": 2,
+      "title": "Search Insert Position",
+      "difficulty": "Easy/Medium",
+      "concept": "Finding lower-bound insertion point in a sorted array",
+      "exports": [
+        "search_insert"
+      ],
+      "files": {
+        "exercise": "exercises/problem-02.md",
+        "notes": "solutions/problem-02.md",
+        "solution": "solutions/problem_02.py",
+        "tests": "tests/test_problem_02.py",
+        "practice": "practice/problem_02.py"
+      },
+      "starterSha256": "6f3b910d6a3fe0b229671e5c792e4143646777794d1bdb71dff326feeb6b4e29",
+      "testsRun": 9,
+      "repairs": 1
+    },
+    {
+      "number": 3,
+      "title": "Find First and Last Position of Element in Sorted Array",
+      "difficulty": "Medium",
+      "concept": "Boundary searching (lower bound and upper bound) with duplicate values",
+      "exports": [
+        "search_range"
+      ],
+      "files": {
+        "exercise": "exercises/problem-03.md",
+        "notes": "solutions/problem-03.md",
+        "solution": "solutions/problem_03.py",
+        "tests": "tests/test_problem_03.py",
+        "practice": "practice/problem_03.py"
+      },
+      "starterSha256": "2f0e521305794923db351f44b44d011c29d2190dd522756067be363f7d65ca3a",
+      "testsRun": 6,
+      "repairs": 0
+    },
+    {
+      "number": 4,
+      "title": "Find Peak Element",
+      "difficulty": "Medium/Hard",
+      "concept": "Binary search on unsorted / locally sorted structure using local monotonicity",
+      "exports": [
+        "find_peak_element"
+      ],
+      "files": {
+        "exercise": "exercises/problem-04.md",
+        "notes": "solutions/problem-04.md",
+        "solution": "solutions/problem_04.py",
+        "tests": "tests/test_problem_04.py",
+        "practice": "practice/problem_04.py"
+      },
+      "starterSha256": "534776a0cff69e016764e0956af7311c5b0ad6c5ed4b9aa89ad9458a8f7ef5f9",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 5,
+      "title": "Search in Rotated Sorted Array",
+      "difficulty": "Hard",
+      "concept": "Modified binary search on a shifted/rotated sorted domain",
+      "exports": [
+        "search_rotated"
+      ],
+      "files": {
+        "exercise": "exercises/problem-05.md",
+        "notes": "solutions/problem-05.md",
+        "solution": "solutions/problem_05.py",
+        "tests": "tests/test_problem_05.py",
+        "practice": "practice/problem_05.py"
+      },
+      "starterSha256": "cffea5394a44d31182a9dd60bdc0757392c3407fc14843d837c0fe69b451b080",
+      "testsRun": 7,
+      "repairs": 0
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "currentDay": 26,
-  "lastLessonDate": "2026-11-04",
-  "currentTopic": "linked-list",
+  "currentDay": 27,
+  "lastLessonDate": "2026-11-05",
+  "currentTopic": "binary-search",
   "topicsCompleted": [
     "big-o",
     "arrays",
@@ -22,10 +22,11 @@
     "prefix-suffix",
     "two-pointers",
     "sliding-window",
-    "linear-search"
+    "linear-search",
+    "binary-search"
   ],
-  "nextRoadmapTopic": "binary-search",
-  "roadmapProgress": "19/59",
+  "nextRoadmapTopic": "binary-search-variations",
+  "roadmapProgress": "20/59",
   "upcomingRevisions": [
     {
       "topic": "linked-list-techniques",
@@ -140,13 +141,19 @@
       "dueDay": 32,
       "stage": 1,
       "requested": false
+    },
+    {
+      "topic": "binary-search",
+      "dueDay": 34,
+      "stage": 1,
+      "requested": false
     }
   ],
   "stats": {
-    "lessons": 26,
-    "newTopicLessons": 19,
+    "lessons": 27,
+    "newTopicLessons": 20,
     "revisionLessons": 7,
-    "problemsGenerated": 130,
+    "problemsGenerated": 135,
     "problemsCompleted": 0,
     "lessonsCompleted": 0
   },
@@ -1792,6 +1799,69 @@
       "generator": {
         "provider": "gemini",
         "model": "gemini-3.5-flash",
+        "agentVersion": "1.0.0"
+      },
+      "requestRevision": false,
+      "revisionRequired": true
+    },
+    {
+      "day": 27,
+      "date": "2026-11-05",
+      "topic": "binary-search",
+      "topicTitle": "Binary Search",
+      "phase": "Searching",
+      "kind": "new",
+      "revisionStage": 0,
+      "difficulty": "progressive",
+      "language": "python",
+      "status": "generated",
+      "problemsGenerated": 5,
+      "problemsCompleted": 0,
+      "problems": [
+        {
+          "number": 1,
+          "title": "Standard Binary Search",
+          "difficulty": "Easy",
+          "concept": "Basic search space halving on a distinct sorted array"
+        },
+        {
+          "number": 2,
+          "title": "Search Insert Position",
+          "difficulty": "Easy/Medium",
+          "concept": "Finding lower-bound insertion point in a sorted array"
+        },
+        {
+          "number": 3,
+          "title": "Find First and Last Position of Element in Sorted Array",
+          "difficulty": "Medium",
+          "concept": "Boundary searching (lower bound and upper bound) with duplicate values"
+        },
+        {
+          "number": 4,
+          "title": "Find Peak Element",
+          "difficulty": "Medium/Hard",
+          "concept": "Binary search on unsorted / locally sorted structure using local monotonicity"
+        },
+        {
+          "number": 5,
+          "title": "Search in Rotated Sorted Array",
+          "difficulty": "Hard",
+          "concept": "Modified binary search on a shifted/rotated sorted domain"
+        }
+      ],
+      "conceptsCovered": [
+        "binary-search",
+        "search-space-halving",
+        "loop-invariants",
+        "lower-bound",
+        "upper-bound"
+      ],
+      "path": "dsa/day-027",
+      "generatedAt": "2026-11-05T07:19:02+00:00",
+      "generationId": "1afbd1ce9432446fa9ebdc6d38cd643f",
+      "generator": {
+        "provider": "gemini",
+        "model": "gemini-3.1-flash-lite",
         "agentVersion": "1.0.0"
       },
       "requestRevision": false,
