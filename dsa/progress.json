@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "currentDay": 28,
-  "lastLessonDate": "2026-11-06",
-  "currentTopic": "binary-search-variations",
+  "currentDay": 29,
+  "lastLessonDate": "2026-11-07",
+  "currentTopic": "linked-list-techniques",
   "topicsCompleted": [
     "big-o",
     "arrays",
@@ -29,12 +29,6 @@
   "nextRoadmapTopic": "binary-search-on-answer",
   "roadmapProgress": "21/59",
   "upcomingRevisions": [
-    {
-      "topic": "linked-list-techniques",
-      "dueDay": 16,
-      "stage": 1,
-      "requested": false
-    },
     {
       "topic": "stack",
       "dueDay": 17,
@@ -132,6 +126,12 @@
       "requested": false
     },
     {
+      "topic": "linked-list-techniques",
+      "dueDay": 30,
+      "stage": 2,
+      "requested": false
+    },
+    {
       "topic": "sliding-window",
       "dueDay": 31,
       "stage": 1,
@@ -157,10 +157,10 @@
     }
   ],
   "stats": {
-    "lessons": 28,
+    "lessons": 29,
     "newTopicLessons": 21,
-    "revisionLessons": 7,
-    "problemsGenerated": 140,
+    "revisionLessons": 8,
+    "problemsGenerated": 145,
     "problemsCompleted": 0,
     "lessonsCompleted": 0
   },
@@ -1933,6 +1933,70 @@
       "generator": {
         "provider": "gemini",
         "model": "gemini-3.5-flash",
+        "agentVersion": "1.0.0"
+      },
+      "requestRevision": false,
+      "revisionRequired": true
+    },
+    {
+      "day": 29,
+      "date": "2026-11-07",
+      "topic": "linked-list-techniques",
+      "topicTitle": "Linked List Techniques",
+      "phase": "Linear Data Structures",
+      "kind": "revision",
+      "revisionStage": 1,
+      "difficulty": "progressive",
+      "language": "python",
+      "status": "generated",
+      "problemsGenerated": 5,
+      "problemsCompleted": 0,
+      "problems": [
+        {
+          "number": 1,
+          "title": "Partition List Around Pivot",
+          "difficulty": "Easy/Medium",
+          "concept": "pointer-partitioning"
+        },
+        {
+          "number": 2,
+          "title": "Swap Nodes in Pairs",
+          "difficulty": "Medium",
+          "concept": "in-place-reversal"
+        },
+        {
+          "number": 3,
+          "title": "Sort Linked List in O(n log n)",
+          "difficulty": "Medium/Hard",
+          "concept": "fast-slow-pointers"
+        },
+        {
+          "number": 4,
+          "title": "Merge K Sorted Linked Lists",
+          "difficulty": "Medium/Hard",
+          "concept": "k-way-merge"
+        },
+        {
+          "number": 5,
+          "title": "Reverse Nodes in K-Group",
+          "difficulty": "Hard",
+          "concept": "in-place-reversal"
+        }
+      ],
+      "conceptsCovered": [
+        "fast-slow-pointers",
+        "cycle-detection",
+        "dummy-sentinel",
+        "in-place-reversal",
+        "k-way-merge",
+        "pointer-partitioning"
+      ],
+      "path": "dsa/day-029",
+      "generatedAt": "2026-11-07T06:28:31+00:00",
+      "generationId": "b803407a4d004271a504f0a19f795bd6",
+      "generator": {
+        "provider": "gemini",
+        "model": "gemini-3.8-flash",
         "agentVersion": "1.0.0"
       },
       "requestRevision": false,

@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "day": 29,
+  "date": "2026-11-07",
+  "topic": "linked-list-techniques",
+  "kind": "revision",
+  "language": "python",
+  "generator": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "agentVersion": "1.0.0"
+  },
+  "problems": [
+    {
+      "number": 1,
+      "title": "Partition List Around Pivot",
+      "difficulty": "Easy/Medium",
+      "concept": "pointer-partitioning",
+      "exports": [
+        "ListNode",
+        "partition"
+      ],
+      "files": {
+        "exercise": "exercises/problem-01.md",
+        "notes": "solutions/problem-01.md",
+        "solution": "solutions/problem_01.py",
+        "tests": "tests/test_problem_01.py",
+        "practice": "practice/problem_01.py"
+      },
+      "starterSha256": "4f6583134fde870e98d7079f37be658df98cba30b27e4a14193dcf0ecc9cf4a0",
+      "testsRun": 8,
+      "repairs": 0
+    },
+    {
+      "number": 2,
+      "title": "Swap Nodes in Pairs",
+      "difficulty": "Medium",
+      "concept": "in-place-reversal",
+      "exports": [
+        "ListNode",
+        "swap_pairs"
+      ],
+      "files": {
+        "exercise": "exercises/problem-02.md",
+        "notes": "solutions/problem-02.md",
+        "solution": "solutions/problem_02.py",
+        "tests": "tests/test_problem_02.py",
+        "practice": "practice/problem_02.py"
+      },
+      "starterSha256": "4fee2b68b2bbb1ffd5a7e0702373b3842eff58b5c8b83c5dd231bfd3bf159f4e",
+      "testsRun": 7,
+      "repairs": 1
+    },
+    {
+      "number": 3,
+      "title": "Sort Linked List in O(n log n)",
+      "difficulty": "Medium/Hard",
+      "concept": "fast-slow-pointers",
+      "exports": [
+        "ListNode",
+        "sort_list"
+      ],
+      "files": {
+        "exercise": "exercises/problem-03.md",
+        "notes": "solutions/problem-03.md",
+        "solution": "solutions/problem_03.py",
+        "tests": "tests/test_problem_03.py",
+        "practice": "practice/problem_03.py"
+      },
+      "starterSha256": "9d60a19ca88d71c0f07bf87c26a48c3bcda1349bcf0e573fc43116a6cb1913f6",
+      "testsRun": 8,
+      "repairs": 0
+    },
+    {
+      "number": 4,
+      "title": "Merge K Sorted Linked Lists",
+      "difficulty": "Medium/Hard",
+      "concept": "k-way-merge",
+      "exports": [
+        "ListNode",
+        "merge_k_lists"
+      ],
+      "files": {
+        "exercise": "exercises/problem-04.md",
+        "notes": "solutions/problem-04.md",
+        "solution": "solutions/problem_04.py",
+        "tests": "tests/test_problem_04.py",
+        "practice": "practice/problem_04.py"
+      },
+      "starterSha256": "ef60b4b59efb73ff6b8511cdcc08e202cce5f4a6d5b1f4952fb158f244980d6d",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 5,
+      "title": "Reverse Nodes in K-Group",
+      "difficulty": "Hard",
+      "concept": "in-place-reversal",
+      "exports": [
+        "ListNode",
+        "reverse_k_group"
+      ],
+      "files": {
+        "exercise": "exercises/problem-05.md",
+        "notes": "solutions/problem-05.md",
+        "solution": "solutions/problem_05.py",
+        "tests": "tests/test_problem_05.py",
+        "practice": "practice/problem_05.py"
+      },
+      "starterSha256": "f08ef9db32b56da631e976c064ce9b7e297efce83798b12ef856beaa90b1ca5a",
+      "testsRun": 9,
+      "repairs": 0
+    }
+  ]
+}
