@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "currentDay": 29,
-  "lastLessonDate": "2026-11-07",
-  "currentTopic": "linked-list-techniques",
+  "currentDay": 30,
+  "lastLessonDate": "2026-11-08",
+  "currentTopic": "binary-search-on-answer",
   "topicsCompleted": [
     "big-o",
     "arrays",
@@ -24,10 +24,11 @@
     "sliding-window",
     "linear-search",
     "binary-search",
-    "binary-search-variations"
+    "binary-search-variations",
+    "binary-search-on-answer"
   ],
-  "nextRoadmapTopic": "binary-search-on-answer",
-  "roadmapProgress": "21/59",
+  "nextRoadmapTopic": "elementary-sorts",
+  "roadmapProgress": "22/59",
   "upcomingRevisions": [
     {
       "topic": "stack",
@@ -154,13 +155,19 @@
       "dueDay": 35,
       "stage": 1,
       "requested": false
+    },
+    {
+      "topic": "binary-search-on-answer",
+      "dueDay": 37,
+      "stage": 1,
+      "requested": false
     }
   ],
   "stats": {
-    "lessons": 29,
-    "newTopicLessons": 21,
+    "lessons": 30,
+    "newTopicLessons": 22,
     "revisionLessons": 8,
-    "problemsGenerated": 145,
+    "problemsGenerated": 150,
     "problemsCompleted": 0,
     "lessonsCompleted": 0
   },
@@ -1994,6 +2001,69 @@
       "path": "dsa/day-029",
       "generatedAt": "2026-11-07T06:28:31+00:00",
       "generationId": "b803407a4d004271a504f0a19f795bd6",
+      "generator": {
+        "provider": "gemini",
+        "model": "gemini-3.8-flash",
+        "agentVersion": "1.0.0"
+      },
+      "requestRevision": false,
+      "revisionRequired": true
+    },
+    {
+      "day": 30,
+      "date": "2026-11-08",
+      "topic": "binary-search-on-answer",
+      "topicTitle": "Binary Search on the Answer",
+      "phase": "Searching",
+      "kind": "new",
+      "revisionStage": 0,
+      "difficulty": "progressive",
+      "language": "python",
+      "status": "generated",
+      "problemsGenerated": 5,
+      "problemsCompleted": 0,
+      "problems": [
+        {
+          "number": 1,
+          "title": "Koko Eating Bananas",
+          "difficulty": "Easy",
+          "concept": "Basic capacity/rate search on integers"
+        },
+        {
+          "number": 2,
+          "title": "Magnetic Force Between Balls",
+          "difficulty": "Easy/Medium",
+          "concept": "Maximize the minimum distance pattern"
+        },
+        {
+          "number": 3,
+          "title": "Split Array Largest Sum",
+          "difficulty": "Medium",
+          "concept": "Minimize the maximum subarray sum (partitioning)"
+        },
+        {
+          "number": 4,
+          "title": "Square Root and Optimal Fuel Blend",
+          "difficulty": "Medium/Hard",
+          "concept": "Real-valued / continuous binary search with precision threshold"
+        },
+        {
+          "number": 5,
+          "title": "K-th Smallest Pair Distance",
+          "difficulty": "Hard",
+          "concept": "Two-pointer feasibility check inside binary search on answer"
+        }
+      ],
+      "conceptsCovered": [
+        "Monotonic Predicate",
+        "Minimize Maximum Pattern",
+        "Maximize Minimum Pattern",
+        "Capacity and Rate Search",
+        "Continuous/Real-valued Binary Search"
+      ],
+      "path": "dsa/day-030",
+      "generatedAt": "2026-11-08T06:39:38+00:00",
+      "generationId": "890e0a8436dd4a92a91c380577351f67",
       "generator": {
         "provider": "gemini",
         "model": "gemini-3.8-flash",
