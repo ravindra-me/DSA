@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "day": 31,
+  "date": "2026-11-09",
+  "topic": "elementary-sorts",
+  "kind": "new",
+  "language": "python",
+  "generator": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "agentVersion": "1.0.0"
+  },
+  "problems": [
+    {
+      "number": 1,
+      "title": "Optimized Bubble Pass Counter",
+      "difficulty": "Easy",
+      "concept": "Bubble sort mechanics, early termination, and swap tracking",
+      "exports": [
+        "bubble_sort_analysis"
+      ],
+      "files": {
+        "exercise": "exercises/problem-01.md",
+        "notes": "solutions/problem-01.md",
+        "solution": "solutions/problem_01.py",
+        "tests": "tests/test_problem_01.py",
+        "practice": "practice/problem_01.py"
+      },
+      "starterSha256": "7cbd2b6296d3bb3a0e2f068bca1b8d88ce7333edb1181918d254f4d3cc992f81",
+      "testsRun": 8,
+      "repairs": 0
+    },
+    {
+      "number": 2,
+      "title": "Minimal Write Selection Sort",
+      "difficulty": "Easy/Medium",
+      "concept": "Selection sort write minimization and tracking index updates",
+      "exports": [
+        "selection_sort_tracked"
+      ],
+      "files": {
+        "exercise": "exercises/problem-02.md",
+        "notes": "solutions/problem-02.md",
+        "solution": "solutions/problem_02.py",
+        "tests": "tests/test_problem_02.py",
+        "practice": "practice/problem_02.py"
+      },
+      "starterSha256": "ac940c3229dbe0541a38dc3cbc22c811860e3081fba1b7aaa5b4169588469b66",
+      "testsRun": 6,
+      "repairs": 0
+    },
+    {
+      "number": 3,
+      "title": "Sort Nearly-Sorted Array (k-Sorted)",
+      "difficulty": "Medium",
+      "concept": "Insertion sort efficiency on inputs with bounded inversion distance",
+      "exports": [
+        "sort_k_sorted"
+      ],
+      "files": {
+        "exercise": "exercises/problem-03.md",
+        "notes": "solutions/problem-03.md",
+        "solution": "solutions/problem_03.py",
+        "tests": "tests/test_problem_03.py",
+        "practice": "practice/problem_03.py"
+      },
+      "starterSha256": "a8447ce3fcacc9bd9dcfafd269fbbaa3bf590b79acd7ef63d86338ea3c5c1237",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 4,
+      "title": "Insertion Sort on Linked List",
+      "difficulty": "Medium/Hard",
+      "concept": "Insertion sort adaptation on linked data structures and pointer manipulation",
+      "exports": [
+        "ListNode",
+        "insertion_sort_list"
+      ],
+      "files": {
+        "exercise": "exercises/problem-04.md",
+        "notes": "solutions/problem-04.md",
+        "solution": "solutions/problem_04.py",
+        "tests": "tests/test_problem_04.py",
+        "practice": "practice/problem_04.py"
+      },
+      "starterSha256": "b77d400d9961e827fbf43848871bfb19db7af05f80152a9196bf4e33aba0a991",
+      "testsRun": 8,
+      "repairs": 0
+    },
+    {
+      "number": 5,
+      "title": "Stable Multi-Key Record Sorter",
+      "difficulty": "Hard",
+      "concept": "Sorting stability, composite keys, and in-place stability preservation",
+      "exports": [
+        "stable_multikey_sort"
+      ],
+      "files": {
+        "exercise": "exercises/problem-05.md",
+        "notes": "solutions/problem-05.md",
+        "solution": "solutions/problem_05.py",
+        "tests": "tests/test_problem_05.py",
+        "practice": "practice/problem_05.py"
+      },
+      "starterSha256": "32afe74eb8e517a4ca80d7e05e57b5625176fb3ea632a17530b68007c40f6fa7",
+      "testsRun": 7,
+      "repairs": 0
+    }
+  ]
+}

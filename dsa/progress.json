@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "currentDay": 30,
-  "lastLessonDate": "2026-11-08",
-  "currentTopic": "binary-search-on-answer",
+  "currentDay": 31,
+  "lastLessonDate": "2026-11-09",
+  "currentTopic": "elementary-sorts",
   "topicsCompleted": [
     "big-o",
     "arrays",
@@ -25,10 +25,11 @@
     "linear-search",
     "binary-search",
     "binary-search-variations",
-    "binary-search-on-answer"
+    "binary-search-on-answer",
+    "elementary-sorts"
   ],
-  "nextRoadmapTopic": "elementary-sorts",
-  "roadmapProgress": "22/59",
+  "nextRoadmapTopic": "merge-sort",
+  "roadmapProgress": "23/59",
   "upcomingRevisions": [
     {
       "topic": "stack",
@@ -161,13 +162,19 @@
       "dueDay": 37,
       "stage": 1,
       "requested": false
+    },
+    {
+      "topic": "elementary-sorts",
+      "dueDay": 38,
+      "stage": 1,
+      "requested": false
     }
   ],
   "stats": {
-    "lessons": 30,
-    "newTopicLessons": 22,
+    "lessons": 31,
+    "newTopicLessons": 23,
     "revisionLessons": 8,
-    "problemsGenerated": 150,
+    "problemsGenerated": 155,
     "problemsCompleted": 0,
     "lessonsCompleted": 0
   },
@@ -2064,6 +2071,71 @@
       "path": "dsa/day-030",
       "generatedAt": "2026-11-08T06:39:38+00:00",
       "generationId": "890e0a8436dd4a92a91c380577351f67",
+      "generator": {
+        "provider": "gemini",
+        "model": "gemini-3.8-flash",
+        "agentVersion": "1.0.0"
+      },
+      "requestRevision": false,
+      "revisionRequired": true
+    },
+    {
+      "day": 31,
+      "date": "2026-11-09",
+      "topic": "elementary-sorts",
+      "topicTitle": "Bubble, Selection & Insertion Sort",
+      "phase": "Sorting",
+      "kind": "new",
+      "revisionStage": 0,
+      "difficulty": "progressive",
+      "language": "python",
+      "status": "generated",
+      "problemsGenerated": 5,
+      "problemsCompleted": 0,
+      "problems": [
+        {
+          "number": 1,
+          "title": "Optimized Bubble Pass Counter",
+          "difficulty": "Easy",
+          "concept": "Bubble sort mechanics, early termination, and swap tracking"
+        },
+        {
+          "number": 2,
+          "title": "Minimal Write Selection Sort",
+          "difficulty": "Easy/Medium",
+          "concept": "Selection sort write minimization and tracking index updates"
+        },
+        {
+          "number": 3,
+          "title": "Sort Nearly-Sorted Array (k-Sorted)",
+          "difficulty": "Medium",
+          "concept": "Insertion sort efficiency on inputs with bounded inversion distance"
+        },
+        {
+          "number": 4,
+          "title": "Insertion Sort on Linked List",
+          "difficulty": "Medium/Hard",
+          "concept": "Insertion sort adaptation on linked data structures and pointer manipulation"
+        },
+        {
+          "number": 5,
+          "title": "Stable Multi-Key Record Sorter",
+          "difficulty": "Hard",
+          "concept": "Sorting stability, composite keys, and in-place stability preservation"
+        }
+      ],
+      "conceptsCovered": [
+        "bubble sort",
+        "selection sort",
+        "insertion sort",
+        "stability",
+        "in-place sorting",
+        "nearly-sorted input",
+        "loop invariants"
+      ],
+      "path": "dsa/day-031",
+      "generatedAt": "2026-11-09T07:31:41+00:00",
+      "generationId": "befd714baf8e483dbde9c31ae59de15d",
       "generator": {
         "provider": "gemini",
         "model": "gemini-3.8-flash",

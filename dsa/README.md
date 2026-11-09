@@ -4,7 +4,7 @@ Generated automatically by the [DSA learning agent](../.github/agents/README.md)
 
 | Current day | Roadmap progress | Problems solved | Next new topic |
 |-------------|------------------|-----------------|----------------|
-| 30 | 22/59 topics | 0/150 | elementary-sorts |
+| 31 | 23/59 topics | 0/155 | merge-sort |
 
 ## Upcoming revisions
 
@@ -23,6 +23,7 @@ Generated automatically by the [DSA learning agent](../.github/agents/README.md)
 
 | Day | Date | Topic | Type | Solved | Status |
 |-----|------|-------|------|--------|--------|
+| [31](day-031/README.md) | 2026-11-09 | Bubble, Selection & Insertion Sort | New | 0/5 | generated |
 | [30](day-030/README.md) | 2026-11-08 | Binary Search on the Answer | New | 0/5 | generated |
 | [29](day-029/README.md) | 2026-11-07 | Linked List Techniques | Revision | 0/5 | generated |
 | [28](day-028/README.md) | 2026-11-06 | Binary Search Variations | New | 0/5 | generated |
