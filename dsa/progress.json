@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "currentDay": 31,
-  "lastLessonDate": "2026-11-09",
-  "currentTopic": "elementary-sorts",
+  "currentDay": 32,
+  "lastLessonDate": "2026-11-10",
+  "currentTopic": "stack",
   "topicsCompleted": [
     "big-o",
     "arrays",
@@ -31,12 +31,6 @@
   "nextRoadmapTopic": "merge-sort",
   "roadmapProgress": "23/59",
   "upcomingRevisions": [
-    {
-      "topic": "stack",
-      "dueDay": 17,
-      "stage": 1,
-      "requested": false
-    },
     {
       "topic": "monotonic-stack",
       "dueDay": 19,
@@ -168,13 +162,19 @@
       "dueDay": 38,
       "stage": 1,
       "requested": false
+    },
+    {
+      "topic": "stack",
+      "dueDay": 55,
+      "stage": 3,
+      "requested": false
     }
   ],
   "stats": {
-    "lessons": 31,
+    "lessons": 32,
     "newTopicLessons": 23,
-    "revisionLessons": 8,
-    "problemsGenerated": 155,
+    "revisionLessons": 9,
+    "problemsGenerated": 160,
     "problemsCompleted": 0,
     "lessonsCompleted": 0
   },
@@ -2139,6 +2139,69 @@
       "generator": {
         "provider": "gemini",
         "model": "gemini-3.8-flash",
+        "agentVersion": "1.0.0"
+      },
+      "requestRevision": false,
+      "revisionRequired": true
+    },
+    {
+      "day": 32,
+      "date": "2026-11-10",
+      "topic": "stack",
+      "topicTitle": "Stack",
+      "phase": "Linear Data Structures",
+      "kind": "revision",
+      "revisionStage": 2,
+      "difficulty": "progressive",
+      "language": "python",
+      "status": "generated",
+      "problemsGenerated": 5,
+      "problemsCompleted": 0,
+      "problems": [
+        {
+          "number": 1,
+          "title": "Validate Stack Sequences",
+          "difficulty": "Easy/Medium",
+          "concept": "Simulation of LIFO Stack push and pop operations"
+        },
+        {
+          "number": 2,
+          "title": "Basic Calculator with Parentheses and Addition/Subtraction",
+          "difficulty": "Medium",
+          "concept": "Expression evaluation with unary minus and dynamic nested state using stack"
+        },
+        {
+          "number": 3,
+          "title": "Remove All Adjacent Duplicates in String II",
+          "difficulty": "Medium/Hard",
+          "concept": "State compression using dynamic dynamic frequency stacks"
+        },
+        {
+          "number": 4,
+          "title": "Maximum Frequency Stack",
+          "difficulty": "Medium/Hard",
+          "concept": "Frequency mapping combined with bucketed stacks"
+        },
+        {
+          "number": 5,
+          "title": "Build Binary Tree from Preorder Traversal with Null Tokens",
+          "difficulty": "Hard",
+          "concept": "Iterative tree construction from serialized string using explicit state stack"
+        }
+      ],
+      "conceptsCovered": [
+        "stack",
+        "lifo",
+        "expression-evaluation",
+        "string-processing",
+        "hash-map"
+      ],
+      "path": "dsa/day-032",
+      "generatedAt": "2026-11-10T07:52:03+00:00",
+      "generationId": "202f5ad9c2dd4c099b855a267fcd088b",
+      "generator": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
         "agentVersion": "1.0.0"
       },
       "requestRevision": false,
