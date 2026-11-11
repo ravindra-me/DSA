@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "day": 33,
+  "date": "2026-11-11",
+  "topic": "merge-sort",
+  "kind": "new",
+  "language": "python",
+  "generator": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "agentVersion": "1.0.0"
+  },
+  "problems": [
+    {
+      "number": 1,
+      "title": "Merge Two Sorted Lists",
+      "difficulty": "Easy",
+      "concept": "Core merging operation of Merge Sort applied to linked structures",
+      "exports": [
+        "ListNode",
+        "merge_two_lists"
+      ],
+      "files": {
+        "exercise": "exercises/problem-01.md",
+        "notes": "solutions/problem-01.md",
+        "solution": "solutions/problem_01.py",
+        "tests": "tests/test_problem_01.py",
+        "practice": "practice/problem_01.py"
+      },
+      "starterSha256": "01f534eca2671cf7b09831df2ce0d0685135306ac74c66080ca0868b897b7bee",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 2,
+      "title": "Stable Merge Sort on Key-Value Pairs",
+      "difficulty": "Easy/Medium",
+      "concept": "Implementing out-of-place merge sort while preserving stability",
+      "exports": [
+        "stable_merge_sort"
+      ],
+      "files": {
+        "exercise": "exercises/problem-02.md",
+        "notes": "solutions/problem-02.md",
+        "solution": "solutions/problem_02.py",
+        "tests": "tests/test_problem_02.py",
+        "practice": "practice/problem_02.py"
+      },
+      "starterSha256": "6d250d64cf78bbe8257f37a8b18a6dece06d9bc13c6494a690ffb28f92931ab6",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 3,
+      "title": "Sort Linked List in O(n log n)",
+      "difficulty": "Medium",
+      "concept": "Divide-and-conquer merge sort on singly linked lists with O(1) auxiliary node space",
+      "exports": [
+        "ListNode",
+        "sort_list"
+      ],
+      "files": {
+        "exercise": "exercises/problem-03.md",
+        "notes": "solutions/problem-03.md",
+        "solution": "solutions/problem_03.py",
+        "tests": "tests/test_problem_03.py",
+        "practice": "practice/problem_03.py"
+      },
+      "starterSha256": "e6ef8cc753b80785980bae3234171fc8cdf5ee8a3bbf8a26b0ef42ae41b54838",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 4,
+      "title": "Count Global Inversions",
+      "difficulty": "Medium/Hard",
+      "concept": "Augmenting the merge step to count cross-inversions in O(n log n)",
+      "exports": [
+        "count_inversions"
+      ],
+      "files": {
+        "exercise": "exercises/problem-04.md",
+        "notes": "solutions/problem-04.md",
+        "solution": "solutions/problem_04.py",
+        "tests": "tests/test_problem_04.py",
+        "practice": "practice/problem_04.py"
+      },
+      "starterSha256": "03af5a721d884b84fa9cee4e05dc8296a65f522fe9c171c1f5fde905dbef03b2",
+      "testsRun": 9,
+      "repairs": 0
+    },
+    {
+      "number": 5,
+      "title": "Simulate External K-Way Merge Sort",
+      "difficulty": "Hard",
+      "concept": "Chunk-based external sorting and multiway merging with bounded memory buffer",
+      "exports": [
+        "external_k_way_sort"
+      ],
+      "files": {
+        "exercise": "exercises/problem-05.md",
+        "notes": "solutions/problem-05.md",
+        "solution": "solutions/problem_05.py",
+        "tests": "tests/test_problem_05.py",
+        "practice": "practice/problem_05.py"
+      },
+      "starterSha256": "e992eaf6f2884d138d064f7d8a264069a426d8c8216453478aabf318dad3af56",
+      "testsRun": 7,
+      "repairs": 0
+    }
+  ]
+}

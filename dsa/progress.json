@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "currentDay": 32,
-  "lastLessonDate": "2026-11-10",
-  "currentTopic": "stack",
+  "currentDay": 33,
+  "lastLessonDate": "2026-11-11",
+  "currentTopic": "merge-sort",
   "topicsCompleted": [
     "big-o",
     "arrays",
@@ -26,10 +26,11 @@
     "binary-search",
     "binary-search-variations",
     "binary-search-on-answer",
-    "elementary-sorts"
+    "elementary-sorts",
+    "merge-sort"
   ],
-  "nextRoadmapTopic": "merge-sort",
-  "roadmapProgress": "23/59",
+  "nextRoadmapTopic": "quick-sort",
+  "roadmapProgress": "24/59",
   "upcomingRevisions": [
     {
       "topic": "monotonic-stack",
@@ -164,6 +165,12 @@
       "requested": false
     },
     {
+      "topic": "merge-sort",
+      "dueDay": 40,
+      "stage": 1,
+      "requested": false
+    },
+    {
       "topic": "stack",
       "dueDay": 55,
       "stage": 3,
@@ -171,10 +178,10 @@
     }
   ],
   "stats": {
-    "lessons": 32,
-    "newTopicLessons": 23,
+    "lessons": 33,
+    "newTopicLessons": 24,
     "revisionLessons": 9,
-    "problemsGenerated": 160,
+    "problemsGenerated": 165,
     "problemsCompleted": 0,
     "lessonsCompleted": 0
   },
@@ -2202,6 +2209,69 @@
       "generator": {
         "provider": "gemini",
         "model": "gemini-3.5-flash",
+        "agentVersion": "1.0.0"
+      },
+      "requestRevision": false,
+      "revisionRequired": true
+    },
+    {
+      "day": 33,
+      "date": "2026-11-11",
+      "topic": "merge-sort",
+      "topicTitle": "Merge Sort",
+      "phase": "Sorting",
+      "kind": "new",
+      "revisionStage": 0,
+      "difficulty": "progressive",
+      "language": "python",
+      "status": "generated",
+      "problemsGenerated": 5,
+      "problemsCompleted": 0,
+      "problems": [
+        {
+          "number": 1,
+          "title": "Merge Two Sorted Lists",
+          "difficulty": "Easy",
+          "concept": "Core merging operation of Merge Sort applied to linked structures"
+        },
+        {
+          "number": 2,
+          "title": "Stable Merge Sort on Key-Value Pairs",
+          "difficulty": "Easy/Medium",
+          "concept": "Implementing out-of-place merge sort while preserving stability"
+        },
+        {
+          "number": 3,
+          "title": "Sort Linked List in O(n log n)",
+          "difficulty": "Medium",
+          "concept": "Divide-and-conquer merge sort on singly linked lists with O(1) auxiliary node space"
+        },
+        {
+          "number": 4,
+          "title": "Count Global Inversions",
+          "difficulty": "Medium/Hard",
+          "concept": "Augmenting the merge step to count cross-inversions in O(n log n)"
+        },
+        {
+          "number": 5,
+          "title": "Simulate External K-Way Merge Sort",
+          "difficulty": "Hard",
+          "concept": "Chunk-based external sorting and multiway merging with bounded memory buffer"
+        }
+      ],
+      "conceptsCovered": [
+        "divide-and-conquer",
+        "merging-sorted-arrays",
+        "sorting-stability",
+        "inversion-counting",
+        "external-sorting-simulation"
+      ],
+      "path": "dsa/day-033",
+      "generatedAt": "2026-11-11T07:33:00+00:00",
+      "generationId": "030dcaae79c64c0d914c367b1ac418f8",
+      "generator": {
+        "provider": "gemini",
+        "model": "gemini-3.8-flash",
         "agentVersion": "1.0.0"
       },
       "requestRevision": false,
