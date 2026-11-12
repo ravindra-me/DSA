@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "day": 34,
+  "date": "2026-11-12",
+  "topic": "quick-sort",
+  "kind": "new",
+  "language": "python",
+  "generator": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash",
+    "agentVersion": "1.0.0"
+  },
+  "problems": [
+    {
+      "number": 1,
+      "title": "Lomuto Partition Scheme",
+      "difficulty": "Easy",
+      "concept": "Lomuto Partitioning",
+      "exports": [
+        "partition_lomuto"
+      ],
+      "files": {
+        "exercise": "exercises/problem-01.md",
+        "notes": "solutions/problem-01.md",
+        "solution": "solutions/problem_01.py",
+        "tests": "tests/test_problem_01.py",
+        "practice": "practice/problem_01.py"
+      },
+      "starterSha256": "18def4ffb1ede75451e99f0c09dbaf7cbc71aaa6394e303b0eb90e532d25cac0",
+      "testsRun": 6,
+      "repairs": 0
+    },
+    {
+      "number": 2,
+      "title": "Kth Smallest Element (Quickselect)",
+      "difficulty": "Easy/Medium",
+      "concept": "Quickselect",
+      "exports": [
+        "find_kth_smallest"
+      ],
+      "files": {
+        "exercise": "exercises/problem-02.md",
+        "notes": "solutions/problem-02.md",
+        "solution": "solutions/problem_02.py",
+        "tests": "tests/test_problem_02.py",
+        "practice": "practice/problem_02.py"
+      },
+      "starterSha256": "b29615a0496fffc969e4be091f5b6dceff0c22491e3e30dfbfb4c7e2c3fb8464",
+      "testsRun": 6,
+      "repairs": 1
+    },
+    {
+      "number": 3,
+      "title": "Sort Colors (3-Way Partitioning)",
+      "difficulty": "Medium",
+      "concept": "Dutch National Flag Partitioning",
+      "exports": [
+        "sort_colors"
+      ],
+      "files": {
+        "exercise": "exercises/problem-03.md",
+        "notes": "solutions/problem-03.md",
+        "solution": "solutions/problem_03.py",
+        "tests": "tests/test_problem_03.py",
+        "practice": "practice/problem_03.py"
+      },
+      "starterSha256": "7dd2ea63c7d71c525f486bd94736e2e2ce06cd42cae5878aa94508113aa98810",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 4,
+      "title": "K Closest Points to Origin",
+      "difficulty": "Medium/Hard",
+      "concept": "Quickselect with Custom Distance Function",
+      "exports": [
+        "k_closest"
+      ],
+      "files": {
+        "exercise": "exercises/problem-04.md",
+        "notes": "solutions/problem-04.md",
+        "solution": "solutions/problem_04.py",
+        "tests": "tests/test_problem_04.py",
+        "practice": "practice/problem_04.py"
+      },
+      "starterSha256": "8f7f8916595d4432395e189323fdc1560230bbe9d2dcc2dcfbc117742b8260fe",
+      "testsRun": 6,
+      "repairs": 0
+    },
+    {
+      "number": 5,
+      "title": "Wiggle Sort II",
+      "difficulty": "Hard",
+      "concept": "3-Way Partitioning with Index Mapping",
+      "exports": [
+        "wiggle_sort"
+      ],
+      "files": {
+        "exercise": "exercises/problem-05.md",
+        "notes": "solutions/problem-05.md",
+        "solution": "solutions/problem_05.py",
+        "tests": "tests/test_problem_05.py",
+        "practice": "practice/problem_05.py"
+      },
+      "starterSha256": "82f614d0d719ff0b7b8e13d358f6a591ec70d5c3b9b03e7c71cdc0ce3041f7b9",
+      "testsRun": 6,
+      "repairs": 0
+    }
+  ]
+}

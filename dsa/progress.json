@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "currentDay": 33,
-  "lastLessonDate": "2026-11-11",
-  "currentTopic": "merge-sort",
+  "currentDay": 34,
+  "lastLessonDate": "2026-11-12",
+  "currentTopic": "quick-sort",
   "topicsCompleted": [
     "big-o",
     "arrays",
@@ -27,10 +27,11 @@
     "binary-search-variations",
     "binary-search-on-answer",
     "elementary-sorts",
-    "merge-sort"
+    "merge-sort",
+    "quick-sort"
   ],
-  "nextRoadmapTopic": "quick-sort",
-  "roadmapProgress": "24/59",
+  "nextRoadmapTopic": "heap-sort",
+  "roadmapProgress": "25/59",
   "upcomingRevisions": [
     {
       "topic": "monotonic-stack",
@@ -171,6 +172,12 @@
       "requested": false
     },
     {
+      "topic": "quick-sort",
+      "dueDay": 41,
+      "stage": 1,
+      "requested": false
+    },
+    {
       "topic": "stack",
       "dueDay": 55,
       "stage": 3,
@@ -178,10 +185,10 @@
     }
   ],
   "stats": {
-    "lessons": 33,
-    "newTopicLessons": 24,
+    "lessons": 34,
+    "newTopicLessons": 25,
     "revisionLessons": 9,
-    "problemsGenerated": 165,
+    "problemsGenerated": 170,
     "problemsCompleted": 0,
     "lessonsCompleted": 0
   },
@@ -2272,6 +2279,69 @@
       "generator": {
         "provider": "gemini",
         "model": "gemini-3.8-flash",
+        "agentVersion": "1.0.0"
+      },
+      "requestRevision": false,
+      "revisionRequired": true
+    },
+    {
+      "day": 34,
+      "date": "2026-11-12",
+      "topic": "quick-sort",
+      "topicTitle": "Quick Sort & Quickselect",
+      "phase": "Sorting",
+      "kind": "new",
+      "revisionStage": 0,
+      "difficulty": "progressive",
+      "language": "python",
+      "status": "generated",
+      "problemsGenerated": 5,
+      "problemsCompleted": 0,
+      "problems": [
+        {
+          "number": 1,
+          "title": "Lomuto Partition Scheme",
+          "difficulty": "Easy",
+          "concept": "Lomuto Partitioning"
+        },
+        {
+          "number": 2,
+          "title": "Kth Smallest Element (Quickselect)",
+          "difficulty": "Easy/Medium",
+          "concept": "Quickselect"
+        },
+        {
+          "number": 3,
+          "title": "Sort Colors (3-Way Partitioning)",
+          "difficulty": "Medium",
+          "concept": "Dutch National Flag Partitioning"
+        },
+        {
+          "number": 4,
+          "title": "K Closest Points to Origin",
+          "difficulty": "Medium/Hard",
+          "concept": "Quickselect with Custom Distance Function"
+        },
+        {
+          "number": 5,
+          "title": "Wiggle Sort II",
+          "difficulty": "Hard",
+          "concept": "3-Way Partitioning with Index Mapping"
+        }
+      ],
+      "conceptsCovered": [
+        "Lomuto Partitioning",
+        "Hoare Partitioning",
+        "Dutch National Flag Partitioning",
+        "Randomized Quickselect",
+        "In-Place Sorting"
+      ],
+      "path": "dsa/day-034",
+      "generatedAt": "2026-11-12T07:42:15+00:00",
+      "generationId": "d8dad102dbb9400eaa1cd689e2dd847f",
+      "generator": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
         "agentVersion": "1.0.0"
       },
       "requestRevision": false,
