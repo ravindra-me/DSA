@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "currentDay": 34,
-  "lastLessonDate": "2026-11-12",
-  "currentTopic": "quick-sort",
+  "currentDay": 35,
+  "lastLessonDate": "2026-11-13",
+  "currentTopic": "monotonic-stack",
   "topicsCompleted": [
     "big-o",
     "arrays",
@@ -33,12 +33,6 @@
   "nextRoadmapTopic": "heap-sort",
   "roadmapProgress": "25/59",
   "upcomingRevisions": [
-    {
-      "topic": "monotonic-stack",
-      "dueDay": 19,
-      "stage": 1,
-      "requested": false
-    },
     {
       "topic": "queue",
       "dueDay": 20,
@@ -182,13 +176,19 @@
       "dueDay": 55,
       "stage": 3,
       "requested": false
+    },
+    {
+      "topic": "monotonic-stack",
+      "dueDay": 57,
+      "stage": 3,
+      "requested": false
     }
   ],
   "stats": {
-    "lessons": 34,
+    "lessons": 35,
     "newTopicLessons": 25,
-    "revisionLessons": 9,
-    "problemsGenerated": 170,
+    "revisionLessons": 10,
+    "problemsGenerated": 175,
     "problemsCompleted": 0,
     "lessonsCompleted": 0
   },
@@ -2339,6 +2339,69 @@
       "path": "dsa/day-034",
       "generatedAt": "2026-11-12T07:42:15+00:00",
       "generationId": "d8dad102dbb9400eaa1cd689e2dd847f",
+      "generator": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
+        "agentVersion": "1.0.0"
+      },
+      "requestRevision": false,
+      "revisionRequired": true
+    },
+    {
+      "day": 35,
+      "date": "2026-11-13",
+      "topic": "monotonic-stack",
+      "topicTitle": "Monotonic Stack",
+      "phase": "Linear Data Structures",
+      "kind": "revision",
+      "revisionStage": 2,
+      "difficulty": "progressive",
+      "language": "python",
+      "status": "generated",
+      "problemsGenerated": 5,
+      "problemsCompleted": 0,
+      "problems": [
+        {
+          "number": 1,
+          "title": "Visible Mountains Count",
+          "difficulty": "Easy/Medium",
+          "concept": "Next Greater Element with distance thresholding"
+        },
+        {
+          "number": 2,
+          "title": "Remove Duplicate Letters Lexicographically",
+          "difficulty": "Medium",
+          "concept": "Monotonic Stack with Hash Map / Frequency Count"
+        },
+        {
+          "number": 3,
+          "title": "Maximum Subarray Min-Product",
+          "difficulty": "Medium/Hard",
+          "concept": "Previous/Next Smaller Element with Prefix Sums"
+        },
+        {
+          "number": 4,
+          "title": "Maximal Rectangle of Ones in Binary Grid",
+          "difficulty": "Medium/Hard",
+          "concept": "2D Grid reduction to Monotonic Stack Histogram"
+        },
+        {
+          "number": 5,
+          "title": "Constrained Subsequence Sum with Width Limit",
+          "difficulty": "Hard",
+          "concept": "Monotonic Stack/Deque with Dynamic Programming"
+        }
+      ],
+      "conceptsCovered": [
+        "monotonic-stack",
+        "next-greater-element",
+        "previous-smaller-element",
+        "histogram-2d",
+        "lexicographical-stack"
+      ],
+      "path": "dsa/day-035",
+      "generatedAt": "2026-11-13T07:13:49+00:00",
+      "generationId": "4e6dca2457e3487894ca1ff30cb1e7cb",
       "generator": {
         "provider": "gemini",
         "model": "gemini-3.5-flash",

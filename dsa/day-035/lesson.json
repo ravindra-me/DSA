@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "day": 35,
+  "date": "2026-11-13",
+  "topic": "monotonic-stack",
+  "kind": "revision",
+  "language": "python",
+  "generator": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash",
+    "agentVersion": "1.0.0"
+  },
+  "problems": [
+    {
+      "number": 1,
+      "title": "Visible Mountains Count",
+      "difficulty": "Easy/Medium",
+      "concept": "Next Greater Element with distance thresholding",
+      "exports": [
+        "count_visible_mountains"
+      ],
+      "files": {
+        "exercise": "exercises/problem-01.md",
+        "notes": "solutions/problem-01.md",
+        "solution": "solutions/problem_01.py",
+        "tests": "tests/test_problem_01.py",
+        "practice": "practice/problem_01.py"
+      },
+      "starterSha256": "7e39654a542d4a767b28fe32e1ccb3c536220e25aa4363233bdefc5c62418ba0",
+      "testsRun": 8,
+      "repairs": 0
+    },
+    {
+      "number": 2,
+      "title": "Remove Duplicate Letters Lexicographically",
+      "difficulty": "Medium",
+      "concept": "Monotonic Stack with Hash Map / Frequency Count",
+      "exports": [
+        "remove_duplicate_letters"
+      ],
+      "files": {
+        "exercise": "exercises/problem-02.md",
+        "notes": "solutions/problem-02.md",
+        "solution": "solutions/problem_02.py",
+        "tests": "tests/test_problem_02.py",
+        "practice": "practice/problem_02.py"
+      },
+      "starterSha256": "bd55d933aebb6cdd66223304ca81747680af41d60ce1936a47e06232a05f882a",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 3,
+      "title": "Maximum Subarray Min-Product",
+      "difficulty": "Medium/Hard",
+      "concept": "Previous/Next Smaller Element with Prefix Sums",
+      "exports": [
+        "max_min_product"
+      ],
+      "files": {
+        "exercise": "exercises/problem-03.md",
+        "notes": "solutions/problem-03.md",
+        "solution": "solutions/problem_03.py",
+        "tests": "tests/test_problem_03.py",
+        "practice": "practice/problem_03.py"
+      },
+      "starterSha256": "89890e5fa0fb4b07ec64321d8d4286c4790b2ec51d496ee9782279a89bfc934d",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 4,
+      "title": "Maximal Rectangle of Ones in Binary Grid",
+      "difficulty": "Medium/Hard",
+      "concept": "2D Grid reduction to Monotonic Stack Histogram",
+      "exports": [
+        "maximal_rectangle"
+      ],
+      "files": {
+        "exercise": "exercises/problem-04.md",
+        "notes": "solutions/problem-04.md",
+        "solution": "solutions/problem_04.py",
+        "tests": "tests/test_problem_04.py",
+        "practice": "practice/problem_04.py"
+      },
+      "starterSha256": "fde9b173a2fc8ed5291b75d1eff136228661b20a2f94b02539516009a21cef55",
+      "testsRun": 7,
+      "repairs": 2
+    },
+    {
+      "number": 5,
+      "title": "Constrained Subsequence Sum with Width Limit",
+      "difficulty": "Hard",
+      "concept": "Monotonic Stack/Deque with Dynamic Programming",
+      "exports": [
+        "constrained_subset_sum"
+      ],
+      "files": {
+        "exercise": "exercises/problem-05.md",
+        "notes": "solutions/problem-05.md",
+        "solution": "solutions/problem_05.py",
+        "tests": "tests/test_problem_05.py",
+        "practice": "practice/problem_05.py"
+      },
+      "starterSha256": "bfa84527bbb3e86e71ddcc409c90ac0e4755ff5a6253312c33d687293e8a5c42",
+      "testsRun": 7,
+      "repairs": 0
+    }
+  ]
+}
