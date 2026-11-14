@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "currentDay": 35,
-  "lastLessonDate": "2026-11-13",
-  "currentTopic": "monotonic-stack",
+  "currentDay": 36,
+  "lastLessonDate": "2026-11-14",
+  "currentTopic": "heap-sort",
   "topicsCompleted": [
     "big-o",
     "arrays",
@@ -28,10 +28,11 @@
     "binary-search-on-answer",
     "elementary-sorts",
     "merge-sort",
-    "quick-sort"
+    "quick-sort",
+    "heap-sort"
   ],
-  "nextRoadmapTopic": "heap-sort",
-  "roadmapProgress": "25/59",
+  "nextRoadmapTopic": "non-comparison-sorts",
+  "roadmapProgress": "26/59",
   "upcomingRevisions": [
     {
       "topic": "queue",
@@ -172,6 +173,12 @@
       "requested": false
     },
     {
+      "topic": "heap-sort",
+      "dueDay": 43,
+      "stage": 1,
+      "requested": false
+    },
+    {
       "topic": "stack",
       "dueDay": 55,
       "stage": 3,
@@ -185,10 +192,10 @@
     }
   ],
   "stats": {
-    "lessons": 35,
-    "newTopicLessons": 25,
+    "lessons": 36,
+    "newTopicLessons": 26,
     "revisionLessons": 10,
-    "problemsGenerated": 175,
+    "problemsGenerated": 180,
     "problemsCompleted": 0,
     "lessonsCompleted": 0
   },
@@ -2405,6 +2412,70 @@
       "generator": {
         "provider": "gemini",
         "model": "gemini-3.5-flash",
+        "agentVersion": "1.0.0"
+      },
+      "requestRevision": false,
+      "revisionRequired": true
+    },
+    {
+      "day": 36,
+      "date": "2026-11-14",
+      "topic": "heap-sort",
+      "topicTitle": "Heap Sort",
+      "phase": "Sorting",
+      "kind": "new",
+      "revisionStage": 0,
+      "difficulty": "progressive",
+      "language": "python",
+      "status": "generated",
+      "problemsGenerated": 5,
+      "problemsCompleted": 0,
+      "problems": [
+        {
+          "number": 1,
+          "title": "Validate Max-Heap Array",
+          "difficulty": "Easy",
+          "concept": "Implicit Tree Representation & Max-Heap Invariant"
+        },
+        {
+          "number": 2,
+          "title": "In-Place Max-Heapify Subtree",
+          "difficulty": "Easy/Medium",
+          "concept": "Sift-Down / Heapify Routine"
+        },
+        {
+          "number": 3,
+          "title": "Classic In-Place Heap Sort",
+          "difficulty": "Medium",
+          "concept": "Full Heap Sort Algorithm"
+        },
+        {
+          "number": 4,
+          "title": "Sort K-Messed Array",
+          "difficulty": "Medium/Hard",
+          "concept": "Bounded Heap Sorting Window"
+        },
+        {
+          "number": 5,
+          "title": "In-Place Partial Selection Sort via Heap",
+          "difficulty": "Hard",
+          "concept": "Partial Heap Sort for Top-K Elements"
+        }
+      ],
+      "conceptsCovered": [
+        "Implicit Binary Tree Array Indexing",
+        "Max-Heap Property",
+        "Sift-Down (Heapify)",
+        "Linear-Time Heap Construction",
+        "In-Place Sorting",
+        "Comparative Cache Locality Analysis"
+      ],
+      "path": "dsa/day-036",
+      "generatedAt": "2026-11-14T07:27:52+00:00",
+      "generationId": "3d30e5233c304f2e8cb061018266169f",
+      "generator": {
+        "provider": "gemini",
+        "model": "gemini-3.8-flash",
         "agentVersion": "1.0.0"
       },
       "requestRevision": false,

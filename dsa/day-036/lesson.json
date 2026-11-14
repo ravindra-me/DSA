@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "day": 36,
+  "date": "2026-11-14",
+  "topic": "heap-sort",
+  "kind": "new",
+  "language": "python",
+  "generator": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "agentVersion": "1.0.0"
+  },
+  "problems": [
+    {
+      "number": 1,
+      "title": "Validate Max-Heap Array",
+      "difficulty": "Easy",
+      "concept": "Implicit Tree Representation & Max-Heap Invariant",
+      "exports": [
+        "is_valid_max_heap"
+      ],
+      "files": {
+        "exercise": "exercises/problem-01.md",
+        "notes": "solutions/problem-01.md",
+        "solution": "solutions/problem_01.py",
+        "tests": "tests/test_problem_01.py",
+        "practice": "practice/problem_01.py"
+      },
+      "starterSha256": "6647680aaab23715ec7194c8c38a8ecd7195e0bf4426d38be0ccb203f7af2564",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 2,
+      "title": "In-Place Max-Heapify Subtree",
+      "difficulty": "Easy/Medium",
+      "concept": "Sift-Down / Heapify Routine",
+      "exports": [
+        "sift_down"
+      ],
+      "files": {
+        "exercise": "exercises/problem-02.md",
+        "notes": "solutions/problem-02.md",
+        "solution": "solutions/problem_02.py",
+        "tests": "tests/test_problem_02.py",
+        "practice": "practice/problem_02.py"
+      },
+      "starterSha256": "5df6f33665acf65fc8e2a58238ba4e249b5299db5e97dd915cf1d534e193b234",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 3,
+      "title": "Classic In-Place Heap Sort",
+      "difficulty": "Medium",
+      "concept": "Full Heap Sort Algorithm",
+      "exports": [
+        "heap_sort"
+      ],
+      "files": {
+        "exercise": "exercises/problem-03.md",
+        "notes": "solutions/problem-03.md",
+        "solution": "solutions/problem_03.py",
+        "tests": "tests/test_problem_03.py",
+        "practice": "practice/problem_03.py"
+      },
+      "starterSha256": "589a9f15719f8511467add5695fc4302b108bf297d39f6fe60000f824fa9864f",
+      "testsRun": 6,
+      "repairs": 0
+    },
+    {
+      "number": 4,
+      "title": "Sort K-Messed Array",
+      "difficulty": "Medium/Hard",
+      "concept": "Bounded Heap Sorting Window",
+      "exports": [
+        "sort_k_messed_array"
+      ],
+      "files": {
+        "exercise": "exercises/problem-04.md",
+        "notes": "solutions/problem-04.md",
+        "solution": "solutions/problem_04.py",
+        "tests": "tests/test_problem_04.py",
+        "practice": "practice/problem_04.py"
+      },
+      "starterSha256": "54afac580040afde1b523b2b72d025d3e249932e26d7fc740a5eba798f28071e",
+      "testsRun": 7,
+      "repairs": 1
+    },
+    {
+      "number": 5,
+      "title": "In-Place Partial Selection Sort via Heap",
+      "difficulty": "Hard",
+      "concept": "Partial Heap Sort for Top-K Elements",
+      "exports": [
+        "partial_heap_sort"
+      ],
+      "files": {
+        "exercise": "exercises/problem-05.md",
+        "notes": "solutions/problem-05.md",
+        "solution": "solutions/problem_05.py",
+        "tests": "tests/test_problem_05.py",
+        "practice": "practice/problem_05.py"
+      },
+      "starterSha256": "027733e410fe3857ba41341473ecd169b4b765e6dcadcd1cb029c9a4273c0571",
+      "testsRun": 7,
+      "repairs": 0
+    }
+  ]
+}
