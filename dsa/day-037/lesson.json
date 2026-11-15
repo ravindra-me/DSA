@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "day": 37,
+  "date": "2026-11-15",
+  "topic": "non-comparison-sorts",
+  "kind": "new",
+  "language": "python",
+  "generator": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "agentVersion": "1.0.0"
+  },
+  "problems": [
+    {
+      "number": 1,
+      "title": "Sort Colors and Frequencies",
+      "difficulty": "Easy",
+      "concept": "Counting Sort with shift offset and key preservation",
+      "exports": [
+        "counting_sort"
+      ],
+      "files": {
+        "exercise": "exercises/problem-01.md",
+        "notes": "solutions/problem-01.md",
+        "solution": "solutions/problem_01.py",
+        "tests": "tests/test_problem_01.py",
+        "practice": "practice/problem_01.py"
+      },
+      "starterSha256": "6a2a2db2504c28f702638b4a450ca36898b36804a55620e487483e06593adab1",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 2,
+      "title": "Sort Pairs by Secondary Key Stably",
+      "difficulty": "Easy/Medium",
+      "concept": "Stable Counting Sort using prefix sums",
+      "exports": [
+        "stable_sort_scores"
+      ],
+      "files": {
+        "exercise": "exercises/problem-02.md",
+        "notes": "solutions/problem-02.md",
+        "solution": "solutions/problem_02.py",
+        "tests": "tests/test_problem_02.py",
+        "practice": "practice/problem_02.py"
+      },
+      "starterSha256": "e613c97ee6219c4b8b10315eabe9d7a1ee77265a2b26346b24df896aa452c0de",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 3,
+      "title": "Radix Sort 32-bit Integers",
+      "difficulty": "Medium",
+      "concept": "LSD Radix Sort with bitwise shifts or base representation",
+      "exports": [
+        "radix_sort"
+      ],
+      "files": {
+        "exercise": "exercises/problem-03.md",
+        "notes": "solutions/problem-03.md",
+        "solution": "solutions/problem_03.py",
+        "tests": "tests/test_problem_03.py",
+        "practice": "practice/problem_03.py"
+      },
+      "starterSha256": "88de0acc251d0a0a0a1ebe1ae9ab0aee7a06b0232d95d4aa1cb18753d8c907ab",
+      "testsRun": 8,
+      "repairs": 0
+    },
+    {
+      "number": 4,
+      "title": "Uniform Bucket Sort",
+      "difficulty": "Medium/Hard",
+      "concept": "Bucket Sort with uniform distribution normalization",
+      "exports": [
+        "bucket_sort"
+      ],
+      "files": {
+        "exercise": "exercises/problem-04.md",
+        "notes": "solutions/problem-04.md",
+        "solution": "solutions/problem_04.py",
+        "tests": "tests/test_problem_04.py",
+        "practice": "practice/problem_04.py"
+      },
+      "starterSha256": "e7548d1997396e8df31a96bd50ee712c8a9266d7b12afc89bdc450cb73da7ab4",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 5,
+      "title": "Maximum Gap in Linear Time",
+      "difficulty": "Hard",
+      "concept": "Pigeonhole Principle with Bucket Partitioning",
+      "exports": [
+        "maximum_gap"
+      ],
+      "files": {
+        "exercise": "exercises/problem-05.md",
+        "notes": "solutions/problem-05.md",
+        "solution": "solutions/problem_05.py",
+        "tests": "tests/test_problem_05.py",
+        "practice": "practice/problem_05.py"
+      },
+      "starterSha256": "0388d3a57c6ce1ca87ccd98dee097934c8c93fdcef43685681f9783566da9a03",
+      "testsRun": 7,
+      "repairs": 0
+    }
+  ]
+}

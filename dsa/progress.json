@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "currentDay": 36,
-  "lastLessonDate": "2026-11-14",
-  "currentTopic": "heap-sort",
+  "currentDay": 37,
+  "lastLessonDate": "2026-11-15",
+  "currentTopic": "non-comparison-sorts",
   "topicsCompleted": [
     "big-o",
     "arrays",
@@ -29,10 +29,11 @@
     "elementary-sorts",
     "merge-sort",
     "quick-sort",
-    "heap-sort"
+    "heap-sort",
+    "non-comparison-sorts"
   ],
-  "nextRoadmapTopic": "non-comparison-sorts",
-  "roadmapProgress": "26/59",
+  "nextRoadmapTopic": "binary-tree",
+  "roadmapProgress": "27/59",
   "upcomingRevisions": [
     {
       "topic": "queue",
@@ -179,6 +180,12 @@
       "requested": false
     },
     {
+      "topic": "non-comparison-sorts",
+      "dueDay": 44,
+      "stage": 1,
+      "requested": false
+    },
+    {
       "topic": "stack",
       "dueDay": 55,
       "stage": 3,
@@ -192,10 +199,10 @@
     }
   ],
   "stats": {
-    "lessons": 36,
-    "newTopicLessons": 26,
+    "lessons": 37,
+    "newTopicLessons": 27,
     "revisionLessons": 10,
-    "problemsGenerated": 180,
+    "problemsGenerated": 185,
     "problemsCompleted": 0,
     "lessonsCompleted": 0
   },
@@ -2473,6 +2480,69 @@
       "path": "dsa/day-036",
       "generatedAt": "2026-11-14T07:27:52+00:00",
       "generationId": "3d30e5233c304f2e8cb061018266169f",
+      "generator": {
+        "provider": "gemini",
+        "model": "gemini-3.8-flash",
+        "agentVersion": "1.0.0"
+      },
+      "requestRevision": false,
+      "revisionRequired": true
+    },
+    {
+      "day": 37,
+      "date": "2026-11-15",
+      "topic": "non-comparison-sorts",
+      "topicTitle": "Counting, Bucket & Radix Sort",
+      "phase": "Sorting",
+      "kind": "new",
+      "revisionStage": 0,
+      "difficulty": "progressive",
+      "language": "python",
+      "status": "generated",
+      "problemsGenerated": 5,
+      "problemsCompleted": 0,
+      "problems": [
+        {
+          "number": 1,
+          "title": "Sort Colors and Frequencies",
+          "difficulty": "Easy",
+          "concept": "Counting Sort with shift offset and key preservation"
+        },
+        {
+          "number": 2,
+          "title": "Sort Pairs by Secondary Key Stably",
+          "difficulty": "Easy/Medium",
+          "concept": "Stable Counting Sort using prefix sums"
+        },
+        {
+          "number": 3,
+          "title": "Radix Sort 32-bit Integers",
+          "difficulty": "Medium",
+          "concept": "LSD Radix Sort with bitwise shifts or base representation"
+        },
+        {
+          "number": 4,
+          "title": "Uniform Bucket Sort",
+          "difficulty": "Medium/Hard",
+          "concept": "Bucket Sort with uniform distribution normalization"
+        },
+        {
+          "number": 5,
+          "title": "Maximum Gap in Linear Time",
+          "difficulty": "Hard",
+          "concept": "Pigeonhole Principle with Bucket Partitioning"
+        }
+      ],
+      "conceptsCovered": [
+        "counting-sort",
+        "stable-sorting",
+        "radix-sort-lsd",
+        "bucket-sort",
+        "linear-sorting-limits"
+      ],
+      "path": "dsa/day-037",
+      "generatedAt": "2026-11-15T07:25:16+00:00",
+      "generationId": "e9fb845035094001863dba31c4042db3",
       "generator": {
         "provider": "gemini",
         "model": "gemini-3.8-flash",
