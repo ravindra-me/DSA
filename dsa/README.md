@@ -4,11 +4,10 @@ Generated automatically by the [DSA learning agent](../.github/agents/README.md)
 
 | Current day | Roadmap progress | Problems solved | Next new topic |
 |-------------|------------------|-----------------|----------------|
-| 37 | 27/59 topics | 0/185 | binary-tree |
+| 38 | 27/59 topics | 0/190 | binary-tree |
 
 ## Upcoming revisions
 
-- `queue`: due on day 20
 - `big-o`: due on day 22
 - `deque`: due on day 22
 - `arrays`: due on day 23
@@ -18,11 +17,13 @@ Generated automatically by the [DSA learning agent](../.github/agents/README.md)
 - `hash-set`: due on day 25
 - `math-basics`: due on day 26
 - `frequency-counting`: due on day 26
+- `bit-manipulation`: due on day 27
 
 ## All lessons
 
 | Day | Date | Topic | Type | Solved | Status |
 |-----|------|-------|------|--------|--------|
+| [38](day-038/README.md) | 2026-11-16 | Queue | Revision | 0/5 | generated |
 | [37](day-037/README.md) | 2026-11-15 | Counting, Bucket & Radix Sort | New | 0/5 | generated |
 | [36](day-036/README.md) | 2026-11-14 | Heap Sort | New | 0/5 | generated |
 | [35](day-035/README.md) | 2026-11-13 | Monotonic Stack | Revision | 0/5 | generated |

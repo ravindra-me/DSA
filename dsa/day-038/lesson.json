@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "day": 38,
+  "date": "2026-11-16",
+  "topic": "queue",
+  "kind": "revision",
+  "language": "python",
+  "generator": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash",
+    "agentVersion": "1.0.0"
+  },
+  "problems": [
+    {
+      "number": 1,
+      "title": "First Unique Character in Dynamic Stream",
+      "difficulty": "Easy/Medium",
+      "concept": "FIFO queue with frequency counting for streaming order preservation",
+      "exports": [
+        "StreamFirstUnique"
+      ],
+      "files": {
+        "exercise": "exercises/problem-01.md",
+        "notes": "solutions/problem-01.md",
+        "solution": "solutions/problem_01.py",
+        "tests": "tests/test_problem_01.py",
+        "practice": "practice/problem_01.py"
+      },
+      "starterSha256": "2624986df02685c0e8f324c70d0cedf7ddd8a910afa9dfe17b7e63d8ad1e456d",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 2,
+      "title": "FIFO Task Batcher with Capacity and Timeout",
+      "difficulty": "Medium",
+      "concept": "Queue batch aggregation with timestamp and capacity flushing",
+      "exports": [
+        "batch_tasks"
+      ],
+      "files": {
+        "exercise": "exercises/problem-02.md",
+        "notes": "solutions/problem-02.md",
+        "solution": "solutions/problem_02.py",
+        "tests": "tests/test_problem_02.py",
+        "practice": "practice/problem_02.py"
+      },
+      "starterSha256": "fb65439bd2ba879354d1a161ed618b295126e4e9a58f3c9da53cff10ce5a4cee",
+      "testsRun": 8,
+      "repairs": 0
+    },
+    {
+      "number": 3,
+      "title": "Circular Buffer with Overwrite and Range Read",
+      "difficulty": "Medium/Hard",
+      "concept": "Fixed-capacity circular buffer with overwrite eviction and historical reading",
+      "exports": [
+        "OverwriteBuffer"
+      ],
+      "files": {
+        "exercise": "exercises/problem-03.md",
+        "notes": "solutions/problem-03.md",
+        "solution": "solutions/problem_03.py",
+        "tests": "tests/test_problem_03.py",
+        "practice": "practice/problem_03.py"
+      },
+      "starterSha256": "75d00075eb07c34021a105ceea72afae3066a77223122b9ec2f5cd2c21bc21c6",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 4,
+      "title": "Card Deck Revealing Order",
+      "difficulty": "Medium/Hard",
+      "concept": "Simulating reverse FIFO transformations using queue state transitions",
+      "exports": [
+        "deck_revealed_increasing"
+      ],
+      "files": {
+        "exercise": "exercises/problem-04.md",
+        "notes": "solutions/problem-04.md",
+        "solution": "solutions/problem_04.py",
+        "tests": "tests/test_problem_04.py",
+        "practice": "practice/problem_04.py"
+      },
+      "starterSha256": "92eabd95423c95de409baa47c35d36ce6b83d38ab593b9725539b1e62438e3e4",
+      "testsRun": 6,
+      "repairs": 0
+    },
+    {
+      "number": 5,
+      "title": "Shortest Path in Grid with Obstacle Elimination Budget",
+      "difficulty": "Hard",
+      "concept": "Multi-dimensional state exploration using FIFO BFS queue",
+      "exports": [
+        "shortest_path_elimination"
+      ],
+      "files": {
+        "exercise": "exercises/problem-05.md",
+        "notes": "solutions/problem-05.md",
+        "solution": "solutions/problem_05.py",
+        "tests": "tests/test_problem_05.py",
+        "practice": "practice/problem_05.py"
+      },
+      "starterSha256": "33a3a32c88c47148ce56b2651a75c4e3878e54b58a3bd13c79a672350359fd5f",
+      "testsRun": 7,
+      "repairs": 1
+    }
+  ]
+}

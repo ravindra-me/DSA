@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "currentDay": 37,
-  "lastLessonDate": "2026-11-15",
-  "currentTopic": "non-comparison-sorts",
+  "currentDay": 38,
+  "lastLessonDate": "2026-11-16",
+  "currentTopic": "queue",
   "topicsCompleted": [
     "big-o",
     "arrays",
@@ -35,12 +35,6 @@
   "nextRoadmapTopic": "binary-tree",
   "roadmapProgress": "27/59",
   "upcomingRevisions": [
-    {
-      "topic": "queue",
-      "dueDay": 20,
-      "stage": 1,
-      "requested": false
-    },
     {
       "topic": "big-o",
       "dueDay": 22,
@@ -196,13 +190,19 @@
       "dueDay": 57,
       "stage": 3,
       "requested": false
+    },
+    {
+      "topic": "queue",
+      "dueDay": 58,
+      "stage": 3,
+      "requested": false
     }
   ],
   "stats": {
-    "lessons": 37,
+    "lessons": 38,
     "newTopicLessons": 27,
-    "revisionLessons": 10,
-    "problemsGenerated": 185,
+    "revisionLessons": 11,
+    "problemsGenerated": 190,
     "problemsCompleted": 0,
     "lessonsCompleted": 0
   },
@@ -2546,6 +2546,69 @@
       "generator": {
         "provider": "gemini",
         "model": "gemini-3.8-flash",
+        "agentVersion": "1.0.0"
+      },
+      "requestRevision": false,
+      "revisionRequired": true
+    },
+    {
+      "day": 38,
+      "date": "2026-11-16",
+      "topic": "queue",
+      "topicTitle": "Queue",
+      "phase": "Linear Data Structures",
+      "kind": "revision",
+      "revisionStage": 2,
+      "difficulty": "progressive",
+      "language": "python",
+      "status": "generated",
+      "problemsGenerated": 5,
+      "problemsCompleted": 0,
+      "problems": [
+        {
+          "number": 1,
+          "title": "First Unique Character in Dynamic Stream",
+          "difficulty": "Easy/Medium",
+          "concept": "FIFO queue with frequency counting for streaming order preservation"
+        },
+        {
+          "number": 2,
+          "title": "FIFO Task Batcher with Capacity and Timeout",
+          "difficulty": "Medium",
+          "concept": "Queue batch aggregation with timestamp and capacity flushing"
+        },
+        {
+          "number": 3,
+          "title": "Circular Buffer with Overwrite and Range Read",
+          "difficulty": "Medium/Hard",
+          "concept": "Fixed-capacity circular buffer with overwrite eviction and historical reading"
+        },
+        {
+          "number": 4,
+          "title": "Card Deck Revealing Order",
+          "difficulty": "Medium/Hard",
+          "concept": "Simulating reverse FIFO transformations using queue state transitions"
+        },
+        {
+          "number": 5,
+          "title": "Shortest Path in Grid with Obstacle Elimination Budget",
+          "difficulty": "Hard",
+          "concept": "Multi-dimensional state exploration using FIFO BFS queue"
+        }
+      ],
+      "conceptsCovered": [
+        "FIFO semantics",
+        "Circular buffer indices",
+        "Amortized analysis via two stacks",
+        "Batch processing and rate-limiting queues",
+        "State serialization and tracking"
+      ],
+      "path": "dsa/day-038",
+      "generatedAt": "2026-11-16T10:29:57+00:00",
+      "generationId": "73e04c33e6ff49cd825379c1582a664f",
+      "generator": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash",
         "agentVersion": "1.0.0"
       },
       "requestRevision": false,
