@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "day": 39,
+  "date": "2026-11-17",
+  "topic": "binary-tree",
+  "kind": "new",
+  "language": "python",
+  "generator": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "agentVersion": "1.0.0"
+  },
+  "problems": [
+    {
+      "number": 1,
+      "title": "Calculate Maximum Tree Depth",
+      "difficulty": "Easy",
+      "concept": "Fundamental bottom-up tree recursion",
+      "exports": [
+        "TreeNode",
+        "max_depth"
+      ],
+      "files": {
+        "exercise": "exercises/problem-01.md",
+        "notes": "solutions/problem-01.md",
+        "solution": "solutions/problem_01.py",
+        "tests": "tests/test_problem_01.py",
+        "practice": "practice/problem_01.py"
+      },
+      "starterSha256": "e735643abe5afe5d9ecf98c9af18813645e01d73ac41a18de4d189a7f1b7fcdd",
+      "testsRun": 8,
+      "repairs": 0
+    },
+    {
+      "number": 2,
+      "title": "Same Tree Verification",
+      "difficulty": "Easy/Medium",
+      "concept": "Dual-node recursive traversal and structural identity",
+      "exports": [
+        "TreeNode",
+        "is_same_tree"
+      ],
+      "files": {
+        "exercise": "exercises/problem-02.md",
+        "notes": "solutions/problem-02.md",
+        "solution": "solutions/problem_02.py",
+        "tests": "tests/test_problem_02.py",
+        "practice": "practice/problem_02.py"
+      },
+      "starterSha256": "cd459bcebf924be417554f8b316a1f380b4084cd8aad4cf1544e31e1d6a9b80e",
+      "testsRun": 8,
+      "repairs": 0
+    },
+    {
+      "number": 3,
+      "title": "Invert Binary Tree",
+      "difficulty": "Medium",
+      "concept": "In-place structural transformation via recursive swap",
+      "exports": [
+        "TreeNode",
+        "invert_tree"
+      ],
+      "files": {
+        "exercise": "exercises/problem-03.md",
+        "notes": "solutions/problem-03.md",
+        "solution": "solutions/problem_03.py",
+        "tests": "tests/test_problem_03.py",
+        "practice": "practice/problem_03.py"
+      },
+      "starterSha256": "64dc8ac07a25d9cea21e8c901bb318f152cefb5f8915892ca4e67fe3da9fefcf",
+      "testsRun": 7,
+      "repairs": 1
+    },
+    {
+      "number": 4,
+      "title": "Check Symmetric Tree",
+      "difficulty": "Medium/Hard",
+      "concept": "Mirror recursion / symmetric divide and conquer",
+      "exports": [
+        "TreeNode",
+        "is_symmetric"
+      ],
+      "files": {
+        "exercise": "exercises/problem-04.md",
+        "notes": "solutions/problem-04.md",
+        "solution": "solutions/problem_04.py",
+        "tests": "tests/test_problem_04.py",
+        "practice": "practice/problem_04.py"
+      },
+      "starterSha256": "4b9b6885b55927fdfe8cf99a3ed46a5333361caf6fdda6a6eb85995b87178711",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 5,
+      "title": "Path Sum Validation and Target Matching",
+      "difficulty": "Hard",
+      "concept": "Root-to-leaf recursive path tracking and backtracking accumulation",
+      "exports": [
+        "TreeNode",
+        "has_path_sum"
+      ],
+      "files": {
+        "exercise": "exercises/problem-05.md",
+        "notes": "solutions/problem-05.md",
+        "solution": "solutions/problem_05.py",
+        "tests": "tests/test_problem_05.py",
+        "practice": "practice/problem_05.py"
+      },
+      "starterSha256": "b3d1ba6c4fe7b305db058045472831ee9c24285df985b45e0b59ba616d83b921",
+      "testsRun": 7,
+      "repairs": 0
+    }
+  ]
+}

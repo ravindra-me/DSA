@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "currentDay": 38,
-  "lastLessonDate": "2026-11-16",
-  "currentTopic": "queue",
+  "currentDay": 39,
+  "lastLessonDate": "2026-11-17",
+  "currentTopic": "binary-tree",
   "topicsCompleted": [
     "big-o",
     "arrays",
@@ -30,10 +30,11 @@
     "merge-sort",
     "quick-sort",
     "heap-sort",
-    "non-comparison-sorts"
+    "non-comparison-sorts",
+    "binary-tree"
   ],
-  "nextRoadmapTopic": "binary-tree",
-  "roadmapProgress": "27/59",
+  "nextRoadmapTopic": "tree-traversals",
+  "roadmapProgress": "28/59",
   "upcomingRevisions": [
     {
       "topic": "big-o",
@@ -180,6 +181,12 @@
       "requested": false
     },
     {
+      "topic": "binary-tree",
+      "dueDay": 46,
+      "stage": 1,
+      "requested": false
+    },
+    {
       "topic": "stack",
       "dueDay": 55,
       "stage": 3,
@@ -199,10 +206,10 @@
     }
   ],
   "stats": {
-    "lessons": 38,
-    "newTopicLessons": 27,
+    "lessons": 39,
+    "newTopicLessons": 28,
     "revisionLessons": 11,
-    "problemsGenerated": 190,
+    "problemsGenerated": 195,
     "problemsCompleted": 0,
     "lessonsCompleted": 0
   },
@@ -2609,6 +2616,71 @@
       "generator": {
         "provider": "gemini",
         "model": "gemini-3.5-flash",
+        "agentVersion": "1.0.0"
+      },
+      "requestRevision": false,
+      "revisionRequired": true
+    },
+    {
+      "day": 39,
+      "date": "2026-11-17",
+      "topic": "binary-tree",
+      "topicTitle": "Binary Trees",
+      "phase": "Trees",
+      "kind": "new",
+      "revisionStage": 0,
+      "difficulty": "progressive",
+      "language": "python",
+      "status": "generated",
+      "problemsGenerated": 5,
+      "problemsCompleted": 0,
+      "problems": [
+        {
+          "number": 1,
+          "title": "Calculate Maximum Tree Depth",
+          "difficulty": "Easy",
+          "concept": "Fundamental bottom-up tree recursion"
+        },
+        {
+          "number": 2,
+          "title": "Same Tree Verification",
+          "difficulty": "Easy/Medium",
+          "concept": "Dual-node recursive traversal and structural identity"
+        },
+        {
+          "number": 3,
+          "title": "Invert Binary Tree",
+          "difficulty": "Medium",
+          "concept": "In-place structural transformation via recursive swap"
+        },
+        {
+          "number": 4,
+          "title": "Check Symmetric Tree",
+          "difficulty": "Medium/Hard",
+          "concept": "Mirror recursion / symmetric divide and conquer"
+        },
+        {
+          "number": 5,
+          "title": "Path Sum Validation and Target Matching",
+          "difficulty": "Hard",
+          "concept": "Root-to-leaf recursive path tracking and backtracking accumulation"
+        }
+      ],
+      "conceptsCovered": [
+        "TreeNode class structure",
+        "Tree terminology (root, leaf, height, depth)",
+        "Bottom-up recursion",
+        "Tree equivalence and structural isomorphism",
+        "Symmetry and tree reflection",
+        "In-place tree mutation",
+        "Root-to-leaf path verification"
+      ],
+      "path": "dsa/day-039",
+      "generatedAt": "2026-11-17T08:16:33+00:00",
+      "generationId": "5aa34509235d43408d25c9ef3a781751",
+      "generator": {
+        "provider": "gemini",
+        "model": "gemini-3.8-flash",
         "agentVersion": "1.0.0"
       },
       "requestRevision": false,

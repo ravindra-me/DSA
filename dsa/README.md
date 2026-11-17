@@ -4,7 +4,7 @@ Generated automatically by the [DSA learning agent](../.github/agents/README.md)
 
 | Current day | Roadmap progress | Problems solved | Next new topic |
 |-------------|------------------|-----------------|----------------|
-| 38 | 27/59 topics | 0/190 | binary-tree |
+| 39 | 28/59 topics | 0/195 | tree-traversals |
 
 ## Upcoming revisions
 
@@ -23,6 +23,7 @@ Generated automatically by the [DSA learning agent](../.github/agents/README.md)
 
 | Day | Date | Topic | Type | Solved | Status |
 |-----|------|-------|------|--------|--------|
+| [39](day-039/README.md) | 2026-11-17 | Binary Trees | New | 0/5 | generated |
 | [38](day-038/README.md) | 2026-11-16 | Queue | Revision | 0/5 | generated |
 | [37](day-037/README.md) | 2026-11-15 | Counting, Bucket & Radix Sort | New | 0/5 | generated |
 | [36](day-036/README.md) | 2026-11-14 | Heap Sort | New | 0/5 | generated |
