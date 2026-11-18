@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "currentDay": 39,
-  "lastLessonDate": "2026-11-17",
-  "currentTopic": "binary-tree",
+  "currentDay": 40,
+  "lastLessonDate": "2026-11-18",
+  "currentTopic": "tree-traversals",
   "topicsCompleted": [
     "big-o",
     "arrays",
@@ -31,10 +31,11 @@
     "quick-sort",
     "heap-sort",
     "non-comparison-sorts",
-    "binary-tree"
+    "binary-tree",
+    "tree-traversals"
   ],
-  "nextRoadmapTopic": "tree-traversals",
-  "roadmapProgress": "28/59",
+  "nextRoadmapTopic": "tree-height-depth",
+  "roadmapProgress": "29/59",
   "upcomingRevisions": [
     {
       "topic": "big-o",
@@ -187,6 +188,12 @@
       "requested": false
     },
     {
+      "topic": "tree-traversals",
+      "dueDay": 47,
+      "stage": 1,
+      "requested": false
+    },
+    {
       "topic": "stack",
       "dueDay": 55,
       "stage": 3,
@@ -206,10 +213,10 @@
     }
   ],
   "stats": {
-    "lessons": 39,
-    "newTopicLessons": 28,
+    "lessons": 40,
+    "newTopicLessons": 29,
     "revisionLessons": 11,
-    "problemsGenerated": 195,
+    "problemsGenerated": 200,
     "problemsCompleted": 0,
     "lessonsCompleted": 0
   },
@@ -2678,6 +2685,69 @@
       "path": "dsa/day-039",
       "generatedAt": "2026-11-17T08:16:33+00:00",
       "generationId": "5aa34509235d43408d25c9ef3a781751",
+      "generator": {
+        "provider": "gemini",
+        "model": "gemini-3.8-flash",
+        "agentVersion": "1.0.0"
+      },
+      "requestRevision": false,
+      "revisionRequired": true
+    },
+    {
+      "day": 40,
+      "date": "2026-11-18",
+      "topic": "tree-traversals",
+      "topicTitle": "Tree Traversals",
+      "phase": "Trees",
+      "kind": "new",
+      "revisionStage": 0,
+      "difficulty": "progressive",
+      "language": "python",
+      "status": "generated",
+      "problemsGenerated": 5,
+      "problemsCompleted": 0,
+      "problems": [
+        {
+          "number": 1,
+          "title": "Binary Tree Level Order Traversal",
+          "difficulty": "Easy",
+          "concept": "Level Order (BFS) with layer separation"
+        },
+        {
+          "number": 2,
+          "title": "Iterative Inorder Traversal",
+          "difficulty": "Easy/Medium",
+          "concept": "Iterative DFS using an explicit stack"
+        },
+        {
+          "number": 3,
+          "title": "Zigzag Level Order Traversal",
+          "difficulty": "Medium",
+          "concept": "Level Order BFS with alternating direction"
+        },
+        {
+          "number": 4,
+          "title": "Iterative Postorder Traversal",
+          "difficulty": "Medium/Hard",
+          "concept": "Iterative Postorder with two-pointer tracking or two-stack approach"
+        },
+        {
+          "number": 5,
+          "title": "Vertical Order Traversal of a Binary Tree",
+          "difficulty": "Hard",
+          "concept": "Coordinate-based BFS / DFS with multi-key sorting"
+        }
+      ],
+      "conceptsCovered": [
+        "Preorder Traversal",
+        "Inorder Traversal",
+        "Postorder Traversal",
+        "Level Order Traversal (BFS)",
+        "Iterative Stack Traversals"
+      ],
+      "path": "dsa/day-040",
+      "generatedAt": "2026-11-18T07:51:34+00:00",
+      "generationId": "4f4ff55bfd1340cca16507b608483cdf",
       "generator": {
         "provider": "gemini",
         "model": "gemini-3.8-flash",

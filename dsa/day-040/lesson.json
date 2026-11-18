@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "day": 40,
+  "date": "2026-11-18",
+  "topic": "tree-traversals",
+  "kind": "new",
+  "language": "python",
+  "generator": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "agentVersion": "1.0.0"
+  },
+  "problems": [
+    {
+      "number": 1,
+      "title": "Binary Tree Level Order Traversal",
+      "difficulty": "Easy",
+      "concept": "Level Order (BFS) with layer separation",
+      "exports": [
+        "TreeNode",
+        "level_order"
+      ],
+      "files": {
+        "exercise": "exercises/problem-01.md",
+        "notes": "solutions/problem-01.md",
+        "solution": "solutions/problem_01.py",
+        "tests": "tests/test_problem_01.py",
+        "practice": "practice/problem_01.py"
+      },
+      "starterSha256": "d4adcf09460ea0c7e7f9ca366c37da625d49c80288f51b1d35d13babc21f2cd2",
+      "testsRun": 6,
+      "repairs": 0
+    },
+    {
+      "number": 2,
+      "title": "Iterative Inorder Traversal",
+      "difficulty": "Easy/Medium",
+      "concept": "Iterative DFS using an explicit stack",
+      "exports": [
+        "TreeNode",
+        "inorder_traversal_iterative"
+      ],
+      "files": {
+        "exercise": "exercises/problem-02.md",
+        "notes": "solutions/problem-02.md",
+        "solution": "solutions/problem_02.py",
+        "tests": "tests/test_problem_02.py",
+        "practice": "practice/problem_02.py"
+      },
+      "starterSha256": "1285889d6f2b464885c6b2fe51b7c18e6366362a1dac66a5e649670a7fe89f8d",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 3,
+      "title": "Zigzag Level Order Traversal",
+      "difficulty": "Medium",
+      "concept": "Level Order BFS with alternating direction",
+      "exports": [
+        "TreeNode",
+        "zigzag_level_order"
+      ],
+      "files": {
+        "exercise": "exercises/problem-03.md",
+        "notes": "solutions/problem-03.md",
+        "solution": "solutions/problem_03.py",
+        "tests": "tests/test_problem_03.py",
+        "practice": "practice/problem_03.py"
+      },
+      "starterSha256": "9308cd6c6fdc197e884f60fa35e5ffd4b0450cd83625e23c574ec85b04d6171b",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 4,
+      "title": "Iterative Postorder Traversal",
+      "difficulty": "Medium/Hard",
+      "concept": "Iterative Postorder with two-pointer tracking or two-stack approach",
+      "exports": [
+        "TreeNode",
+        "postorder_traversal_iterative"
+      ],
+      "files": {
+        "exercise": "exercises/problem-04.md",
+        "notes": "solutions/problem-04.md",
+        "solution": "solutions/problem_04.py",
+        "tests": "tests/test_problem_04.py",
+        "practice": "practice/problem_04.py"
+      },
+      "starterSha256": "0bd29b2623fc00049076a03e848ff337a964455e5e5e80b35c09a48b879b51b1",
+      "testsRun": 8,
+      "repairs": 0
+    },
+    {
+      "number": 5,
+      "title": "Vertical Order Traversal of a Binary Tree",
+      "difficulty": "Hard",
+      "concept": "Coordinate-based BFS / DFS with multi-key sorting",
+      "exports": [
+        "TreeNode",
+        "vertical_traversal"
+      ],
+      "files": {
+        "exercise": "exercises/problem-05.md",
+        "notes": "solutions/problem-05.md",
+        "solution": "solutions/problem_05.py",
+        "tests": "tests/test_problem_05.py",
+        "practice": "practice/problem_05.py"
+      },
+      "starterSha256": "8458801b692a6716fdf3a39289d474f89da01c3dee20fb19f1e12a2c9a3ed135",
+      "testsRun": 7,
+      "repairs": 0
+    }
+  ]
+}
