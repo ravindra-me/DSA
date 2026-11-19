@@ -4,11 +4,10 @@ Generated automatically by the [DSA learning agent](../.github/agents/README.md)
 
 | Current day | Roadmap progress | Problems solved | Next new topic |
 |-------------|------------------|-----------------|----------------|
-| 40 | 29/59 topics | 0/200 | tree-height-depth |
+| 41 | 29/59 topics | 0/205 | tree-height-depth |
 
 ## Upcoming revisions
 
-- `big-o`: due on day 22
 - `deque`: due on day 22
 - `arrays`: due on day 23
 - `hash-map`: due on day 23
@@ -18,11 +17,13 @@ Generated automatically by the [DSA learning agent](../.github/agents/README.md)
 - `math-basics`: due on day 26
 - `frequency-counting`: due on day 26
 - `bit-manipulation`: due on day 27
+- `linked-list`: due on day 28
 
 ## All lessons
 
 | Day | Date | Topic | Type | Solved | Status |
 |-----|------|-------|------|--------|--------|
+| [41](day-041/README.md) | 2026-11-19 | Big O Notation & Complexity Analysis | Revision | 0/5 | generated |
 | [40](day-040/README.md) | 2026-11-18 | Tree Traversals | New | 0/5 | generated |
 | [39](day-039/README.md) | 2026-11-17 | Binary Trees | New | 0/5 | generated |
 | [38](day-038/README.md) | 2026-11-16 | Queue | Revision | 0/5 | generated |

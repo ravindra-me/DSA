@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "day": 41,
+  "date": "2026-11-19",
+  "topic": "big-o",
+  "kind": "revision",
+  "language": "python",
+  "generator": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "agentVersion": "1.0.0"
+  },
+  "problems": [
+    {
+      "number": 1,
+      "title": "Sliding Window Max-Min Spread",
+      "difficulty": "Easy/Medium",
+      "concept": "Amortized O(1) per element with Monotonic Deques",
+      "exports": [
+        "max_min_spread"
+      ],
+      "files": {
+        "exercise": "exercises/problem-01.md",
+        "notes": "solutions/problem-01.md",
+        "solution": "solutions/problem_01.py",
+        "tests": "tests/test_problem_01.py",
+        "practice": "practice/problem_01.py"
+      },
+      "starterSha256": "63fe1e8bc3fe9c634c347d8d4cedd2cb6e01c37a92a5170a499778ffe038cf18",
+      "testsRun": 8,
+      "repairs": 0
+    },
+    {
+      "number": 2,
+      "title": "Strict In-Place Zero Partition",
+      "difficulty": "Medium",
+      "concept": "In-place array partitioning with strict O(1) auxiliary space",
+      "exports": [
+        "stable_zero_partition"
+      ],
+      "files": {
+        "exercise": "exercises/problem-02.md",
+        "notes": "solutions/problem-02.md",
+        "solution": "solutions/problem_02.py",
+        "tests": "tests/test_problem_02.py",
+        "practice": "practice/problem_02.py"
+      },
+      "starterSha256": "0080e8a394f2f87a17a081ef40de6ce5d441e3b1ed268aa1746a3a932ac9e624",
+      "testsRun": 7,
+      "repairs": 0
+    },
+    {
+      "number": 3,
+      "title": "Amortized Two-Stack Deque",
+      "difficulty": "Medium/Hard",
+      "concept": "Potential method and amortized O(1) multi-operation structures",
+      "exports": [
+        "TwoStackDeque"
+      ],
+      "files": {
+        "exercise": "exercises/problem-03.md",
+        "notes": "solutions/problem-03.md",
+        "solution": "solutions/problem_03.py",
+        "tests": "tests/test_problem_03.py",
+        "practice": "practice/problem_03.py"
+      },
+      "starterSha256": "4f18efb4f10570a991e02b62a342e598d24e7f9458f55ab60985b1e7f39eb577",
+      "testsRun": 6,
+      "repairs": 0
+    },
+    {
+      "number": 4,
+      "title": "Subtree Weight Parity Balance",
+      "difficulty": "Medium/Hard",
+      "concept": "Recursive Tree Traversal with O(H) call stack analysis",
+      "exports": [
+        "TreeNode",
+        "count_parity_balanced"
+      ],
+      "files": {
+        "exercise": "exercises/problem-04.md",
+        "notes": "solutions/problem-04.md",
+        "solution": "solutions/problem_04.py",
+        "tests": "tests/test_problem_04.py",
+        "practice": "practice/problem_04.py"
+      },
+      "starterSha256": "79dfe5f18f9c27a1daba10827332fdb7a80beeda05bd3738128d8e08d221cf2d",
+      "testsRun": 8,
+      "repairs": 0
+    },
+    {
+      "number": 5,
+      "title": "Optimal Budget Job Scheduler",
+      "difficulty": "Hard",
+      "concept": "Binary Search on Answer with O(N log(Sum)) runtime complexity",
+      "exports": [
+        "min_completion_time"
+      ],
+      "files": {
+        "exercise": "exercises/problem-05.md",
+        "notes": "solutions/problem-05.md",
+        "solution": "solutions/problem_05.py",
+        "tests": "tests/test_problem_05.py",
+        "practice": "practice/problem_05.py"
+      },
+      "starterSha256": "f940da466a497c3f1780fbe54860464f4d5acd2bcd5e651cb2ca5425256c44d5",
+      "testsRun": 8,
+      "repairs": 0
+    }
+  ]
+}

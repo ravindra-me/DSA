@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "currentDay": 40,
-  "lastLessonDate": "2026-11-18",
-  "currentTopic": "tree-traversals",
+  "currentDay": 41,
+  "lastLessonDate": "2026-11-19",
+  "currentTopic": "big-o",
   "topicsCompleted": [
     "big-o",
     "arrays",
@@ -37,12 +37,6 @@
   "nextRoadmapTopic": "tree-height-depth",
   "roadmapProgress": "29/59",
   "upcomingRevisions": [
-    {
-      "topic": "big-o",
-      "dueDay": 22,
-      "stage": 2,
-      "requested": false
-    },
     {
       "topic": "deque",
       "dueDay": 22,
@@ -182,6 +176,12 @@
       "requested": false
     },
     {
+      "topic": "big-o",
+      "dueDay": 46,
+      "stage": 3,
+      "requested": false
+    },
+    {
       "topic": "binary-tree",
       "dueDay": 46,
       "stage": 1,
@@ -213,10 +213,10 @@
     }
   ],
   "stats": {
-    "lessons": 40,
+    "lessons": 41,
     "newTopicLessons": 29,
-    "revisionLessons": 11,
-    "problemsGenerated": 200,
+    "revisionLessons": 12,
+    "problemsGenerated": 205,
     "problemsCompleted": 0,
     "lessonsCompleted": 0
   },
@@ -2748,6 +2748,69 @@
       "path": "dsa/day-040",
       "generatedAt": "2026-11-18T07:51:34+00:00",
       "generationId": "4f4ff55bfd1340cca16507b608483cdf",
+      "generator": {
+        "provider": "gemini",
+        "model": "gemini-3.8-flash",
+        "agentVersion": "1.0.0"
+      },
+      "requestRevision": false,
+      "revisionRequired": true
+    },
+    {
+      "day": 41,
+      "date": "2026-11-19",
+      "topic": "big-o",
+      "topicTitle": "Big O Notation & Complexity Analysis",
+      "phase": "Fundamentals",
+      "kind": "revision",
+      "revisionStage": 2,
+      "difficulty": "progressive",
+      "language": "python",
+      "status": "generated",
+      "problemsGenerated": 5,
+      "problemsCompleted": 0,
+      "problems": [
+        {
+          "number": 1,
+          "title": "Sliding Window Max-Min Spread",
+          "difficulty": "Easy/Medium",
+          "concept": "Amortized O(1) per element with Monotonic Deques"
+        },
+        {
+          "number": 2,
+          "title": "Strict In-Place Zero Partition",
+          "difficulty": "Medium",
+          "concept": "In-place array partitioning with strict O(1) auxiliary space"
+        },
+        {
+          "number": 3,
+          "title": "Amortized Two-Stack Deque",
+          "difficulty": "Medium/Hard",
+          "concept": "Potential method and amortized O(1) multi-operation structures"
+        },
+        {
+          "number": 4,
+          "title": "Subtree Weight Parity Balance",
+          "difficulty": "Medium/Hard",
+          "concept": "Recursive Tree Traversal with O(H) call stack analysis"
+        },
+        {
+          "number": 5,
+          "title": "Optimal Budget Job Scheduler",
+          "difficulty": "Hard",
+          "concept": "Binary Search on Answer with O(N log(Sum)) runtime complexity"
+        }
+      ],
+      "conceptsCovered": [
+        "big-o",
+        "amortized-analysis",
+        "worst-average-best-case",
+        "auxiliary-space",
+        "growth-rates"
+      ],
+      "path": "dsa/day-041",
+      "generatedAt": "2026-11-19T08:28:40+00:00",
+      "generationId": "e37afd9e14184bb6ac8a37cdf8a79a16",
       "generator": {
         "provider": "gemini",
         "model": "gemini-3.8-flash",
